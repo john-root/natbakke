@@ -11,6 +11,27 @@ from socket import error as SocketError
 import errno
 import time
 
+def get_canvases(manifest_data):
+    '''
+    Return the canvases within a manifest.
+    '''
+    canvases = manifest_data['sequences'][0]['canvases']
+    return canvases
+
+
+def get_info_json_uri(canvas):
+    '''
+    Get the info.json URI from a canvas
+    '''
+    return canvas['images'][0]['resource']['service']['@id']
+
+
+def get_width_height(info_json):
+    '''
+    Get the height and width from an info.json URI.
+    '''
+    r = json.loads(requests.get(info_json).content)
+    return {'height': r['height'], 'width': r['width']}
 
 def get_recursively(search_dict, field):
     """
