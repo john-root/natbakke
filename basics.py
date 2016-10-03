@@ -11,6 +11,7 @@ from socket import error as SocketError
 import errno
 import time
 
+
 def get_canvases(manifest_data):
     '''
     Return the canvases within a manifest.
@@ -23,7 +24,17 @@ def get_info_json_uri(canvas):
     '''
     Get the info.json URI from a canvas
     '''
-    return canvas['images'][0]['resource']['service']['@id']
+    try:
+        try:
+            info_json = canvas['images'][0]['resource']['service']['@id']
+            if validators.url(info_json) is True:
+                return canvas['images'][0]['resource']['service']['@id']
+            else:
+                raise ValueError('Not a valid URI', info_json)
+        except ValueError as err:
+                print(err.args)
+    except KeyError as err:
+        print 'Could not extract info.json URI from canvas'
 
 
 def get_width_height(info_json):
@@ -32,6 +43,7 @@ def get_width_height(info_json):
     '''
     r = json.loads(requests.get(info_json).content)
     return {'height': r['height'], 'width': r['width']}
+
 
 def get_recursively(search_dict, field):
     """
@@ -230,7 +242,8 @@ class IIIF_Manifest(IIIF_Item):
         '''
         # self.json_expand()
         self.manifest_dict = json.loads(self.source_data)
-        core_fields = ['@id', '@type', 'label', 'description', 'thumbnail', 'attribution', 'logo', 'license']
+        core_fields = ['@id', '@type', 'label', 'description',
+                       'thumbnail', 'attribution', 'logo', 'license']
         for field in core_fields:
             if field in self.manifest_dict:
                 print self.manifest_dict[field]
