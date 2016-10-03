@@ -1,6 +1,7 @@
 '''
-Basic functions for use in parsing IIIF collections, IIIF manifests, canvases, etc 
-in the context of OCR, full text and entity extraction.
+Basic functions for use in parsing IIIF collections, IIIF manifests, canvases,
+etc
+N.B. in the context of OCR, full text and entity extraction.
 '''
 
 import urllib2
