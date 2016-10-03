@@ -10,6 +10,7 @@ from pyld import jsonld
 from socket import error as SocketError
 import errno
 import time
+import requests
 
 
 def get_canvases(manifest_data):
@@ -32,7 +33,7 @@ def get_info_json_uri(canvas):
             else:
                 raise ValueError('Not a valid URI', info_json)
         except ValueError as err:
-                print(err.args)
+            print(err.args)
     except KeyError as err:
         print 'Could not extract info.json URI from canvas'
 
@@ -41,8 +42,21 @@ def get_width_height(info_json):
     '''
     Get the height and width from an info.json URI.
     '''
-    r = json.loads(requests.get(info_json).content)
-    return {'height': r['height'], 'width': r['width']}
+    try:
+        if validators.url(info_json):
+            info_request = requests.get(info_json)
+            info_request.raise_for_status()
+            if info_request.json():
+                r = info_request.json()
+                try:
+                    return {'height': r['height'], 'width': r['width']}
+                    raise KeyError('Could not extract height and width')
+                except KeyError as err:
+                    print 'Could not extract height and width from:', r
+        else:
+            raise ValueError('Not a valid URI', info_json)
+    except ValueError as err:
+        print(err.args)
 
 
 def get_recursively(search_dict, field):
