@@ -98,6 +98,7 @@ class CanvasProcess():
                 filename = os.path.join(self.data_dir, hashlib.md5(self.id).hexdigest() + '.json')
                 with open(filename, 'w') as file:
                     file.write(json.dumps(self.annotations, indent=4))
+                push_annos(self.annotations, self.id)
 
     def index_ocr_data(self):
         '''
@@ -169,19 +170,20 @@ def create_anno(container_name, anno_body, uri='https://annotation-dev.digtest.c
     return r.status_code, r.content
 
 
-def push_annos(annotation_list):
+def push_annos(annotation_list, canvas_id):
     for annotation in annotation_list:
         body = json.dumps(annotation, indent=4)
-        print body
-        # try:
-        #     status, data = create_container(targ_hash, target)
-        #     if status == 200 or status == 201:
-        #         anno_status, anno_data = create_anno(
-        #             targ_hash, body)
-        #         print 'Anno create status: %s' % anno_status
-        #         print 'Anno create return %s' % anno_data
-        # except:
-        #     print "Something went wrong."
+        target = canvas_id
+        targ_hash = hashlib.md5(target).hexdigest() + '_1'
+        try:
+            status, data = create_container(targ_hash, target)
+            if status == 200 or status == 201:
+                anno_status, anno_data = create_anno(
+                    targ_hash, body)
+                print 'Anno create status: %s' % anno_status
+                print 'Anno create return %s' % anno_data
+        except:
+            print "Something went wrong."
 
 
 def main():
@@ -194,7 +196,6 @@ def main():
     for canvas in item.canvases:
         processed = CanvasProcess(
             canvas_obj=canvas, manifest_id=item.requested.uri)
-        push_annos(processed.annotations)
 
 if __name__ == '__main__':
     main()
