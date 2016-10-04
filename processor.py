@@ -84,6 +84,11 @@ class Canvas():
 
 class CanvasProcess():
 
+    '''
+    Could probably run these in parallel to stop the OCR pipeline
+    from being a bottleneck, e.g. run 4 canvases at once.
+    '''
+
     def __init__(self, canvas_obj):
         self.canvas = Canvas(canvas_obj)
         self.canvas.get_width_height()
@@ -93,14 +98,15 @@ class CanvasProcess():
         self.canvas.get_alto()
         self.canvas.get_hocr()
         if hasattr(self.canvas, 'alto'):
-            self.word_index, self.word_list, self.ocr_text, self.ocr_text_sub = get_words_alto(self.canvas)
+            self.word_index, self.word_list, self.ocr_text, self.ocr_text_sub = get_words_alto(
+                self.canvas)
         elif hasattr(self.canvas, 'hocr'):
-            self.word_index, self.word_list, self.ocr_text, ocr_text_sub = get_words_hocr(self.canvas)
+            self.word_index, self.word_list, self.ocr_text, self.ocr_text_sub = get_words_hocr(
+                self.canvas)
         else:
             self.generate_ocr()
-            print self.canvas.hocr
-            # self.word_index, self.word_list, self.ocr_text, ocr_text_sub = get_words_hocr(self.canvas)
-
+            self.word_index, self.word_list, self.ocr_text, self.ocr_text_sub = get_words_hocr(
+                self.canvas)
 
     def generate_ocr(self):
         print 'OCR-ing'
@@ -109,11 +115,11 @@ class CanvasProcess():
             self.canvas.hocr = temp_hocr
 
 
-
 def main():
     # item = Manifest(
     #     uri='http://wellcomelibrary.org/iiif/b20086362/manifest')
-    item = Manifest(uri='http://tomcrane.github.io/scratch/manifests/ida/m1011-san-juan-1920-22.json')
+    item = Manifest(
+        uri='http://tomcrane.github.io/scratch/manifests/ida/m1011-san-juan-1920-22.json')
     canvas = item.canvases[10]
     # for canvas in item.canvases:
     processed = CanvasProcess(canvas_obj=canvas)
