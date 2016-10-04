@@ -5,6 +5,7 @@ from io import open as iopen
 import hashlib
 import requests
 import subprocess
+import os
 
 
 def get_words_alto(canvas, verbose=False):
@@ -132,7 +133,12 @@ def ocr_image(info_json):
     fullfull = ''.join([image_id, '/full/full/0/default.jpg'])
     file_name = hashlib.md5(image_id).hexdigest() + '.jpg'
     get_image(fullfull, file_name)
-    return tesseract_image(file_name)
+    result = tesseract_image(file_name)
+    if result:
+        os.remove(file_name)
+        return result
+    else:
+        return None
 
 
 def tesseract_image(file_name):
