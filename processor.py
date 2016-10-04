@@ -1,20 +1,14 @@
 # -*- coding: utf-8 -*-
 
-# import lxml
-# from bs4 import BeautifulSoup
-# import re
-# import ftfy  # for fixing badly encoded text
 import ujson
 # import hocr_functions_refactor
 # import manifest_ner
-# import spacy.en
-import hashlib
 # import codecs
 import basics
 import validators
 import requests
 from ocr_basics import get_words_alto, get_words_hocr, ocr_image
-from io import open as iopen
+from parser_basics import ocr_to_annos
 
 
 class Manifest():
@@ -89,12 +83,14 @@ class CanvasProcess():
     from being a bottleneck, e.g. run 4 canvases at once.
     '''
 
-    def __init__(self, canvas_obj):
+    def __init__(self, canvas_obj, manifest_id):
+        self.manifest_id = manifest_id
         self.canvas = Canvas(canvas_obj)
+        self.id = self.canvas.canvas_obj['@id']
         self.canvas.get_width_height()
         self.index_ocr_data()
         if hasattr(self, 'word_index'):
-            print 'GOT WORDS'
+            ocr_to_annos(self.ocr_text_sub, self.word_index, self.word_list, self.id, self.manifest_id)
 
     def index_ocr_data(self):
         self.canvas.get_alto()
@@ -119,13 +115,14 @@ class CanvasProcess():
 
 
 def main():
-    # item = Manifest(
-    #     uri='http://wellcomelibrary.org/iiif/b20086362/manifest')
     item = Manifest(
-        uri='http://tomcrane.github.io/scratch/manifests/ida/m1011-san-juan-1920-22.json')
+        uri='http://wellcomelibrary.org/iiif/b20086362/manifest')
+    print item.requested.uri
+    # item = Manifest(
+    #     uri='http://tomcrane.github.io/scratch/manifests/ida/m1011-san-juan-1920-22.json')
     canvas = item.canvases[10]
     # for canvas in item.canvases:
-    processed = CanvasProcess(canvas_obj=canvas)
+    processed = CanvasProcess(canvas_obj=canvas, manifest_id=item.requested.uri)
     # print processed.word_index
 
 if __name__ == '__main__':
