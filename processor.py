@@ -8,12 +8,13 @@ import ujson
 # import hocr_functions_refactor
 # import manifest_ner
 # import spacy.en
-# import hashlib
+import hashlib
 # import codecs
 import basics
 import validators
 import requests
-from ocr_basics import get_words_alto, get_words_hocr
+from ocr_basics import get_words_alto, get_words_hocr, ocr_image
+from io import open as iopen
 
 
 class Manifest():
@@ -47,11 +48,14 @@ class Canvas():
             self.get_width_height()
 
     def get_seeAlsos(self):
-        if isinstance(self.canvas_obj['seeAlso'], list):
-            for seeAlso in self.canvas_obj['seeAlso']:
-                self.identify_service(seeAlso)
-        else:
-            self.identify_service(self.canvas_obj['seeAlso'])
+        try:
+            if isinstance(self.canvas_obj['seeAlso'], list):
+                for seeAlso in self.canvas_obj['seeAlso']:
+                    self.identify_service(seeAlso)
+            else:
+                self.identify_service(self.canvas_obj['seeAlso'])
+        except KeyError:
+            print 'This canvas has no seeAlso.'
 
     def identify_service(self, service):
         if 'alto' in service['profile'].lower():
@@ -93,15 +97,24 @@ class CanvasProcess():
         elif hasattr(self.canvas, 'hocr'):
             self.word_index, self.word_list, self.ocr_text, ocr_text_sub = get_words_hocr(self.canvas)
         else:
-            print 'Will need to OCR from images.'
+            self.generate_ocr()
+
+    def generate_ocr(self):
+        print 'OCR-ing'
+        if hasattr(self.canvas, 'info_json'):
+            temp_hocr = ocr_image(self.canvas.info_json)
+            print temp_hocr
+
 
 
 def main():
-    item = Manifest(
-        uri='http://wellcomelibrary.org/iiif/b20086362/manifest')
-    for canvas in item.canvases:
-        processed = CanvasProcess(canvas_obj=canvas)
-        print processed.word_index
+    # item = Manifest(
+    #     uri='http://wellcomelibrary.org/iiif/b20086362/manifest')
+    item = Manifest(uri='http://tomcrane.github.io/scratch/manifests/ida/m1011-san-juan-1920-22.json')
+    canvas = item.canvases[10]
+    # for canvas in item.canvases:
+    processed = CanvasProcess(canvas_obj=canvas)
+    # print processed.word_index
 
 if __name__ == '__main__':
     main()
