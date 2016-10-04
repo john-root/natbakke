@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 # import lxml
-from bs4 import BeautifulSoup
-import re
-import ftfy  # for fixing badly encoded text
+# from bs4 import BeautifulSoup
+# import re
+# import ftfy  # for fixing badly encoded text
 import ujson
 # import hocr_functions_refactor
 # import manifest_ner
@@ -13,7 +13,7 @@ import ujson
 import basics
 import validators
 import requests
-from ocr_basics import get_words_alto
+from ocr_basics import get_words_alto, get_words_hocr
 
 
 class Manifest():
@@ -89,11 +89,9 @@ class CanvasProcess():
         self.canvas.get_alto()
         self.canvas.get_hocr()
         if hasattr(self.canvas, 'alto'):
-            self.word_index, self.ocr_text, self.ocr_text_sub = get_words_alto(self.canvas)
-            # print words
+            self.word_index, self.word_list, self.ocr_text, self.ocr_text_sub = get_words_alto(self.canvas)
         elif hasattr(self.canvas, 'hocr'):
-            self.word_index, self.ocr_text, ocr_text_sub = get_words_hocr(self.canvas)
-            # print words
+            self.word_index, self.word_list, self.ocr_text, ocr_text_sub = get_words_hocr(self.canvas)
         else:
             print 'Will need to OCR from images.'
 
@@ -103,7 +101,7 @@ def main():
         uri='http://wellcomelibrary.org/iiif/b20086362/manifest')
     for canvas in item.canvases:
         processed = CanvasProcess(canvas_obj=canvas)
-        print processed.ocr_text_sub
+        print processed.word_index
 
 if __name__ == '__main__':
     main()
