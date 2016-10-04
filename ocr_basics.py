@@ -37,7 +37,7 @@ def get_words_alto(canvas, verbose=False):
     text_words = []
     # iterate through lines in the hOCR
     count = 0  # keep a running number of the words
-    char_count = 1  # keep a running count of character offset
+    char_count = 0  # keep a running count of character offset
     for line in lines:
         # parse each line with BS4
         line_soup = BeautifulSoup(str(line), "html.parser")
