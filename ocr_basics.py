@@ -132,11 +132,15 @@ def ocr_image(info_json):
     image_id = info_json['@id']
     fullfull = ''.join([image_id, '/full/full/0/default.jpg'])
     file_name = hashlib.md5(image_id).hexdigest() + '.jpg'
+    print fullfull
     get_image(fullfull, file_name)
-    result = tesseract_image(file_name)
-    if result:
-        os.remove(file_name)
-        return result
+    if os.path.exists(file_name):
+        result = tesseract_image(file_name)
+        if result:
+            os.remove(file_name)
+            return result
+        else:
+            return None
     else:
         return None
 
