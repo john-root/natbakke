@@ -98,12 +98,15 @@ class CanvasProcess():
             self.word_index, self.word_list, self.ocr_text, ocr_text_sub = get_words_hocr(self.canvas)
         else:
             self.generate_ocr()
+            print self.canvas.hocr
+            # self.word_index, self.word_list, self.ocr_text, ocr_text_sub = get_words_hocr(self.canvas)
+
 
     def generate_ocr(self):
         print 'OCR-ing'
         if hasattr(self.canvas, 'info_json'):
             temp_hocr = ocr_image(self.canvas.info_json)
-            print temp_hocr
+            self.canvas.hocr = temp_hocr
 
 
 
