@@ -93,6 +93,8 @@ class CanvasProcess():
         self.canvas = Canvas(canvas_obj)
         self.canvas.get_width_height()
         self.index_ocr_data()
+        if hasattr(self, 'word_index'):
+            print 'GOT WORDS'
 
     def index_ocr_data(self):
         self.canvas.get_alto()
@@ -107,6 +109,7 @@ class CanvasProcess():
             self.generate_ocr()
             self.word_index, self.word_list, self.ocr_text, self.ocr_text_sub = get_words_hocr(
                 self.canvas)
+
 
     def generate_ocr(self):
         print 'OCR-ing'
