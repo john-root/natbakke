@@ -4,7 +4,7 @@ import ftfy
 from io import open as iopen
 import hashlib
 import requests
-
+import subprocess
 
 
 def get_words_alto(canvas, verbose=False):
@@ -61,7 +61,8 @@ def get_words_alto(canvas, verbose=False):
             text_words.append(word_dict['text'])
     ocr_text = ' '.join(text_words)
     ocr_text_sub = re.sub(r'\s+', ' ', ocr_text)
-    word_index = [{item['id']: range(int(item['start_idx']), int(item['end_idx']))} for item in word_list]
+    word_index = [{item['id']: range(
+        int(item['start_idx']), int(item['end_idx']))} for item in word_list]
     return word_index, word_list, ocr_text, ocr_text_sub
 
 
@@ -121,23 +122,31 @@ def get_words_hocr(canvas):
             text_words.append(word_dict['text'])
     ocr_text = ' '.join(text_words)
     ocr_text_sub = re.sub(r'\s+', ' ', ocr_text)
-    word_index = [{x['id']: range(int(x['start_idx']), int(x['end_idx']))} for x in word_list]
+    word_index = [
+        {x['id']: range(int(x['start_idx']), int(x['end_idx']))} for x in word_list]
     return word_index, word_list, ocr_text, ocr_text_sub
 
 
 def ocr_image(info_json):
-    get_image(info_json)
-    return 'Foo'
-
-
-def get_image(info_json):
     image_id = info_json['@id']
     fullfull = ''.join([image_id, '/full/full/0/default.jpg'])
-    try:
-        file_name = hashlib.md5(image_id).hexdigest() + '.jpg'
-        r = requests.get(fullfull)
-        r.raise_for_status
+    file_name = hashlib.md5(image_id).hexdigest() + '.jpg'
+    get_image(fullfull, file_name)
+    return tesseract_image(file_name)
+
+
+def tesseract_image(file_name):
+    '''
+    '''
+    command = ['/usr/local/bin/tesseract', file_name, 'stdout', 'hocr']
+    print command
+    result = subprocess.check_output(command)
+    return result
+
+
+def get_image(fullfull, file_name):
+    r = requests.get(fullfull)
+    r.raise_for_status
+    if r.status_code == 200:
         with iopen(file_name, 'wb') as file:
             file.write(r.content)
-    except:
-        print 'Something went wrong.'
