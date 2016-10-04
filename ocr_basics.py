@@ -143,8 +143,9 @@ def ocr_image(info_json):
             '''
             Is this premature?
             '''
+            print result
             print 'Removing file: %s' % file_name
-            # os.remove(file_name)
+            os.remove(file_name)
             return result
         else:
             return None
@@ -152,15 +153,15 @@ def ocr_image(info_json):
         print 'File missing'
         return None
 
-
 def tesseract_image(file_name):
     '''
     '''
-    command = ['/usr/local/bin/tesseract', file_name, 'stdout', 'hocr']
+    command = ['/usr/local/bin/tesseract', file_name, file_name.replace('.jpg',''), 'hocr']
     print command
-    proc = subprocess.Popen(command, stdout=subprocess.PIPE)
-    result = proc.communicate()[0]
-    return result
+    proc = subprocess.check_output(command)
+    with open(file_name.replace('jpg', 'hocr')) as hocr:
+        ocr_data = hocr.read()
+        return ocr_data
 
 
 def get_image(fullfull, file_name):
