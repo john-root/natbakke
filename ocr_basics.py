@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 import re
+import ftfy
 
 
 def get_words_alto(canvas, verbose=False):
@@ -41,7 +42,8 @@ def get_words_alto(canvas, verbose=False):
             word_dict = {}  # build a dict for each word
             word_dict['text'] = word['content']
             word_dict['id'] = str(count)  # running ID
-            word_dict['idx'] = str(char_count)
+            word_dict['start_idx'] = str(char_count)
+            word_dict['end_idx'] = str(char_count + len(word_dict['text']))
             char_count = char_count + len(word['content']) + 1
             x = int(float(word['hpos']) * scaleW)
             y = int(float(word['vpos']) * scaleH)
@@ -55,7 +57,8 @@ def get_words_alto(canvas, verbose=False):
             text_words.append(word_dict['text'])
     ocr_text = ' '.join(text_words)
     ocr_text_sub = re.sub(r'\s+', ' ', ocr_text)
-    return word_list, ocr_text, ocr_text_sub
+    word_index = [{item['id']: range(int(item['start_idx']), int(item['end_idx']))} for item in word_list]
+    return word_index, word_list, ocr_text, ocr_text_sub
 
 
 def get_words_hocr(canvas):
@@ -114,4 +117,5 @@ def get_words_hocr(canvas):
             text_words.append(word_dict['text'])
     ocr_text = ' '.join(text_words)
     ocr_text_sub = re.sub(r'\s+', ' ', ocr_text)
-    return word_list, ocr_text, ocr_text_sub
+    word_index = [{x['id']: range(int(x['start_idx']), int(x['end_idx']))} for x in word_list]
+    return word_index, word_list, ocr_text, ocr_text_sub
