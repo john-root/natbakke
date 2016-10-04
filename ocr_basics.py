@@ -1,6 +1,10 @@
 from bs4 import BeautifulSoup
 import re
 import ftfy
+from io import open as iopen
+import hashlib
+import requests
+
 
 
 def get_words_alto(canvas, verbose=False):
@@ -119,3 +123,21 @@ def get_words_hocr(canvas):
     ocr_text_sub = re.sub(r'\s+', ' ', ocr_text)
     word_index = [{x['id']: range(int(x['start_idx']), int(x['end_idx']))} for x in word_list]
     return word_index, word_list, ocr_text, ocr_text_sub
+
+
+def ocr_image(info_json):
+    get_image(info_json)
+    return 'Foo'
+
+
+def get_image(info_json):
+    image_id = info_json['@id']
+    fullfull = ''.join([image_id, '/full/full/0/default.jpg'])
+    try:
+        file_name = hashlib.md5(image_id).hexdigest() + '.jpg'
+        r = requests.get(fullfull)
+        r.raise_for_status
+        with iopen(file_name, 'wb') as file:
+            file.write(r.content)
+    except:
+        print 'Something went wrong.'
