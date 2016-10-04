@@ -2,15 +2,13 @@
 
 import ujson
 import json
-# import hocr_functions_refactor
-# import manifest_ner
-# import codecs
 import basics
 import validators
 import requests
 from ocr_basics import get_words_alto, get_words_hocr, ocr_image
 from parser_basics import ocr_to_annos
-
+import hashlib
+import os
 
 class Manifest():
 
@@ -85,16 +83,37 @@ class CanvasProcess():
     '''
 
     def __init__(self, canvas_obj, manifest_id):
+        self.data_dir = './data/'
         self.manifest_id = manifest_id
         self.canvas = Canvas(canvas_obj)
         self.id = self.canvas.canvas_obj['@id']
         self.canvas.get_width_height()
+        # index the OCR data.
         self.index_ocr_data()
         if hasattr(self, 'word_index'):
             self.annotations = ocr_to_annos(
                 self.ocr_text_sub, self.word_index, self.word_list, self.id, self.manifest_id)
+            # save the annotations to a JSON file, using hash of canvas_id as filename
+            if self.annotations:
+                filename = os.path.join(data_dir, hashlib.md5(self.id).hexdigest() + '.json')
+                with open(filename, 'w') as file:
+                    file.write(json.dumps(self.annotations, indent=4))
 
     def index_ocr_data(self):
+        '''
+        Function: Generate an index of OCR words with their
+        bounding boxes, and character offsets, plus OCR full text.
+
+        Try to get Alto or hOCR data.
+
+        If either exist, use those to generate the entity based
+        annotation list.
+
+        If no OCR available, generate the OCR by calling a function
+        that uses tesseract to generate hOCR.
+
+        Parse that.
+        '''
         self.canvas.get_alto()
         self.canvas.get_hocr()
         if hasattr(self.canvas, 'alto'):
@@ -109,9 +128,8 @@ class CanvasProcess():
                 self.canvas)
 
     def generate_ocr(self):
-        print 'OCR-ing'
         if hasattr(self.canvas, 'info_json'):
-            self.canvas.hocr = ocr_image(self.canvas.info_json)
+            self.canvas.hocr = ocr_image(self.canvas.info_json, self.id, self.data_dir)
 
 
 def create_container(container_name, label, uri='https://annotation-dev.digtest.co.uk:443/w3c/'):
