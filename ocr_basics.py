@@ -130,20 +130,29 @@ def get_words_hocr(canvas):
     return word_index, word_list, ocr_text, ocr_text_sub
 
 
-def ocr_image(info_json):
+def ocr_image(info_json, canvas_id, data_dir):
+    '''
+    Read the info.json
+
+    Generate a full/full image path from the @id
+    Get this file and save to disk.
+    Run tesseract over it.
+    Return the hOCR for processing.
+
+    Use the hash of the canvas id for the hocr filename.
+    '''
     image_id = info_json['@id']
     fullfull = ''.join([image_id, '/full/full/0/default.jpg'])
-    file_name = hashlib.md5(image_id).hexdigest() + '.jpg'
-    print fullfull
+    file_name = os.path.join(data_dir, hashlib.md5(image_id).hexdigest() + '.jpg')
+    hocr_file = os.path.join(data_dir, hashlib.md5(canvas_id).hexdigest())
     get_image(fullfull, file_name)
     if os.path.exists(file_name):
-        print 'File exists'
-        result = tesseract_image(file_name)
+        result = tesseract_image(file_name, hocr_file)
         if result:
             '''
             Is this premature?
             '''
-            print result
+            # print result
             print 'Removing file: %s' % file_name
             os.remove(file_name)
             return result
@@ -153,13 +162,17 @@ def ocr_image(info_json):
         print 'File missing'
         return None
 
-def tesseract_image(file_name):
+def tesseract_image(file_name, hocr_file):
     '''
+    Run tesseract in a subprocess, reading the jpeg
+    and writing to an hoCR file.
+
+    When done, read the hOCR and return.
     '''
-    command = ['/usr/local/bin/tesseract', file_name, file_name.replace('.jpg',''), 'hocr']
-    print command
+    command = ['/usr/local/bin/tesseract', file_name, hocr_file, 'hocr']
+    # print command
     proc = subprocess.check_output(command)
-    with open(file_name.replace('jpg', 'hocr')) as hocr:
+    with open(hocr_file+'.hocr') as hocr:
         ocr_data = hocr.read()
         return ocr_data
 
