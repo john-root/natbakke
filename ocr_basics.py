@@ -77,7 +77,7 @@ def get_words_hocr(canvas):
     Output: list of dictionaries of words
             full text.
     '''
-    soup = BeautifulSoup(canvas.hocr, 'html.parser')
+    soup = BeautifulSoup(canvas.hocr, "html.parser")
     lines = soup.find_all("span", class_="ocr_line")
     word_list = []
     text_words = []
@@ -140,7 +140,8 @@ def tesseract_image(file_name):
     '''
     command = ['/usr/local/bin/tesseract', file_name, 'stdout', 'hocr']
     print command
-    result = subprocess.check_output(command)
+    proc = subprocess.Popen(command, stdout=subprocess.PIPE)
+    result = proc.communicate()[0]
     return result
 
 
