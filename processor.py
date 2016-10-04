@@ -90,7 +90,7 @@ class CanvasProcess():
         self.canvas.get_width_height()
         self.index_ocr_data()
         if hasattr(self, 'word_index'):
-            ocr_to_annos(self.ocr_text_sub, self.word_index, self.word_list, self.id, self.manifest_id)
+            self.annotations = ocr_to_annos(self.ocr_text_sub, self.word_index, self.word_list, self.id, self.manifest_id)
 
     def index_ocr_data(self):
         self.canvas.get_alto()
@@ -110,20 +110,19 @@ class CanvasProcess():
     def generate_ocr(self):
         print 'OCR-ing'
         if hasattr(self.canvas, 'info_json'):
-            temp_hocr = ocr_image(self.canvas.info_json)
-            self.canvas.hocr = temp_hocr
+            self.canvas.hocr = ocr_image(self.canvas.info_json)
 
 
 def main():
-    item = Manifest(
-        uri='http://wellcomelibrary.org/iiif/b20086362/manifest')
-    print item.requested.uri
     # item = Manifest(
-    #     uri='http://tomcrane.github.io/scratch/manifests/ida/m1011-san-juan-1920-22.json')
-    canvas = item.canvases[10]
-    # for canvas in item.canvases:
-    processed = CanvasProcess(canvas_obj=canvas, manifest_id=item.requested.uri)
-    # print processed.word_index
+    #     uri='http://wellcomelibrary.org/iiif/b20086362/manifest')
+    # print item.requested.uri
+    item = Manifest(
+        uri='http://tomcrane.github.io/scratch/manifests/ida/m1011-san-juan-1920-22.json')
+    # canvas = item.canvases[10]
+    for canvas in item.canvases:
+        processed = CanvasProcess(canvas_obj=canvas, manifest_id=item.requested.uri)
+        print processed.annotations
 
 if __name__ == '__main__':
     main()
