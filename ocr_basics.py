@@ -135,13 +135,18 @@ def ocr_image(info_json):
     print fullfull
     get_image(fullfull, file_name)
     if os.path.exists(file_name):
+        print 'File exists'
         result = tesseract_image(file_name)
         if result:
+            '''
+            Is this premature?
+            '''
             os.remove(file_name)
             return result
         else:
             return None
     else:
+        print 'File missing'
         return None
 
 
