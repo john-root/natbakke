@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import ujson
+import json
 # import hocr_functions_refactor
 # import manifest_ner
 # import codecs
@@ -90,7 +91,8 @@ class CanvasProcess():
         self.canvas.get_width_height()
         self.index_ocr_data()
         if hasattr(self, 'word_index'):
-            self.annotations = ocr_to_annos(self.ocr_text_sub, self.word_index, self.word_list, self.id, self.manifest_id)
+            self.annotations = ocr_to_annos(
+                self.ocr_text_sub, self.word_index, self.word_list, self.id, self.manifest_id)
 
     def index_ocr_data(self):
         self.canvas.get_alto()
@@ -106,11 +108,47 @@ class CanvasProcess():
             self.word_index, self.word_list, self.ocr_text, self.ocr_text_sub = get_words_hocr(
                 self.canvas)
 
-
     def generate_ocr(self):
         print 'OCR-ing'
         if hasattr(self.canvas, 'info_json'):
             self.canvas.hocr = ocr_image(self.canvas.info_json)
+
+
+def create_container(container_name, label, uri='https://annotation-dev.digtest.co.uk:443/w3c/'):
+    '''
+    Create a IIIF Container with a container name and label.
+
+    Will default to Anno Dev server.
+    '''
+    container_headers = {'Slug': container_name,
+                         'Content-Type': 'application/ld+json',
+                         'Accept': 'application/ld+json;profile="http://www.w3.org/ns/anno.jsonld"'}
+    container_dict = {'@context': 'http://www.w3.org/ns/anno.jsonld',
+                      'type': 'AnnotationCollection',
+                      'label': label}
+    container_body = json.dumps(container_dict)
+    print 'JSON for container create: %s' % container_body
+    print 'Container headers: %s' % container_headers
+    x = requests.get(uri + container_name + '/')
+    if x.status_code == 200:
+        print 'Container exists'
+        return x.status_code, x.content
+    else:
+        r = requests.post(
+            uri, headers=container_headers, data=container_body)
+        print 'Container create status: %s' % r.status_code
+        return r.status_code, r.content
+
+
+def create_anno(container_name, anno_body, uri='https://annotation-dev.digtest.co.uk:443/w3c/'):
+    anno_headers = {'Content-Type': 'application/ld+json',
+                    'Accept': 'application/ld+json;profile="http://www.w3.org/ns/anno.jsonld"'}
+    print 'JSON for anno create: %s' % anno_body
+    print 'Anno headers: %s' % anno_headers
+    r = requests.post(
+        uri + '/' + container_name + '/', headers=anno_headers, data=anno_body)
+    print 'Anno create status: %s' % r.status_code
+    return r.status_code, r.content
 
 
 def push_annos(annotation_list):
@@ -127,6 +165,7 @@ def push_annos(annotation_list):
         # except:
         #     print "Something went wrong."
 
+
 def main():
     # item = Manifest(
     #     uri='http://wellcomelibrary.org/iiif/b20086362/manifest')
@@ -135,7 +174,8 @@ def main():
         uri='http://tomcrane.github.io/scratch/manifests/ida/m1011-san-juan-1920-22.json')
     # canvas = item.canvases[10]
     for canvas in item.canvases:
-        processed = CanvasProcess(canvas_obj=canvas, manifest_id=item.requested.uri)
+        processed = CanvasProcess(
+            canvas_obj=canvas, manifest_id=item.requested.uri)
         push_annos(processed.annotations)
 
 if __name__ == '__main__':
