@@ -95,7 +95,7 @@ class CanvasProcess():
                 self.ocr_text_sub, self.word_index, self.word_list, self.id, self.manifest_id)
             # save the annotations to a JSON file, using hash of canvas_id as filename
             if self.annotations:
-                filename = os.path.join(data_dir, hashlib.md5(self.id).hexdigest() + '.json')
+                filename = os.path.join(self.data_dir, hashlib.md5(self.id).hexdigest() + '.json')
                 with open(filename, 'w') as file:
                     file.write(json.dumps(self.annotations, indent=4))
 
