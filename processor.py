@@ -113,6 +113,20 @@ class CanvasProcess():
             self.canvas.hocr = ocr_image(self.canvas.info_json)
 
 
+def push_annos(annotation_list):
+    for annotation in annotation_list:
+        body = json.dumps(annotation, indent=4)
+        print body
+        # try:
+        #     status, data = create_container(targ_hash, target)
+        #     if status == 200 or status == 201:
+        #         anno_status, anno_data = create_anno(
+        #             targ_hash, body)
+        #         print 'Anno create status: %s' % anno_status
+        #         print 'Anno create return %s' % anno_data
+        # except:
+        #     print "Something went wrong."
+
 def main():
     # item = Manifest(
     #     uri='http://wellcomelibrary.org/iiif/b20086362/manifest')
@@ -122,7 +136,7 @@ def main():
     # canvas = item.canvases[10]
     for canvas in item.canvases:
         processed = CanvasProcess(canvas_obj=canvas, manifest_id=item.requested.uri)
-        print processed.annotations
+        push_annos(processed.annotations)
 
 if __name__ == '__main__':
     main()
