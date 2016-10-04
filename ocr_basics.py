@@ -6,6 +6,8 @@ import hashlib
 import requests
 import subprocess
 import os
+from PIL import Image
+from io import BytesIO
 
 
 def get_words_alto(canvas, verbose=False):
@@ -141,7 +143,8 @@ def ocr_image(info_json):
             '''
             Is this premature?
             '''
-            os.remove(file_name)
+            print 'Removing file: %s' % file_name
+            # os.remove(file_name)
             return result
         else:
             return None
@@ -161,8 +164,11 @@ def tesseract_image(file_name):
 
 
 def get_image(fullfull, file_name):
-    r = requests.get(fullfull)
+    r = requests.get(fullfull, stream=False)
     r.raise_for_status
     if r.status_code == 200:
-        with iopen(file_name, 'wb') as file:
-            file.write(r.content)
+        i = Image.open(BytesIO(r.content))
+        print 'Format: %s' % i.format
+        if i.format == 'JPEG':
+            i.save(file_name)
+
