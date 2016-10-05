@@ -7,6 +7,7 @@ def main():
     conn = boto.sqs.connect_to_region("us-west-2")
     queue = conn.get_queue('ocr1')
     results = queue.get_messages()
+    print len(results)
     for result in results:
         job = json.loads(result.get_body())
         canvas = job['canvas']
