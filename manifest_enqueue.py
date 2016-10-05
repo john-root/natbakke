@@ -1,5 +1,4 @@
 import boto.sqs
-import canvas_processor
 import json
 from boto.sqs.message import RawMessage
 
