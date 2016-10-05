@@ -20,7 +20,7 @@ app = flask.Flask(__name__)
 @app.route('/queue_manifest', methods=['GET', 'POST'])
 def manifestor():
     manifest = request.args.get('manifest')
-    content = 'Queued: %s' % urllib.urldecode(manifest)
+    content = 'Queued: %s' % urllib.unquote_plus(manifest)
     resp = flask.Response(content)
     return resp
 
