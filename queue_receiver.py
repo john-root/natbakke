@@ -13,6 +13,8 @@ def main():
         manifest = job['manifest']
         processed = canvas_processor.CanvasProcess(
             canvas_obj=canvas, manifest_id=manifest)
+        queue.delete_message(result)
+
 
 
 
