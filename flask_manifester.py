@@ -15,13 +15,8 @@ def manifest_enqueue():
     manifest_queue.write(m)
 
 
-def main():
-    app = flask.Flask(__name__)
-    @app.route('/queue_manifest', methods=['POST'])
-    def manifestor():
-    	manifest = request.args.get('manifest')
-    	print 'manifest'
-
-
-if __name__ == '__main__':
-    main()
+app = flask.Flask(__name__)
+@app.route('/queue_manifest', methods=['POST'])
+def manifestor():
+    manifest = request.args.get('manifest')
+    print manifest
