@@ -6,11 +6,11 @@ from boto.sqs.message import RawMessage
 import urllib
 
 
-def manifest_enqueue():
+def manifest_enqueue(manifest_uri):
     conn = boto.sqs.connect_to_region("us-west-2")
     manifest_queue = conn.get_queue('ocr0')
     msg = {}
-    msg['manifest'] = 'https://tomcrane.github.io/scratch/manifests/ida/m1011-santa-fe-1910-30.json'
+    msg['manifest'] = manifest_uri
     m = RawMessage()
     m.set_body(json.dumps(msg, indent=4))
     manifest_queue.write(m)
@@ -19,8 +19,9 @@ def manifest_enqueue():
 app = flask.Flask(__name__)
 @app.route('/queue_manifest', methods=['GET', 'POST'])
 def manifestor():
-    manifest = request.args.get('manifest')
-    content = 'Queued: %s' % urllib.unquote_plus(manifest)
+    manifest = urllib.unquote_plus(request.args.get('manifest'))
+    manifest_enqueue(manifest)
+    content = 'Queued: %s' % manifest
     resp = flask.Response(content)
     return resp
 
