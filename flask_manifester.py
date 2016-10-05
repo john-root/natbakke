@@ -9,11 +9,13 @@ import urllib
 def manifest_enqueue(manifest_uri):
     conn = boto.sqs.connect_to_region("us-west-2")
     manifest_queue = conn.get_queue('ocr0')
+    print 'Working'
     msg = {}
     msg['manifest'] = manifest_uri
     m = RawMessage()
     m.set_body(json.dumps(msg, indent=4))
-    manifest_queue.write(m)
+    bar = manifest_queue.write(m)
+    print bar
 
 
 app = flask.Flask(__name__)
