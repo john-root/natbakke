@@ -16,6 +16,7 @@ def main():
     m = RawMessage()
     m.set_body(json.dumps(msg, indent=4))
     status = queue.write(m)
+    print status
 
 
 
