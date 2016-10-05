@@ -82,8 +82,9 @@ class CanvasProcess():
     from being a bottleneck, e.g. run 4 canvases at once.
     '''
 
-    def __init__(self, canvas_obj, manifest_id):
+    def __init__(self, canvas_obj, manifest_id, push=False):
         self.data_dir = './data/'
+        self.push = push
         self.manifest_id = manifest_id
         self.canvas = Canvas(canvas_obj)
         self.id = self.canvas.canvas_obj['@id']
@@ -98,7 +99,8 @@ class CanvasProcess():
                 filename = os.path.join(self.data_dir, hashlib.md5(self.id).hexdigest() + '.json')
                 with open(filename, 'w') as file:
                     file.write(json.dumps(self.annotations, indent=4))
-                push_annos(self.annotations, self.id)
+                if self.push==True:
+                    push_annos(self.annotations, self.id)
 
     def index_ocr_data(self):
         '''
