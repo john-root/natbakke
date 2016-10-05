@@ -11,6 +11,7 @@ def main():
     for canvas in item.canvases:
         canvas_json = json.dumps(canvas)
         print canvas_json
+        print item.id
 
 
 
