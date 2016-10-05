@@ -19,7 +19,8 @@ def manifest_enqueue(manifest_uri):
 
 
 app = flask.Flask(__name__)
-@app.route('/queue_manifest', methods=['GET', 'POST'])
+# @app.route('/queue_manifest', methods=['GET', 'POST'])
+@app.route('/ocr/queue_manifest', methods=['GET', 'POST'])
 def manifestor():
     manifest = urllib.unquote_plus(request.args.get('manifest'))
     print manifest
