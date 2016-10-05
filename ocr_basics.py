@@ -169,7 +169,7 @@ def tesseract_image(file_name, hocr_file):
 
     When done, read the hOCR and return.
     '''
-    command = ['/usr/local/bin/tesseract', file_name, hocr_file, 'hocr']
+    command = ['tesseract', file_name, hocr_file, 'hocr']
     # print command
     proc = subprocess.check_output(command)
     with open(hocr_file+'.hocr') as hocr:
