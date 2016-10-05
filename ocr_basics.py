@@ -130,7 +130,7 @@ def get_words_hocr(canvas):
     return word_index, word_list, ocr_text, ocr_text_sub
 
 
-def ocr_image(info_json, canvas_id, data_dir):
+def ocr_image(info_json, canvas_id, image_dir, data_dir):
     '''
     Read the info.json
 
@@ -143,7 +143,7 @@ def ocr_image(info_json, canvas_id, data_dir):
     '''
     image_id = info_json['@id']
     fullfull = ''.join([image_id, '/full/full/0/default.jpg'])
-    file_name = os.path.join(data_dir, hashlib.md5(image_id).hexdigest() + '.jpg')
+    file_name = os.path.join(image_dir, hashlib.md5(image_id).hexdigest() + '.jpg')
     hocr_file = os.path.join(data_dir, hashlib.md5(canvas_id).hexdigest())
     get_image(fullfull, file_name)
     if os.path.exists(file_name):
