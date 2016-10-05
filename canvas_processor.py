@@ -83,7 +83,7 @@ class CanvasProcess():
     '''
 
     def __init__(self, canvas_obj, manifest_id, push=False):
-        self.data_dir = './data/'
+        self.data_dir = '/home/digirati/natbakke/data'
         self.push = push
         self.manifest_id = manifest_id
         self.canvas = Canvas(canvas_obj)
