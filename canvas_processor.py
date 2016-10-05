@@ -101,6 +101,8 @@ class CanvasProcess():
                     file.write(json.dumps(self.annotations, indent=4))
                 if self.push==True:
                     push_annos(self.annotations, self.id)
+                else:
+                    print json.dumps(self.annotations, indent=4)
 
     def index_ocr_data(self):
         '''
