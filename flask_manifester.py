@@ -3,6 +3,7 @@ from flask import request
 import boto.sqs
 import json
 from boto.sqs.message import RawMessage
+import urllib
 
 
 def manifest_enqueue():
@@ -19,7 +20,7 @@ app = flask.Flask(__name__)
 @app.route('/queue_manifest', methods=['GET', 'POST'])
 def manifestor():
     manifest = request.args.get('manifest')
-    content = 'Queued: %s' % manifest
+    content = 'Queued: %s' % urllib.urldecode(manifest)
     resp = flask.Response(content)
     return resp
 
