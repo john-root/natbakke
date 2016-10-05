@@ -84,6 +84,7 @@ class CanvasProcess():
 
     def __init__(self, canvas_obj, manifest_id, push=False):
         self.data_dir = '/home/digirati/natbakke/data'
+        self.image_dir = '/run'
         self.push = push
         self.manifest_id = manifest_id
         self.canvas = Canvas(canvas_obj)
@@ -134,7 +135,7 @@ class CanvasProcess():
 
     def generate_ocr(self):
         if hasattr(self.canvas, 'info_json'):
-            self.canvas.hocr = ocr_image(self.canvas.info_json, self.id, self.data_dir)
+            self.canvas.hocr = ocr_image(self.canvas.info_json, self.id, self.image_dir, self.data_dir)
 
 
 def create_container(container_name, label, uri='https://annotation-dev.digtest.co.uk:443/w3c/'):
