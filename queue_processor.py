@@ -9,9 +9,10 @@ def main():
     item = canvas_processor.Manifest(
         uri='https://tomcrane.github.io/scratch/manifests/ida/m1011-santa-fe-1910-30.json')
     for canvas in item.canvases:
-        canvas_json = json.dumps(canvas)
-        print canvas_json
-        print item.requested.uri
+        msg = {}
+        msg['manifest'] = item.requested.uri
+        msg['canvas'] = canvas
+        print json.dumps(msg, indent=4)
 
 
 
