@@ -9,10 +9,10 @@ def main():
     results = queue.get_messages()
     for result in results:
         job = json.loads(result.get_body())
-        print job['canvas']
-        print job['manifest']
-        # processed = canvas_processor.CanvasProcess(
-        #     canvas_obj=canvas, manifest_id=item.requested.uri)
+        canvas = job['canvas']
+        manifest = job['manifest']
+        processed = canvas_processor.CanvasProcess(
+            canvas_obj=canvas, manifest_id=manifest)
 
 
 
