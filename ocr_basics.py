@@ -21,6 +21,10 @@ def get_words_alto(canvas, verbose=False):
 
     Output: list of dictionaries of words
             full text.
+
+    ToDo: combine the two word indexes into one.
+    ToDo: combine both hocr and alto functions into one.
+
     '''
     soup = BeautifulSoup(canvas.alto, "html.parser")
     attributes_dictionary = soup.find('page').attrs
@@ -87,6 +91,9 @@ def get_words_hocr(canvas):
 
     Output: list of dictionaries of words
             full text.
+
+    ToDo: combine the two word indexes into one.
+    ToDo: combine both hocr and alto functions into one.
     '''
     soup = BeautifulSoup(canvas.hocr, "html.parser")
     lines = soup.find_all("span", class_="ocr_line")
