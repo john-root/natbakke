@@ -42,7 +42,8 @@ def ocr_to_annos(ocr_text, word_index, word_list, canvas_id, manifest_id=None):
     URI for manifest
 
     Output:
-    A list of W3C annotations
+    A list of W3C annotations that can be pushed to a server,
+    or written to disk or a database.
     '''
     parser = spacy.en.English()
     parsed = parser(unicode(ocr_text))
