@@ -92,14 +92,16 @@ def get_words_hocr(canvas):
     count = 0  # keep a running number of the words
     # iterate through lines in the hOCR
     char_count = 0  # keep a running count of character offset
+    line_count = 0 # start at 1 below, do we care?
     for line in lines:
+        line_count += 1
         # parse each line with BS4
         line_soup = BeautifulSoup(str(line), "lxml")
         # store line number for later
         # this is potentially fragile -- should possibly
         # just generate a number, check against
         # ocracoke hCOR, for example.
-        number = line_soup.span['id'].split('_')[-1]
+        # number = line_soup.span['id'].split('_')[-1]
         # Parse with BS4 and extract all words from line.
         words = line_soup.find_all("span", class_="ocrx_word")
         for word in words:
@@ -108,7 +110,7 @@ def get_words_hocr(canvas):
             # parse each word with BS4
             word_soup = BeautifulSoup(str(word), "lxml")
             # build a dictionary of word properties
-            word_dict['line_number'] = number
+            word_dict['line_number'] = line_count # number
             word_dict['bbox'] = word_soup.span[
                 'title'].split(';')[0].split()[1:]
             word_dict['start_x'] = int(word_dict['bbox'][0])
