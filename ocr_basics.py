@@ -64,6 +64,11 @@ def get_words_alto(canvas, verbose=False):
             text_words.append(word_dict['text'])
     ocr_text = ' '.join(text_words)
     ocr_text_sub = re.sub(r'\s+', ' ', ocr_text)
+    # index with the ID of each word, and the range it spans in terms
+    # of character offset from start of text.
+    # e.g. {11: [22,23,24]} = the 11th word, which spans characters 22 - 24.
+    # used to match Spacy.io tokens (which have an index that gives the char
+    # offset) to OCR words and thus bounding boxes.
     word_index = [{item['id']: range(
         int(item['start_idx']), int(item['end_idx']))} for item in word_list]
     return word_index, word_list, ocr_text, ocr_text_sub
@@ -90,6 +95,9 @@ def get_words_hocr(canvas):
         # parse each line with BS4
         line_soup = BeautifulSoup(str(line), "lxml")
         # store line number for later
+        # this is potentially fragile -- should possibly
+        # just generate a number, check against
+        # ocracoke hCOR, for example.
         number = line_soup.span['id'].split('_')[-1]
         # Parse with BS4 and extract all words from line.
         words = line_soup.find_all("span", class_="ocrx_word")
@@ -120,11 +128,16 @@ def get_words_hocr(canvas):
             word_dict['confidence'] = word_soup.span[
                 'title'].split(';')[1].split()[-1]
             word_list.append(word_dict)
-            # build a simple whitespaced text
+            # build a simple whitespaced text list
             # for use in entity extraction, etc.
             text_words.append(word_dict['text'])
     ocr_text = ' '.join(text_words)
     ocr_text_sub = re.sub(r'\s+', ' ', ocr_text)
+    # index with the ID of each word, and the range it spans in terms
+    # of character offset from start of text.
+    # e.g. {11: [22,23,24]} = the 11th word, which spans characters 22 - 24.
+    # used to match Spacy.io tokens (which have an index that gives the char
+    # offset) to OCR words and thus bounding boxes.
     word_index = [
         {x['id']: range(int(x['start_idx']), int(x['end_idx']))} for x in word_list]
     return word_index, word_list, ocr_text, ocr_text_sub
