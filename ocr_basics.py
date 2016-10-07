@@ -37,7 +37,7 @@ def get_words_alto(canvas, verbose=False):
     lines = soup.find_all("textline")
     word_list = []
     text_words = []
-    # iterate through lines in the hOCR
+    # iterate through lines in the Alto
     count = 0  # keep a running number of the words
     char_count = 0  # keep a running count of character offset
     for line in lines:
@@ -89,6 +89,7 @@ def get_words_hocr(canvas):
     lines = soup.find_all("span", class_="ocr_line")
     word_list = []
     text_words = []
+    count = 0  # keep a running number of the words
     # iterate through lines in the hOCR
     char_count = 0  # keep a running count of character offset
     for line in lines:
@@ -102,6 +103,7 @@ def get_words_hocr(canvas):
         # Parse with BS4 and extract all words from line.
         words = line_soup.find_all("span", class_="ocrx_word")
         for word in words:
+            count += 1
             word_dict = {}
             # parse each word with BS4
             word_soup = BeautifulSoup(str(word), "lxml")
@@ -124,7 +126,7 @@ def get_words_hocr(canvas):
             word_dict['start_idx'] = str(char_count)
             word_dict['end_idx'] = str(char_count + len(word_dict['text']))
             char_count = char_count + len(word_dict['text']) + 1
-            word_dict['id'] = word_soup.span['id'].split('_')[-1]
+            word_dict['id'] = count# word_soup.span['id'].split('_')[-1]
             word_dict['confidence'] = word_soup.span[
                 'title'].split(';')[1].split()[-1]
             word_list.append(word_dict)
