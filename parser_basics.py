@@ -33,6 +33,17 @@ def create_anno(text, xywh, target, entity, manifest_uri=None):
 
 
 def ocr_to_annos(ocr_text, word_index, word_list, canvas_id, manifest_id=None):
+    '''
+    Input:
+    OCR full text
+    Index of words with a list of character positions covered by the word
+    List of words with full coordinates and other info
+    URI for canvas
+    URI for manifest
+
+    Output:
+    A list of W3C annotations
+    '''
     parser = spacy.en.English()
     parsed = parser(unicode(ocr_text))
     lookup = [x.idx for x in parsed]
