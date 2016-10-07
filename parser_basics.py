@@ -32,6 +32,12 @@ def create_anno(text, xywh, target, entity, manifest_uri=None):
     return anno_dict
 
 
+def box_fitter(list_of_boxes):
+    '''
+    '''
+    pass
+
+
 def ocr_to_annos(ocr_text, word_index, word_list, canvas_id, manifest_id=None):
     '''
     Input:
