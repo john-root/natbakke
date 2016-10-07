@@ -40,7 +40,9 @@ def get_words_alto(canvas, verbose=False):
     # iterate through lines in the Alto
     count = 0  # keep a running number of the words
     char_count = 0  # keep a running count of character offset
+    line_count = 0  # keep a running count of lines.
     for line in lines:
+        line += 1
         # parse each line with BS4
         line_soup = BeautifulSoup(str(line), "html.parser")
         word_soup = line_soup.find_all('string')
@@ -49,6 +51,7 @@ def get_words_alto(canvas, verbose=False):
             word_dict = {}  # build a dict for each word
             word_dict['text'] = word['content']
             word_dict['id'] = str(count)  # running ID
+            word_dict['line_number'] = line_count
             word_dict['start_idx'] = str(char_count)
             word_dict['end_idx'] = str(char_count + len(word_dict['text']))
             char_count = char_count + len(word['content']) + 1
