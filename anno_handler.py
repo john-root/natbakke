@@ -32,8 +32,8 @@ def create_anno(text, xywh, target, tag=None, manifest_uri=None):
     if tag:
         tag_dict['oa:hasPurpose'] = "oa:tagging"
         tag_dict['rdf:value'] = 'entity:' + tag
-    selector_dict = {}
     if xywh:
+        selector_dict = {}
         selector_dict['@type'] = 'oa:FragmentSelector'
         selector_dict['dcterms:conformsTo'] = "http://www.w3.org/TR/media-frags/"
         selector_dict['rdf:value'] = 'xywh=' + xywh
@@ -55,7 +55,7 @@ def create_anno(text, xywh, target, tag=None, manifest_uri=None):
     if tag_dict:
         body_list.append(tag_dict)
         motivation_list.append('oa:tagging')
-    if body_list and anno_dict['oa:hasTarget']:
+    if body_list and hasattr(anno_dict, 'oa:hasTarget'):
         if len(body_list) == 1:
             anno_dict['oa:hasBody'] = body_list[0]
             anno_dict['oa:motivatedBy'] = motivation_list[0]
@@ -63,6 +63,7 @@ def create_anno(text, xywh, target, tag=None, manifest_uri=None):
             anno_dict['oa:hasBody'] = body_list
             anno_dict['oa:motivatedBy'] = motivation_list
         else:
+            raise
             print 'Error handling body'
         return anno_dict
     else:
