@@ -24,7 +24,12 @@ fields = ['geonameid', 'name', 'asciiname', 'alternatenames', 'latitude',
           'population', 'elevation', 'dem', 'timezone', 'modification date']
 
 reader = csv.DictReader(text_file, fieldnames=fields, delimiter='\t')
-new_mexico = [x for x in reader if x['admin1 code'] == 'NM']
+# new_mexico = [x for x in reader if x['admin1 code'] == 'NM']
 
-with open('new_mexico.json', 'w') as export:
-    ujson.dump(new_mexico, export, sort_keys=True, indent=4)
+# with open('new_mexico.json', 'w') as export:
+#     ujson.dump(new_mexico, export, sort_keys=True, indent=4)
+
+# new_mexico = [x for x in reader if x['admin1 code'] == 'NM']
+
+with open('usa.json', 'w') as export:
+    ujson.dump(reader, export, sort_keys=True, indent=4)
