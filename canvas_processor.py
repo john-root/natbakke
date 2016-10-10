@@ -138,7 +138,7 @@ class CanvasProcess():
             self.canvas.hocr = ocr_image(self.canvas.info_json, self.id, self.image_dir, self.data_dir)
 
 
-def create_container(container_name, label, uri='https://annotation-dev.digtest.co.uk:443/w3c/'):
+def create_container(container_name, label, uri='https://annotation-dev.digtest.co.uk:443/annotation/w3c/'):
     '''
     Create a IIIF Container with a container name and label.
 
@@ -164,7 +164,7 @@ def create_container(container_name, label, uri='https://annotation-dev.digtest.
         return r.status_code, r.content
 
 
-def create_anno(container_name, anno_body, uri='https://annotation-dev.digtest.co.uk:443/w3c/'):
+def create_anno(container_name, anno_body, uri='https://annotation-dev.digtest.co.uk:443/annotation/w3c/'):
     anno_headers = {'Content-Type': 'application/ld+json',
                     'Accept': 'application/ld+json;profile="http://www.w3.org/ns/anno.jsonld"'}
     print 'JSON for anno create: %s' % anno_body
