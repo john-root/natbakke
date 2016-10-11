@@ -42,7 +42,7 @@ for row in rows:
 
 # gazetteer = ujson.loads(open(foo).read())
 
-usa = ujson.loads(open('usa.json').read())
+usa = ujson.loads(open('gb.json').read())
 
 token_dict = {}
 for item in usa:
@@ -70,5 +70,5 @@ for item in usa:
     token_list.append(word_list)
     token_dict[item['name']] = token_list
 
-with open('usa_gazetteer.json', 'w') as export:
+with open('gb_gazetteer.json', 'w') as export:
     ujson.dump(token_dict, export, sort_keys=True, indent=4)
