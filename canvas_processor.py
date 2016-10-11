@@ -25,7 +25,7 @@ class Canvas():
 
     def get_info_json(self):
         self.info_json_uri = self.canvas_obj[
-            'images'][0]['resource']['service']['@id']
+            'images'][0]['resource']['service']['@id'] + '/info.json'
         if validators.url(self.info_json_uri) is True:
             try:
                 self.info_json = requests.get(self.info_json_uri).json()
@@ -51,10 +51,12 @@ class Canvas():
             print 'This canvas has no seeAlso.'
 
     def identify_service(self, service):
+        print 'Trying'
         if 'alto' in service['profile'].lower():
             self.alto_uri = service['@id']
         elif 'hocr' in service['profile'].lower():
             self.hocr_uri = service['@id']
+            print self.hocr_uri
         else:
             print 'Unknown'
 
@@ -69,6 +71,7 @@ class Canvas():
     def get_hocr(self):
         self.get_seeAlsos()
         if hasattr(self, 'hocr_uri'):
+            print 'Got it!'
             if validators.url(self.hocr_uri)is True:
                 r = requests.get(self.hocr_uri)
                 r.raise_for_status()
