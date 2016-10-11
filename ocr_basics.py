@@ -46,7 +46,7 @@ def get_words_alto(canvas, verbose=False):
     char_count = 0  # keep a running count of character offset
     line_count = 0  # keep a running count of lines.
     for line in lines:
-        line += 1
+        line_count += 1
         # parse each line with BS4
         line_soup = BeautifulSoup(str(line), "html.parser")
         word_soup = line_soup.find_all('string')
