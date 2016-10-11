@@ -15,7 +15,7 @@ to an JSON file.
 # arabic transliterations.
 csv.field_size_limit(sys.maxsize)
 
-text_file = open('US.txt')
+text_file = open('GB.txt')
 
 # field list, as no header row in tab delimited txt file.
 fields = ['geonameid', 'name', 'asciiname', 'alternatenames', 'latitude',
@@ -31,5 +31,5 @@ reader = csv.DictReader(text_file, fieldnames=fields, delimiter='\t')
 
 # new_mexico = [x for x in reader if x['admin1 code'] == 'NM']
 
-with open('usa.json', 'w') as export:
+with open('gb.json', 'w') as export:
     ujson.dump(reader, export, sort_keys=True, indent=4)
