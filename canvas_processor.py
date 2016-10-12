@@ -182,7 +182,7 @@ def push_annos(annotation_list, canvas_id):
     for annotation in annotation_list:
         body = json.dumps(annotation, indent=4)
         target = canvas_id
-        targ_hash = hashlib.md5(target).hexdigest() + '_a'
+        targ_hash = hashlib.md5(target).hexdigest() + '_b'
         try:
             status, data = create_container(targ_hash, target)
             if status == 200 or status == 201:
