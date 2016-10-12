@@ -102,7 +102,7 @@ def get_words_hocr(canvas, scale_factor=None):
     count = 0  # keep a running number of the words
     # iterate through lines in the hOCR
     char_count = 0  # keep a running count of character offset
-    line_count = 0 # start at 1 below, do we care?
+    line_count = 0  # start at 1 below, do we care?
     for line in lines:
         line_count += 1
         # parse each line with BS4
@@ -120,7 +120,7 @@ def get_words_hocr(canvas, scale_factor=None):
             # parse each word with BS4
             word_soup = BeautifulSoup(str(word), "lxml")
             # build a dictionary of word properties
-            word_dict['line_number'] = line_count # number
+            word_dict['line_number'] = line_count  # number
             word_dict['bbox'] = word_soup.span[
                 'title'].split(';')[0].split()[1:]
             word_dict['start_x'] = int(word_dict['bbox'][0])
@@ -138,7 +138,7 @@ def get_words_hocr(canvas, scale_factor=None):
             word_dict['start_idx'] = str(char_count)
             word_dict['end_idx'] = str(char_count + len(word_dict['text']))
             char_count = char_count + len(word_dict['text']) + 1
-            word_dict['id'] = count# word_soup.span['id'].split('_')[-1]
+            word_dict['id'] = count  # word_soup.span['id'].split('_')[-1]
             word_dict['confidence'] = word_soup.span[
                 'title'].split(';')[1].split()[-1]
             word_list.append(word_dict)
@@ -170,7 +170,8 @@ def ocr_image(info_json, canvas_id, image_dir, data_dir):
     '''
     image_id = info_json['@id']
     fullfull = ''.join([image_id, '/full/full/0/default.jpg'])
-    file_name = os.path.join(image_dir, hashlib.md5(image_id).hexdigest() + '.jpg')
+    file_name = os.path.join(
+        image_dir, hashlib.md5(image_id).hexdigest() + '.jpg')
     hocr_file = os.path.join(data_dir, hashlib.md5(canvas_id).hexdigest())
     get_image(fullfull, file_name)
     if os.path.exists(file_name):
@@ -188,6 +189,7 @@ def ocr_image(info_json, canvas_id, image_dir, data_dir):
     else:
         print 'File missing'
         return None
+
 
 def tesseract_image(file_name, hocr_file):
     '''
@@ -209,7 +211,12 @@ def get_image(fullfull, file_name):
     r.raise_for_status
     if r.status_code == 200:
         i = Image.open(BytesIO(r.content))
+        try:
+            width, height = i.size
+        except:
+            pass
         print 'Format: %s' % i.format
         if i.format == 'JPEG':
             i.save(file_name)
-
+        if width and height:
+            return width, height
