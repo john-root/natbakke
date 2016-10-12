@@ -65,8 +65,8 @@ def ocr_to_annos(ocr_text, word_index, word_list, canvas_id, manifest_id=None):
         print entity.start
         print entity.end
         print token_index[lookup[entity.start]]
-        for p in range(int(entity.start), int(entity.end)):
-            details = token_index[lookup[p + 1]]
+        if entity.end - entity.start == 1:
+            details = token_index[lookup[entity.start]]
             if (entity.label_ != 'ORDINAL') and (entity.label_ != 'CARDINAL') and details:
                 resource_list.append(create_anno(entity.text_with_ws.encode('utf-8'),
                                                  details[0][0]['xywh'],
@@ -74,4 +74,14 @@ def ocr_to_annos(ocr_text, word_index, word_list, canvas_id, manifest_id=None):
                                                  entity.label_,
                                                  manifest_id
                                                  ))
+        else:
+            for p in range(int(entity.start), int(entity.end)):
+                details = token_index[lookup[p]]
+                if (entity.label_ != 'ORDINAL') and (entity.label_ != 'CARDINAL') and details:
+                    resource_list.append(create_anno(entity.text_with_ws.encode('utf-8'),
+                                                     details[0][0]['xywh'],
+                                                     canvas_id,
+                                                     entity.label_,
+                                                     manifest_id
+                                                     ))
     return resource_list
