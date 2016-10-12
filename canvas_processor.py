@@ -170,8 +170,8 @@ def create_container(container_name, label, uri='https://annotation-dev.digtest.
 def create_anno(container_name, anno_body, uri='https://annotation-dev.digtest.co.uk:443/annotation/w3c/'):
     anno_headers = {'Content-Type': 'application/ld+json',
                     'Accept': 'application/ld+json;profile="http://www.w3.org/ns/anno.jsonld"'}
-    print 'JSON for anno create: %s' % anno_body
-    print 'Anno headers: %s' % anno_headers
+    # print 'JSON for anno create: %s' % anno_body
+    # print 'Anno headers: %s' % anno_headers
     r = requests.post(
         uri + '/' + container_name + '/', headers=anno_headers, data=anno_body)
     print 'Anno create status: %s' % r.status_code
