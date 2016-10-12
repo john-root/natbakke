@@ -173,7 +173,10 @@ def ocr_image(info_json, canvas_id, image_dir, data_dir):
     file_name = os.path.join(
         image_dir, hashlib.md5(image_id).hexdigest() + '.jpg')
     hocr_file = os.path.join(data_dir, hashlib.md5(canvas_id).hexdigest())
-    get_image(fullfull, file_name)
+    try:
+        width, height = get_image(fullfull, file_name)
+    except:
+        pass
     if os.path.exists(file_name):
         result = tesseract_image(file_name, hocr_file)
         if result:
