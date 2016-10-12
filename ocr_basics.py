@@ -99,7 +99,7 @@ def get_words_hocr(canvas):
     lines = soup.find_all("span", class_="ocr_line")
     word_list = []
     text_words = []
-    count = 1  # keep a running number of the words
+    count = 0  # keep a running number of the words
     # iterate through lines in the hOCR
     char_count = 0  # keep a running count of character offset
     line_count = 0 # start at 1 below, do we care?
