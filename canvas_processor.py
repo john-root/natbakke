@@ -66,7 +66,8 @@ class Canvas():
             if validators.url(self.alto_uri)is True:
                 r = requests.get(self.alto_uri)
                 r.raise_for_status()
-                self.alto = r.content
+                if '<alto' in r.content:
+                    self.alto = r.content
 
     def get_hocr(self):
         self.get_seeAlsos()
