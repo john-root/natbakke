@@ -86,8 +86,8 @@ class CanvasProcess():
     '''
 
     def __init__(self, canvas_obj, manifest_id, push=False):
-        self.data_dir = '/home/digirati/natbakke/data'
-        self.image_dir = '/dev/shm'
+        self.data_dir = './data/' #'/home/digirati/natbakke/data'
+        self.image_dir = './data/' #'/dev/shm'
         self.push = push
         self.manifest_id = manifest_id
         self.canvas = Canvas(canvas_obj)
@@ -182,7 +182,7 @@ def push_annos(annotation_list, canvas_id):
     for annotation in annotation_list:
         body = json.dumps(annotation, indent=4)
         target = canvas_id
-        targ_hash = hashlib.md5(target).hexdigest() + '_1'
+        targ_hash = hashlib.md5(target).hexdigest() + '_2'
         try:
             status, data = create_container(targ_hash, target)
             if status == 200 or status == 201:
