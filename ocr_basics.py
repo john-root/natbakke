@@ -81,7 +81,7 @@ def get_words_alto(canvas, verbose=False):
     return word_index, word_list, ocr_text, ocr_text_sub
 
 
-def get_words_hocr(canvas):
+def get_words_hocr(canvas, scale_factor=None):
     '''
     Returns a big list of words with
     text, coordinates, xywh bounding box,
