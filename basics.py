@@ -150,7 +150,7 @@ class IIIF_Item():
         elif self.uri.startswith('https://'):
             self.request_type = 'https'
         else:
-            self.request_type = None
+            self.request_type = 'http'
 
     def uri_load(self):
         '''
