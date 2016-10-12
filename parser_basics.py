@@ -61,6 +61,10 @@ def ocr_to_annos(ocr_text, word_index, word_list, canvas_id, manifest_id=None):
             [a for a in word_list if a['id'] == x.keys()[0]]
             for x in word_index if token.idx in x.values()[0]]
     for entity in parsed.ents:
+        print entity
+        print entity.start
+        print entity.end
+        print token_index[lookup[entity.start]]
         for p in range(int(entity.start), int(entity.end)):
             details = token_index[lookup[p]]
             if (entity.label_ != 'ORDINAL') and (entity.label_ != 'CARDINAL') and details:
