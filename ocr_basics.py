@@ -129,11 +129,24 @@ def get_words_hocr(canvas, scale_factor=None):
             word_dict['end_y'] = int(word_dict['bbox'][3])
             word_dict['width'] = word_dict['end_x'] - word_dict['start_x']
             word_dict['height'] = word_dict['end_y'] - word_dict['start_y']
+            print 'Scale factor: %s' % scale_factor
+            if scale_factor:
+                start_x = str(int(word_dict['start_x'] * scale_factor))
+                start_y = str(int(word_dict['start_y'] * scale_factor))
+                width = str(int(word_dict['width'] * scale_factor))
+                height = str(int(word_dict['height'] * scale_factor))
+            else:
+                start_x = str(word_dict['start_x'])
+                start_y = str(word_dict['start_y'])
+                width = str(word_dict['width'])
+                height = str(word_dict['height'])
             word_dict['xywh'] = ','.join(
-                [str(word_dict['start_x']),
-                 str(word_dict['start_y']),
-                 str(word_dict['width']),
-                 str(word_dict['height'])])
+                [
+                    start_x,
+                    start_y,
+                    width,
+                    height
+                ])
             word_dict['text'] = ftfy.fix_text(word_soup.text)
             word_dict['start_idx'] = str(char_count)
             word_dict['end_idx'] = str(char_count + len(word_dict['text']))
@@ -175,6 +188,13 @@ def ocr_image(info_json, canvas_id, image_dir, data_dir):
     hocr_file = os.path.join(data_dir, hashlib.md5(canvas_id).hexdigest())
     try:
         width, height = get_image(fullfull, file_name)
+        if width:
+            scale_factor = float(info_json['width']) / float(width)
+            print 'Width %s' % width
+            print 'Height %s' % height
+            print 'Info json width %s' % info_json['width']
+            print 'Info json height %s' % info_json['height']
+            print 'Generated scale factor %s' % scale_factor
     except:
         pass
     if os.path.exists(file_name):
@@ -186,7 +206,10 @@ def ocr_image(info_json, canvas_id, image_dir, data_dir):
             # print result
             print 'Removing file: %s' % file_name
             os.remove(file_name)
-            return result
+            if scale_factor:
+                return scale_factor, result
+            else:
+                return None, result
         else:
             return None
     else:
