@@ -190,11 +190,11 @@ def ocr_image(info_json, canvas_id, image_dir, data_dir):
         width, height = get_image(fullfull, file_name)
         if width:
             scale_factor = float(info_json['width']) / float(width)
-            print 'Width %s' % width
-            print 'Height %s' % height
-            print 'Info json width %s' % info_json['width']
-            print 'Info json height %s' % info_json['height']
-            print 'Generated scale factor %s' % scale_factor
+            # print 'Width %s' % width
+            # print 'Height %s' % height
+            # print 'Info json width %s' % info_json['width']
+            # print 'Info json height %s' % info_json['height']
+            # print 'Generated scale factor %s' % scale_factor
     except:
         pass
     if os.path.exists(file_name):
