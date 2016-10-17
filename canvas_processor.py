@@ -124,6 +124,7 @@ class CanvasProcess():
 
         Parse that.
         '''
+        self.scale_factor = None
         self.canvas.get_alto()
         self.canvas.get_hocr()
         if hasattr(self.canvas, 'alto'):
@@ -135,11 +136,11 @@ class CanvasProcess():
         else:
             self.generate_ocr()
             self.word_index, self.word_list, self.ocr_text, self.ocr_text_sub = get_words_hocr(
-                self.canvas)
+                self.canvas, self.scale_factor)
 
     def generate_ocr(self):
         if hasattr(self.canvas, 'info_json'):
-            self.canvas.hocr = ocr_image(self.canvas.info_json, self.id, self.image_dir, self.data_dir)
+            self.scale_factor, self.canvas.hocr = ocr_image(self.canvas.info_json, self.id, self.image_dir, self.data_dir)
 
 
 def create_container(container_name, label, uri='https://annotation-dev.digtest.co.uk:443/annotation/w3c/'):
