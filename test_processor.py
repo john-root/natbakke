@@ -21,15 +21,15 @@ def main():
     # http://wellcomelibrary.org/iiif/b24881843/manifest  ** Tewa Indians
     # Nubian message: https://d.lib.ncsu.edu/collections/catalog/nubian-message-2003-04-01/manifest  ***
     item = canvas_processor.Manifest(
-        uri='https://d.lib.ncsu.edu/collections/catalog/nubian-message-2003-04-01/manifest')
+        uri='http://iiif.bodleian.ox.ac.uk/iiif/manifest/d4a44388-866f-4ee5-a73f-ee5191b5727d.json')
     # canvas = item.canvases[10]
     total = len(item.canvases)
     count = 1
     for canvas in item.canvases:
         print 'Processing canvas %s of %s' % (count, total)
-        print canvas['seeAlso']
+        # print canvas['seeAlso']
         processed = canvas_processor.CanvasProcess(
-            canvas_obj=canvas, manifest_id=item.requested.uri)
+            canvas_obj=canvas, manifest_id=item.requested.uri, push=True)
         count += 1
 
 if __name__ == '__main__':
