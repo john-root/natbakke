@@ -65,11 +65,11 @@ def ocr_to_annos(ocr_text, word_index, word_list, canvas_id, manifest_id=None, c
         print entity.start
         print entity.end
         print token_index[lookup[entity.start]]
-        # check the confidence value exceeds a certain threshold?
-        # e.g. 75
         if entity.end - entity.start == 1:
             details = token_index[lookup[entity.start]]
             if (entity.label_ != 'ORDINAL') and (entity.label_ != 'CARDINAL') and details:
+                # check the confidence value exceeds a certain threshold?
+                # e.g. 75
                 confidence = int(details[0][0]['confidence'])
                 if confidence > confidence_thresh:
                     resource_list.append(create_anno(entity.text_with_ws.encode('utf-8'),
@@ -82,6 +82,8 @@ def ocr_to_annos(ocr_text, word_index, word_list, canvas_id, manifest_id=None, c
             for p in range(int(entity.start), int(entity.end)):
                 details = token_index[lookup[p]]
                 if (entity.label_ != 'ORDINAL') and (entity.label_ != 'CARDINAL') and details:
+                    # check the confidence value exceeds a certain threshold?
+                    # e.g. 75
                     confidence = int(details[0][0]['confidence'])
                     if confidence > confidence_thresh:
                         resource_list.append(create_anno(entity.text_with_ws.encode('utf-8'),
