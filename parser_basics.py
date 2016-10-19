@@ -56,15 +56,19 @@ def ocr_to_annos(ocr_text, word_index, word_list, canvas_id, manifest_id=None, c
     lookup = [x.idx for x in parsed]
     token_index = {}
     resource_list = []
+    # Build an index of tokens with details from OCR
     for token in parsed:
         token_index[token.idx] = [
             [a for a in word_list if a['id'] == x.keys()[0]]
             for x in word_index if token.idx in x.values()[0]]
+    # Extract entities and step through them
     for entity in parsed.ents:
         print entity
         print entity.start
         print entity.end
         print token_index[lookup[entity.start]]
+        # one word/token entity
+        # needs revision to handle occasional 'drift' of anno box placement
         if entity.end - entity.start == 1:
             details = token_index[lookup[entity.start]]
             if (entity.label_ != 'ORDINAL') and (entity.label_ != 'CARDINAL') and details:
@@ -78,6 +82,8 @@ def ocr_to_annos(ocr_text, word_index, word_list, canvas_id, manifest_id=None, c
                                                      entity.label_,
                                                      manifest_id
                                                      ))
+        # multi word/token entity
+        # needs revision to handle occasional 'drift' of anno box placement
         else:
             for p in range(int(entity.start), int(entity.end)):
                 details = token_index[lookup[p]]
