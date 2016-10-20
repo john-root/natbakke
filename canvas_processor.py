@@ -25,13 +25,18 @@ class Canvas():
         self.canvas_obj = canvas_obj
 
     def get_info_json(self):
-        print 'Images: %s' % self.canvas_obj['images']
-        print 'First image: %s' % self.canvas_obj['images'][0]
-        self.info_json_uri = self.canvas_obj[
-            'images'][0]['resource']['service']['@id'] + '/info.json'
+        # print 'Images: %s' % self.canvas_obj['images']
+        # print 'First image: %s' % self.canvas_obj['images'][0]['resource']['service'][0]['@id']
+        service_block = self.canvas_obj['images'][0]['resource']['service']
+        if isinstance(service_block, list):
+            self.info_json_uri = service_block[0]['@id'] + '/info.json'
+        else:
+            self.info_json_uri = service_block['@id'] + '/info.json'
+        print 'INFO JSON Uri %s' % self.info_json_uri
         if validators.url(self.info_json_uri) is True:
             try:
                 self.info_json = requests.get(self.info_json_uri).json()
+                print 'INFO JSON %s' % self.info_json
             except:
                 print "Could not get info.json"
 
