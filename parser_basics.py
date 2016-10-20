@@ -38,7 +38,10 @@ def box_fitter(list_of_boxes):
     pass
 
 
-def ocr_to_annos(ocr_text, word_index, word_list, canvas_id, manifest_id=None, confidence_thresh=55):
+def ocr_to_annos(entity_parser, ocr_text, word_index,
+                 word_list, canvas_id,
+                 manifest_id=None,
+                 confidence_thresh=55):
     '''
     Input:
     OCR full text
@@ -53,7 +56,8 @@ def ocr_to_annos(ocr_text, word_index, word_list, canvas_id, manifest_id=None, c
 
     Needs box joining for multi-token annos on the same line.
     '''
-    parser = spacy.en.English()
+    # parser = spacy.en.English()
+    parser = entity_parser
     parsed = parser(unicode(ocr_text))
     lookup = [x.idx for x in parsed]
     token_index = {}
@@ -65,24 +69,31 @@ def ocr_to_annos(ocr_text, word_index, word_list, canvas_id, manifest_id=None, c
             for x in word_index if token.idx in x.values()[0]]
     # Extract entities and step through them
     for entity in parsed.ents:
-        print entity
-        print entity.start
-        print entity.end
-        print token_index[lookup[entity.start]]
+        # print entity
+        # print entity.start
+        # print entity.end
+        # print token_index[lookup[entity.start]]
         if entity.end - entity.start == 1:
-            details = token_index[lookup[entity.start]][0][0]
-            if 'confidence' in details:
-                confidence = details['confidence']
-                print 'Confidence %s' % confidence
-            else:
-                confidence = None
-            if (entity.label_ != 'ORDINAL') and (entity.label_ != 'CARDINAL') and details:
-                candidate_anno = create_anno(entity.text_with_ws.encode('utf-8'),
-                                             details['xywh'],
-                                             canvas_id,
-                                             entity.label_,
-                                             manifest_id
-                                             )
+            try:
+                details = token_index[lookup[entity.start]][0][0]
+            except IndexError:
+                # print 'No details'
+                details = None
+            if details:
+                if 'confidence' in details:
+                    confidence = details['confidence']
+                else:
+                    confidence = None
+            if ((entity.label_ != 'ORDINAL') and
+                    (entity.label_ != 'CARDINAL') and
+                    details):
+                candidate_anno = create_anno(
+                    entity.orth_.encode('utf-8'),
+                    details['xywh'],
+                    canvas_id,
+                    entity.label_,
+                    manifest_id
+                )
                 if confidence:
                     if confidence > confidence_thresh:
                         resource_list.append(candidate_anno)
@@ -94,19 +105,26 @@ def ocr_to_annos(ocr_text, word_index, word_list, canvas_id, manifest_id=None, c
         # needs revision to handle occasional 'drift' of anno box placement
         else:
             for p in range(int(entity.start), int(entity.end)):
-                details = token_index[lookup[p]][0][0]
-                if 'confidence' in details:
-                    confidence = details['confidence']
-                    print 'Confidence %s' % confidence
-                else:
-                    confidence = None
-                if (entity.label_ != 'ORDINAL') and (entity.label_ != 'CARDINAL') and details:
-                    candidate_anno = create_anno(entity.text_with_ws.encode('utf-8'),
-                                                 details['xywh'],
-                                                 canvas_id,
-                                                 entity.label_,
-                                                 manifest_id
-                                                 )
+                try:
+                    details = token_index[lookup[p]][0][0]
+                except IndexError:
+                    # print 'No details'
+                    details = None
+                if details:
+                    if 'confidence' in details:
+                        confidence = details['confidence']
+                    else:
+                        confidence = None
+                if ((entity.label_ != 'ORDINAL') and
+                        (entity.label_ != 'CARDINAL') and
+                        details):
+                    candidate_anno = create_anno(
+                        entity.orth_.encode('utf-8'),
+                        details['xywh'],
+                        canvas_id,
+                        entity.label_,
+                        manifest_id
+                    )
                     if confidence:
                         if confidence > confidence_thresh:
                             resource_list.append(candidate_anno)
