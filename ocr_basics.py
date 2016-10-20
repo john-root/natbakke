@@ -108,6 +108,7 @@ def get_words_hocr(canvas, scale_factor=None):
         line_count += 1
         # parse each line with BS4
         line_soup = BeautifulSoup(str(line), "lxml")
+        # print 'hOCR Line: %s' % line
         # store line number for later
         # this is potentially fragile -- should possibly
         # just generate a number, check against
@@ -130,7 +131,8 @@ def get_words_hocr(canvas, scale_factor=None):
             word_dict['end_y'] = int(word_dict['bbox'][3])
             word_dict['width'] = word_dict['end_x'] - word_dict['start_x']
             word_dict['height'] = word_dict['end_y'] - word_dict['start_y']
-            print 'Scale factor: %s' % scale_factor
+            if scale_factor:
+                print 'Scale factor: %s' % scale_factor
             if scale_factor:
                 start_x = str(int(word_dict['start_x'] * scale_factor))
                 start_y = str(int(word_dict['start_y'] * scale_factor))
@@ -155,6 +157,7 @@ def get_words_hocr(canvas, scale_factor=None):
             word_dict['id'] = count  # word_soup.span['id'].split('_')[-1]
             word_dict['confidence'] = word_soup.span[
                 'title'].split(';')[1].split()[-1]
+            # print 'Confidence: %s' % word_dict['confidence']
             word_list.append(word_dict)
             # build a simple whitespaced text list
             # for use in entity extraction, etc.
