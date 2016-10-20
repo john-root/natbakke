@@ -5,6 +5,8 @@ Test processor to see if the external canvas_processor code works.
 '''
 
 import canvas_processor
+import spacy.en
+
 
 
 def main():
@@ -20,15 +22,16 @@ def main():
     # http://iiif.bodleian.ox.ac.uk/iiif/manifest/54b574dd-8be3-4388-a840-b824954cf161.json
     # http://wellcomelibrary.org/iiif/b24881843/manifest  ** Tewa Indians
     # Nubian message: https://d.lib.ncsu.edu/collections/catalog/nubian-message-2003-04-01/manifest  ***
+    parser = spacy.en.English()
     item = canvas_processor.Manifest(
-        uri='https://digital.library.villanova.edu/Item/vudl:40134/Manifest')
+        uri='https://digital.library.villanova.edu/Item/vudl:14704/Manifest')
     # canvas = item.canvases[10]
     total = len(item.canvases)
     count = 1
     for canvas in item.canvases:
         print 'Processing canvas %s of %s' % (count, total)
         # print canvas['seeAlso']
-        processed = canvas_processor.CanvasProcess(
+        processed = canvas_processor.CanvasProcess(entity_parser=parser,
             canvas_obj=canvas, manifest_id=item.requested.uri)
         count += 1
 
