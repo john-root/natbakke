@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import spacy.en
+# import spacy.en
 
 
 def create_anno(text, xywh, target, entity, manifest_uri=None):
