@@ -25,6 +25,7 @@ def get_words_alto(canvas, verbose=False):
     ToDo: combine the two word indexes into one.
     ToDo: combine both hocr and alto functions into one.
 
+    ** Need to add confidence or broken **
     '''
     soup = BeautifulSoup(canvas.alto, "html.parser")
     attributes_dictionary = soup.find('page').attrs
