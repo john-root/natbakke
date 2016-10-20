@@ -1,7 +1,6 @@
 from bs4 import BeautifulSoup
 import re
 import ftfy
-from io import open as iopen
 import hashlib
 import requests
 import subprocess
