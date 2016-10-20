@@ -88,8 +88,10 @@ class CanvasProcess():
     '''
 
     def __init__(self, entity_parser, canvas_obj, manifest_id, push=False):
-        self.data_dir = './data/'  # '/home/digirati/natbakke/data'
-        self.image_dir = './data/'  # '/dev/shm'
+        self.data_dir = '/home/digirati/natbakke/data'
+        self.image_dir = '/dev/shm'
+        # self.data_dir = './data/'  # '/home/digirati/natbakke/data'
+        # self.image_dir = './data/'  # '/dev/shm'
         self.push = push
         self.entity_parser = entity_parser
         self.manifest_id = manifest_id
