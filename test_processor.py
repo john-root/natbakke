@@ -88,7 +88,7 @@ def main():
         print 'Processing canvas %s of %s' % (count, total)
         # print canvas['seeAlso']
         processed = canvas_processor.CanvasProcess(entity_parser=nlp,
-                                                   canvas_obj=canvas, manifest_id=item.requested.uri)
+                                                   canvas_obj=canvas, manifest_id=item.requested.uri, push=True)
         count += 1
 
 if __name__ == '__main__':
