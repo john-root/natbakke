@@ -24,7 +24,7 @@ def main():
     # Nubian message: https://d.lib.ncsu.edu/collections/catalog/nubian-message-2003-04-01/manifest  ***
     parser = spacy.en.English()
     item = canvas_processor.Manifest(
-        uri='https://digital.library.villanova.edu/Item/vudl:14704/Manifest')
+        uri='http://wellcomelibrary.org/iiif/b21893937/manifest')
     # canvas = item.canvases[10]
     total = len(item.canvases)
     count = 1
