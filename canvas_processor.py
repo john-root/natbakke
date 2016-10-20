@@ -25,6 +25,8 @@ class Canvas():
         self.canvas_obj = canvas_obj
 
     def get_info_json(self):
+        print 'Images: %s' % self.canvas_obj['images']
+        print 'First image: %s' % self.canvas_obj['images'][0]
         self.info_json_uri = self.canvas_obj[
             'images'][0]['resource']['service']['@id'] + '/info.json'
         if validators.url(self.info_json_uri) is True:
