@@ -10,6 +10,7 @@ from parser_basics import ocr_to_annos
 import hashlib
 import os
 
+
 class Manifest():
 
     def __init__(self, uri):
@@ -72,7 +73,7 @@ class Canvas():
     def get_hocr(self):
         self.get_seeAlsos()
         if hasattr(self, 'hocr_uri'):
-            print 'Got it!'
+            # print 'Got it!'
             if validators.url(self.hocr_uri)is True:
                 r = requests.get(self.hocr_uri)
                 r.raise_for_status()
@@ -86,10 +87,11 @@ class CanvasProcess():
     from being a bottleneck, e.g. run 4 canvases at once.
     '''
 
-    def __init__(self, canvas_obj, manifest_id, push=False):
-        self.data_dir = './data/' #'/home/digirati/natbakke/data'
-        self.image_dir = './data/' #'/dev/shm'
+    def __init__(self, entity_parser, canvas_obj, manifest_id, push=False):
+        self.data_dir = './data/'  # '/home/digirati/natbakke/data'
+        self.image_dir = './data/'  # '/dev/shm'
         self.push = push
+        self.entity_parser = entity_parser
         self.manifest_id = manifest_id
         self.canvas = Canvas(canvas_obj)
         self.id = self.canvas.canvas_obj['@id']
@@ -97,14 +99,17 @@ class CanvasProcess():
         # index the OCR data.
         self.index_ocr_data()
         if hasattr(self, 'word_index'):
-            self.annotations = ocr_to_annos(
-                self.ocr_text_sub, self.word_index, self.word_list, self.id, self.manifest_id)
-            # save the annotations to a JSON file, using hash of canvas_id as filename
+            self.annotations = ocr_to_annos(self.entity_parser,
+                                            self.ocr_text_sub, self.word_index,
+                                            self.word_list, self.id, self.manifest_id)
+            # save the annotations to a JSON file, using hash of canvas_id as
+            # filename
             if self.annotations:
-                filename = os.path.join(self.data_dir, hashlib.md5(self.id).hexdigest() + '.json')
+                filename = os.path.join(
+                    self.data_dir, hashlib.md5(self.id).hexdigest() + '.json')
                 with open(filename, 'w') as file:
                     file.write(json.dumps(self.annotations, indent=4))
-                if self.push==True:
+                if self.push == True:
                     push_annos(self.annotations, self.id)
                 else:
                     print json.dumps(self.annotations, indent=4)
@@ -140,7 +145,8 @@ class CanvasProcess():
 
     def generate_ocr(self):
         if hasattr(self.canvas, 'info_json'):
-            self.scale_factor, self.canvas.hocr = ocr_image(self.canvas.info_json, self.id, self.image_dir, self.data_dir)
+            self.scale_factor, self.canvas.hocr = ocr_image(
+                self.canvas.info_json, self.id, self.image_dir, self.data_dir)
 
 
 def create_container(container_name, label, uri='https://annotation-dev.digtest.co.uk:443/annotation/w3c/'):
