@@ -41,7 +41,7 @@ def main():
                  LOWER: 'to-nil-choni'},
                 {ORTH: 'Wash',
                  LOWER: 'wash'},
-                 {ORTH: 'School',
+                {ORTH: 'School',
                  LOWER: 'school'}
             ]
         ]
