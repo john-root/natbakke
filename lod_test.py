@@ -31,6 +31,21 @@ def main():
             ]
         ]
     )
+    parser.matcher.add(
+        "To-nil-choniSWashSchool",
+        "ORG",
+        {},
+        [
+            [
+                {ORTH: 'To-nil-choni',
+                 LOWER: 'to-nil-choni'},
+                {ORTH: 'Wash',
+                 LOWER: 'wash'},
+                 {ORTH: 'School',
+                 LOWER: 'school'}
+            ]
+        ]
+    )
     parser2 = initialise_spacy()
     print example
     before = parser2(unicode(example))
