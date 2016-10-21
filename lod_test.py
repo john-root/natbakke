@@ -3,12 +3,12 @@ import ftfy
 
 
 def main():
-    example = ftfy.fix_text((open('./data/e4488a6cb20ed47e2050daf5e54a9831.txt').read().decode('utf-8')))
+    example = ftfy.fix_text((open('./data/cdc30e430234e88977fdf25a2b6fe3cb.txt').read().decode('utf-8')))
     parser = initialise_spacy('new_mexico.json', geonames=True)
     parser2 = initialise_spacy()
     print example
-    before = parser(unicode(example))
-    after = parser2(unicode(example))
+    before = parser2(unicode(example))
+    after = parser(unicode(example))
     print("Before")
     for ent in before.ents:
         print(ent.text, ent.label_, [w.tag_ for w in ent])
