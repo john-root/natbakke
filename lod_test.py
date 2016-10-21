@@ -25,9 +25,7 @@ def main():
         [
             [
                 {ORTH: 'Toadlena',
-                 LOWER: 'toadlena'}
-            ],
-            [
+                 LOWER: 'toadlena'},
                 {ORTH: 'School',
                  LOWER: 'school'}
             ]
