@@ -10,6 +10,7 @@ def main():
     parser.matcher.add(
         "Toadlena",
         "GPE",
+        {},
         [
             [
                 {ORTH: 'Toadlena',
