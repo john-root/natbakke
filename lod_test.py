@@ -7,14 +7,14 @@ def main():
     parser = initialise_spacy('new_mexico.json', geonames=True)
     parser2 = initialise_spacy()
     print example
-    # before = parser(unicode(example))
-    # after = parser2(unicode(example))
-    # print("Before")
-    # for ent in before.ents:
-    #     print(ent.text, ent.label_, [w.tag_ for w in ent])
-    # print("After")
-    # for ent in after.ents:
-    #     print(ent.text, ent.label_, [w.tag_ for w in ent])
+    before = parser(unicode(example))
+    after = parser2(unicode(example))
+    print("Before")
+    for ent in before.ents:
+        print(ent.text, ent.label_, [w.tag_ for w in ent])
+    print("After")
+    for ent in after.ents:
+        print(ent.text, ent.label_, [w.tag_ for w in ent])
 
 
 
