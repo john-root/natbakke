@@ -16,7 +16,8 @@ def main():
                 {ORTH: 'Toadlena',
                  LOWER: 'toadlena'}
             ]
-        ])
+        ]
+    )
     parser2 = initialise_spacy()
     print example
     before = parser2(unicode(example))
