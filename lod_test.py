@@ -18,6 +18,21 @@ def main():
             ]
         ]
     )
+    parser.matcher.add(
+        "ToadlenaSchool",
+        "ORG",
+        {},
+        [
+            [
+                {ORTH: 'Toadlena',
+                 LOWER: 'toadlena'}
+            ],
+            [
+                {ORTH: 'School',
+                 LOWER: 'school'}
+            ]
+        ]
+    )
     parser2 = initialise_spacy()
     print example
     before = parser2(unicode(example))
