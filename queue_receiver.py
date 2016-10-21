@@ -1,13 +1,14 @@
 import canvas_processor
 import boto.sqs
 import json
-import spacy.en
+from spacy_basics import initialise_spacy
 
 
 def main():
     conn = boto.sqs.connect_to_region("us-west-2")
     canvas_queue = conn.get_queue('ocr1')
-    parser = spacy.en.English()
+    # parser = spacy.en.English()
+    parser = initialise_spacy('new_mexico.json', geonames=True)
     while 1:
         canvas_results = canvas_queue.get_messages(wait_time_seconds=20,
                                                    num_messages=5)
