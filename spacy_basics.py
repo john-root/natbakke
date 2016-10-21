@@ -36,41 +36,42 @@ def build_featurecode_dict(file_name):
     return featurecode_dict
 
 
-def initialise_spacy(matcher_json):
+def initialise_spacy(matcher_json=None, geonames=False):
     '''
     Initialise a spacy parser, then add custom
     vocab to the matcher.
     '''
     parser = spacy.en.English()
-    featurecode_dict = build_featurecode_dict('GeoNames.htm')
-    # data = ujson.loads(open('new_mexico.json').read())
-    data = ujson.loads(open(matcher_json).read())
-    # nlp = spacy.en.English()
-    for item in data:
-        name = item['name']
-        geonameid = item['geonameid']
-        name_tokens = item['asciiname'].split()
-        word_list = []
-        for token in name_tokens:
-            word_dict = [{LOWER: token.lower()}, {ORTH: token}]
-            word_list.append(word_dict)
-        try:
-            z = featurecode_dict[item['feature code']]
-        except:
+    if geonames:
+        featurecode_dict = build_featurecode_dict('GeoNames.htm')
+    if matcher_json is not None:
+        data = ujson.loads(open(matcher_json).read())
+        # nlp = spacy.en.English()
+        for item in data:
+            name = item['name']
+            geonameid = item['geonameid']
+            name_tokens = item['asciiname'].split()
+            word_list = []
+            for token in name_tokens:
+                word_dict = [{LOWER: token.lower()}, {ORTH: token}]
+                word_list.append(word_dict)
             try:
-                if item['feature class'] in ['A', 'P']:
-                    z = 'GPE'
-                elif item['feature class'] in ['L', 'R', 'S']:
-                    z = 'FAC'
-                else:
-                    z = 'LOC'
+                z = featurecode_dict[item['feature code']]
             except:
-                pass
-        parser.matcher.add(
-            name,  # Entity ID: Not really used at the moment.
-            z,   # Entity type: should be one of the types in the NER data
-            # Arbitrary attributes. Currently unused.
-            {"geonameid": geonameid},
-            word_list
-        )
+                try:
+                    if item['feature class'] in ['A', 'P']:
+                        z = 'GPE'
+                    elif item['feature class'] in ['L', 'R', 'S']:
+                        z = 'FAC'
+                    else:
+                        z = 'LOC'
+                except:
+                    pass
+            parser.matcher.add(
+                name,  # Entity ID: Not really used at the moment.
+                z,   # Entity type: should be one of the types in the NER data
+                # Arbitrary attributes. Currently unused.
+                {"geonameid": geonameid},
+                word_list
+            )
     return parser
