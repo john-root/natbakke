@@ -5,7 +5,7 @@ from spacy.attrs import ORTH, LOWER
 
 def main():
     example = ftfy.fix_text(
-        (open('./test.txt').read().decode('utf-8')))
+        (open('./test2.txt').read().decode('utf-8')))
     parser = initialise_spacy('new_mexico.json', geonames=True)
     parser.matcher.add(
         "Toadlena",
