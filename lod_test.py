@@ -3,7 +3,7 @@ import ftfy
 
 
 def main():
-    example = ftfy.fix_text(open('./data/e4488a6cb20ed47e2050daf5e54a9831.txt').read())
+    example = ftfy.fix_text(unicode(open('./data/e4488a6cb20ed47e2050daf5e54a9831.txt').read()))
     parser = initialise_spacy('new_mexico.json', geonames=True)
     parser2 = initialise_spacy()
     print example
