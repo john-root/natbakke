@@ -32,15 +32,15 @@ def main():
         ]
     )
     parser.matcher.add(
-        "To-nil-choniSWashSchool",
+        "SanJuanSchool",
         "ORG",
         {},
         [
             [
-                {ORTH: 'To-nil-choni',
-                 LOWER: 'to-nil-choni'},
-                {ORTH: 'Wash',
-                 LOWER: 'wash'},
+                {ORTH: 'San',
+                 LOWER: 'san'},
+                {ORTH: 'Juan',
+                 LOWER: 'juan'},
                 {ORTH: 'School',
                  LOWER: 'school'}
             ]
