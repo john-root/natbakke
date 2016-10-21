@@ -67,6 +67,8 @@ def initialise_spacy(matcher_json=None, geonames=False):
                         z = 'LOC'
                 except:
                     pass
+            add_list = [name, z, {"geonameid": geonameid}, word_list]
+            print ujson.dumps(add_list, indent=2)
             parser.matcher.add(
                 name,  # Entity ID: Not really used at the moment.
                 z,   # Entity type: should be one of the types in the NER data
