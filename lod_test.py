@@ -57,7 +57,7 @@ def main():
         writer = csv.DictWriter(f, fieldnames=fieldnames, dialect='excel')
         writer.writeheader()
         for ent in before.ents:
-            if ent.label_ is not in ['TIME', 'PERCENT', 'CARDINAL', 'ORDINAL'] and len(ent.orth_) > 2:
+            if ent.label_ not in ['TIME', 'PERCENT', 'CARDINAL', 'ORDINAL'] and len(ent.orth_) > 2:
                 writer.writerow({'Entity_Orth': ent.orth_.encode('utf-8'),
                                  'Entity_Label': ent.label_,
                                  'Parts_of_Speech': ' '.join([w.tag_ for w in ent])})
@@ -67,7 +67,7 @@ def main():
         writer = csv.DictWriter(f, fieldnames=fieldnames, dialect='excel-tab')
         writer.writeheader()
         for ent in after.ents:
-            if ent.label_ is not in ['TIME', 'PERCENT', 'CARDINAL', 'ORDINAL'] and len(ent.orth_) > 2:
+            if ent.label_ not in ['TIME', 'PERCENT', 'CARDINAL', 'ORDINAL'] and len(ent.orth_) > 2:
                 writer.writerow({'Entity_Orth': ent.orth_.encode('utf-8'),
                                  'Entity_Label': ent.label_,
                                  'Parts_of_Speech': ' '.join([w.tag_ for w in ent])})
