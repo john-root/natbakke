@@ -70,7 +70,7 @@ def main():
             # print(ent.text, ent.label_, [w.tag_ for w in ent])
             writer.writerow({'Entity_Orth': ent.orth_.encode('utf-8'),
                              'Entity_Label': ent.label_,
-                             'Parts_of_Speech': ' '.join([w.tag_ for w in ent])})
+                             'Parts_of_Speech': ','.join([w.tag_ for w in ent])})
 
 
 if __name__ == '__main__':
