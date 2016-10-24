@@ -54,7 +54,7 @@ def main():
     print("Before")
     with open('before.csv', 'wb') as f:
         fieldnames = ['Entity_Orth', 'Entity_Label', 'Parts_of_Speech']
-        writer = csv.DictWriter(f, fieldnames=fieldnames, dialect='excel-tab')
+        writer = csv.DictWriter(f, fieldnames=fieldnames, dialect='excel-tab', encoding='utf-8')
         writer.writeheader()
         for ent in before.ents:
             # print(ent.text, ent.label_, [w.tag_ for w in ent])
@@ -64,7 +64,7 @@ def main():
     print("After")
     with open('after.csv', 'wb') as f:
         fieldnames = ['Entity_Orth', 'Entity_Label', 'Parts_of_Speech']
-        writer = csv.DictWriter(f, fieldnames=fieldnames, dialect='excel-tab')
+        writer = csv.DictWriter(f, fieldnames=fieldnames, dialect='excel-tab', encoding='utf-8')
         writer.writeheader()
         for ent in after.ents:
             # print(ent.text, ent.label_, [w.tag_ for w in ent])
