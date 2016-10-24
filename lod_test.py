@@ -1,6 +1,7 @@
 from spacy_basics import initialise_spacy
 import ftfy
 from spacy.attrs import ORTH, LOWER
+import csv
 
 
 def main():
@@ -53,9 +54,15 @@ def main():
     print("Before")
     for ent in before.ents:
         print(ent.text, ent.label_, [w.tag_ for w in ent])
+    with open('before.csv', 'wb') as f:
+        writer = csv.writer(f)
+        writer.writerow(ent.text, ent.label_, [w.tag_ for w in ent])
     print("After")
     for ent in after.ents:
         print(ent.text, ent.label_, [w.tag_ for w in ent])
+    with open('after.csv', 'wb') as f:
+        writer = csv.writer(f)
+        writer.writerow(ent.text, ent.label_, [w.tag_ for w in ent])
 
 
 if __name__ == '__main__':
