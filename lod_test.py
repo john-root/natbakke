@@ -58,7 +58,7 @@ def main():
         writer.writeheader()
         for ent in before.ents:
             # print(ent.text, ent.label_, [w.tag_ for w in ent])
-            writer.writerow({'Entity_Text': ent.text,
+            writer.writerow({'Entity_Text': ent.orth,
                              'Entity_Label': ent.label_,
                              'Parts_of_Speech': ' '.join([w.tag_ for w in ent])})
     print("After")
