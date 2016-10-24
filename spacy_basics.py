@@ -53,7 +53,7 @@ def initialise_spacy(matcher_json=None, geonames=False):
             name_tokens = item['asciiname'].split()
             word_list = []
             for token in name_tokens:
-                word_dict = [{LOWER: token.lower()}, {ORTH: token}]
+                word_dict = {LOWER: token.lower()}, {ORTH: token}
                 word_list.append(word_dict)
             try:
                 z = featurecode_dict[item['feature code']]
@@ -74,6 +74,6 @@ def initialise_spacy(matcher_json=None, geonames=False):
                 z,   # Entity type: should be one of the types in the NER data
                 # Arbitrary attributes. Currently unused.
                 {"geonameid": geonameid},
-                word_list
+                [word_list]
             )
     return parser
