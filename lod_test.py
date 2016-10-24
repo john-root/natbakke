@@ -34,6 +34,31 @@ def main():
         ]
     )
     parser.matcher.add(
+        "Fort Wingate",
+        "GPE",
+        {
+            "geonameid": "5468166"
+        },
+        [
+            [
+                {
+                    "66": "fort"
+                },
+                {
+                    "65": "Fort"
+                }
+            ],
+            [
+                {
+                    "66": "wingate"
+                },
+                {
+                    "65": "Wingate"
+                }
+            ]
+        ]
+    )
+    parser.matcher.add(
         "SanJuanSchool",
         "ORG",
         {},
