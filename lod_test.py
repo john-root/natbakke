@@ -60,7 +60,7 @@ def main():
             # print(ent.text, ent.label_, [w.tag_ for w in ent])
             writer.writerow({'Entity_Text': ent.orth_,
                              'Entity_Label': ent.label_,
-                             'Parts_of_Speech': ' '.join([w.tag_ for w in ent])})
+                             'Parts_of_Speech': ','.join([w.tag_ for w in ent])})
     print("After")
     with open('after.csv', 'wb') as f:
         fieldnames = ['Entity_Text', 'Entity_Label', 'Parts_of_Speech']
