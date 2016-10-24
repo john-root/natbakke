@@ -264,7 +264,7 @@ English,LANGUAGE,JJ
 Indians,NORP,NNPS
 English,LANGUAGE,JJ
 San Juan Reservation,GPE,NNP NNP NNP
-Headgates -...,PERSON,NNPS HYPH NFP
+Headgates -.....,PERSON,NNPS HYPH NFP
 January,DATE,NNP
 February ________ 5,DATE,NNP SYM CD
 March ___________,DATE,NNP NN
@@ -530,6 +530,7 @@ the year,DATE,DT NN
 February,DATE,NNP
 IViarch,GPE,NNP
 the past ten years,DATE,DT JJ CD NNS
+this season,DATE,DT NN
 June,PERSON,NNP
 mid-June,DATE,JJ SYM NNP
 Navajo,NORP,NNP
@@ -550,7 +551,6 @@ Havajos,ORG,NNP
 winter,DATE,NN
 1925,DATE,CD
 San Juan Reservation,GPE,NNP NNP NNP
-4.. Number of,ORG,CD NFP NN IN
 18 years,DATE,CD NNS
 Climbs-Children,PERSON,NNP HYPH NNP
 Laser-w,PERSON,NNP HYPH NNP
@@ -710,7 +710,7 @@ Denetolaw,PERSON,NNP
 Theodore W,PERSON,NNP NNP
 Belonebega,PERSON,NNP
 Baehabage,PERSON,NNP
-Ruby,PRODUCT,NNP
+Ruby,PERSON,NNP
 Begay,PERSON,NNP
 Bessie,PERSON,NNP
 Begay,PERSON,NNP
@@ -1260,9 +1260,8 @@ Farmington,GPE,NNP
 N. M. from,PERSON,NNP NNP IN
 State Highway,ORG,SP NNP NNP
 Gallup,ORG,NNP
-S. F. Ry..,PERSON,NNP NNP NNP NFP
 Farmington,GPE,NNP
-Shiprock,ORG,NNP
+Shiprock,PERSON,NNP
 Farmington,GPE,NNP
 Bell,PERSON,NNP
 Sunday,DATE,NNP
@@ -1423,7 +1422,6 @@ Ilhich,GPE,NNP
 Pueblo,ORG,NNP
 Pueblo,ORG,NNP
 San Juan Agency,ORG,NNP NNP NNP
-Rambouillet,ORG,NNP
 many years,DATE,JJ NNS
 1925,DATE,CD
 "the Bureau of
