@@ -71,6 +71,10 @@ def main():
             [
                 {ORTH: 'Diphtheria',
                  LOWER: 'diphtheria'}
+            ],
+            [
+                {ORTH: 'Phagocite',
+                 LOWER: 'phagocite'}
             ]
         ]
     )
