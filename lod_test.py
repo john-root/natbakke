@@ -42,18 +42,12 @@ def main():
         [
             [
                 {
-                    "66": "fort"
+                    LOWER: "fort",
+                    ORTH: "Fort"
                 },
                 {
-                    "65": "Fort"
-                }
-            ],
-            [
-                {
-                    "66": "wingate"
-                },
-                {
-                    "65": "Wingate"
+                    LOWER: "wingate",
+                    ORTH: "Wingate"
                 }
             ]
         ]
