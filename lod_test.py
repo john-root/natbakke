@@ -52,17 +52,25 @@ def main():
     before = parser2(unicode(example))
     after = parser(unicode(example))
     print("Before")
-    for ent in before.ents:
-        print(ent.text, ent.label_, [w.tag_ for w in ent])
     with open('before.csv', 'wb') as f:
-        writer = csv.writer(f)
-        writer.writerow(ent.text, ent.label_, [w.tag_ for w in ent])
+        fieldnames = ['Entity_Text', 'Entity_Label', 'Parts_of_Speech']
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        for ent in before.ents:
+            # print(ent.text, ent.label_, [w.tag_ for w in ent])
+            writer.writerow({'Entity_Text': ent.text,
+                             'Entity_Label': ent.label_,
+                             'Parts_of_Speech': ' '.join([w.tag_ for w in ent])})
     print("After")
-    for ent in after.ents:
-        print(ent.text, ent.label_, [w.tag_ for w in ent])
     with open('after.csv', 'wb') as f:
-        writer = csv.writer(f)
-        writer.writerow(ent.text, ent.label_, [w.tag_ for w in ent])
+        fieldnames = ['Entity_Text', 'Entity_Label', 'Parts_of_Speech']
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        for ent in after.ents:
+            # print(ent.text, ent.label_, [w.tag_ for w in ent])
+            writer.writerow({'Entity_Text': ent.text,
+                             'Entity_Label': ent.label_,
+                             'Parts_of_Speech': ' '.join([w.tag_ for w in ent])})
 
 
 if __name__ == '__main__':
