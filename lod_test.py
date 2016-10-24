@@ -48,13 +48,13 @@ def main():
         ]
     )
     parser2 = initialise_spacy()
-    print example
+    # print example
     before = parser2(unicode(example))
     after = parser(unicode(example))
     print("Before")
     with open('before.csv', 'wb') as f:
         fieldnames = ['Entity_Text', 'Entity_Label', 'Parts_of_Speech']
-        writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter='   ')
+        writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter='\t')
         writer.writeheader()
         for ent in before.ents:
             # print(ent.text, ent.label_, [w.tag_ for w in ent])
