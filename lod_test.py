@@ -54,21 +54,21 @@ def main():
     print("Before")
     with open('before.csv', 'wb') as f:
         fieldnames = ['Entity_Orth', 'Entity_Label', 'Parts_of_Speech']
-        writer = csv.DictWriter(f, fieldnames=fieldnames, dialect='excel-tab', encoding='utf-8')
+        writer = csv.DictWriter(f, fieldnames=fieldnames, dialect='excel-tab')
         writer.writeheader()
         for ent in before.ents:
             # print(ent.text, ent.label_, [w.tag_ for w in ent])
-            writer.writerow({'Entity_Orth': ent.orth_,
+            writer.writerow({'Entity_Orth': ent.orth_.encode('utf-8'),
                              'Entity_Label': ent.label_,
                              'Parts_of_Speech': ','.join([w.tag_ for w in ent])})
     print("After")
     with open('after.csv', 'wb') as f:
         fieldnames = ['Entity_Orth', 'Entity_Label', 'Parts_of_Speech']
-        writer = csv.DictWriter(f, fieldnames=fieldnames, dialect='excel-tab', encoding='utf-8')
+        writer = csv.DictWriter(f, fieldnames=fieldnames, dialect='excel-tab')
         writer.writeheader()
         for ent in after.ents:
             # print(ent.text, ent.label_, [w.tag_ for w in ent])
-            writer.writerow({'Entity_Orth': ent.orth_,
+            writer.writerow({'Entity_Orth': ent.orth_.encode('utf-8'),
                              'Entity_Label': ent.label_,
                              'Parts_of_Speech': ' '.join([w.tag_ for w in ent])})
 
