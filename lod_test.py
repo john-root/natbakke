@@ -47,6 +47,32 @@ def main():
             ]
         ]
     )
+    parser.matcher.add(
+        "SanJuanSAgency",
+        "ORG",
+        {},
+        [
+            [
+                {ORTH: 'San',
+                 LOWER: 'san'},
+                {ORTH: 'Juan',
+                 LOWER: 'juan'},
+                {ORTH: 'Agency',
+                 LOWER: 'agency'}
+            ]
+        ]
+    )
+    parser.matcher.add(
+        "false_positives",
+        None,
+        {},
+        [
+            [
+                {ORTH: 'Diphtheria',
+                 LOWER: 'diptheria'}
+            ]
+        ]
+    )
     parser2 = initialise_spacy()
     # print example
     before = parser2(unicode(example))
