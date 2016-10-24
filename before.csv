@@ -1,2479 +1,1755 @@
-Entity_Orth	Entity_Label	Parts_of_Speech
-1925	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-10 miles	QUANTITY	SP,CD,NNS
-Farmington	GPE	NNP
-less than two hours	DATE	JJR,IN,CD,NNS
-the past year	DATE	DT,JJ,NN
-first	ORDINAL	JJ
-two hundred or three hundred	CARDINAL	CD,CD,CC,CD,CD
-Gallup	ORG	NNP
-Federal Aid Highway	ORG	NNP,NNP,NNP
-two	CARDINAL	CD
-first	ORDINAL	RB
-A few days later	DATE	DT,JJ,NNS,RB
-San Juan	GPE	NNP,NNP
-Shiprock	GPE	NNP
-Physician	ORG	NNP
-Presbyterianmghggch	ORG	NNP
-Physician	NORP	NN
-Red Rocks	ORG	NNP,NNPS
-Shiprock	GPE	NNP
-the Medicine Men	ORG	DT,NNP,NNPS
-Second	ORDINAL	RB
-the Saw Mill	ORG	DT,NNP,NNP
-Mesa Boarding School	ORG	NNP,NNP,NNP
-200	CARDINAL	CD
-100	CARDINAL	CD
-100	CARDINAL	CD
-Some 500	CARDINAL	DT,CD
-San Juan	GPE	NNP,NNP
-the New Hospital	ORG	DT,NNP,NNP
-several years ago	DATE	JJ,NNS,RB
-second	ORDINAL	JJ
-Agency	ORG	NNP
-The Field Force	ORG	DT,NNP,NNP
-two	CARDINAL	CD
-Stockman	PERSON	NNP
-two	CARDINAL	CD
-One	CARDINAL	CD
-Shiprock	FAC	NNP
-400	CARDINAL	CD
-1925	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-the year two cases	DATE	DT,NN,CD,NNS
-the Indian Court	ORG	DT,NNP,NNP
-the last day	DATE	DT,JJ,NN
-two days	DATE	CD,NNS
-the third day	DATE	DT,JJ,NN
-Agency	ORG	NNP
-two	CARDINAL	CD
-Indian	NORP	JJ
-Agency	ORG	NNP
-San Juan Agency	ORG	NNP,NNP,NNP
-Juan School	PERSON	NNP,NNP
-Typhoid	GPE	NNP
-November	DATE	NNP
-December	DATE	NNP
-the Toadlena School	ORG	DT,NNP,NNP
-one	CARDINAL	CD
-James D. Kennedy	PERSON	NNP,NNP,NNP
-September	DATE	NNP
-100	CARDINAL	CD
-Shiprock	GPE	NNP
-one	CARDINAL	CD
-Several months	DATE	JJ,NNS
-one	CARDINAL	CD
-Diphtheria	GPE	NNP
-Shiprock	GPE	NNP
-San Juan Agency	ORG	NNP,NNP,NNP
-one	CARDINAL	CD
-five or six	MONEY	CD,CC,CD
-Agency	ORG	NNP
-San Juan	GPE	NNP,NNP
-one	CARDINAL	CD
-the past year	DATE	DT,JJ,NN
-the preceding year	DATE	DT,JJ,NN
-the County Clerk	ORG	DT,NNP,NNP
-1925	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-the year	DATE	DT,NN
-Fifty miles	QUANTITY	CD,NNS
-Clara	GPE	NNP
-Barker	PERSON	NNP
-Bast	PERSON	NNP
-zero	CARDINAL	CD
-Missionaries	LOC	NNPS
-Tes Nos Pos	FAC	NNP,NNP,NNP
-50 miles	QUANTITY	CD,NNS
-Shiprock	GPE	NNP
-Abney	PERSON	NNP
-Red Rocks	ORG	NNP,NNPS
-50 miles	QUANTITY	CD,NNS
-Physician	ORG	NNP
-Thomas Snoddy	PERSON	NNP,NNP
-1925	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-Study	FAC	NNP
-Daily	FAC	NNP
-Sewing	GPE	NNP
-Engineering	GPE	NNP
-Farming	GPE	NNP
-Animal Husbandry	PERSON	NNP,NNP
-Shoe Repair	ORG	NNP,NNP
-four days	DATE	CD,NNS
-the year	DATE	DT,NN
-one	CARDINAL	CD
-during_the year	DATE	SP,DT,NN
-Simcoe School	ORG	NNP,NNP
-Yakima	GPE	NNP
-Washington	GPE	NNP
-San Juan Agency	ORG	NNP,NNP,NNP
-first	ORDINAL	JJ
-Indians	NORP	NNPS
-Toadlena	PERSON	NNP
-100,000 feet	QUANTITY	CD,NNS
-two	CARDINAL	CD
-Physicians	NORP	NNPS
-Navajo	NORP	NNP
-Physician	ORG	NNP
-Physicians	NORP	NNPS
-1925	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-John D. Kennedy	PERSON	NNP,NNP,NNP
-the Toadlena School	ORG	DT,NNP,NNP
-About January a	DATE	IN,NNP,DT
-first	ORDINAL	RB
-Indian	NORP	JJ
-one	CARDINAL	CD
-three	CARDINAL	CD
-one	CARDINAL	CD
-one	CARDINAL	CD
-one	CARDINAL	CD
-eleven	CARDINAL	CD
-ten	CARDINAL	CD
-Indians	NORP	NNPS
-one	CARDINAL	CD
-one	CARDINAL	CD
-two	CARDINAL	CD
-Forte Defiance	FAC	NNP,NNP
-Arizona	GPE	NNP
-the J-ndians	ORG	DT,NNP,HYPH,NNS
-1925	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-the Agency Hospital	ORG	DT,NNP,NNP
-Tubercular	NORP	JJ
-the HOSpital	FAC	DT,NN
-VA	ORG	NNP
-Trachoma	GPE	NNP
-Wigglesworth	PERSON	NNP
-several weeks	DATE	JJ,NNS
-late spring	DATE	JJ,NN
-	ORG	SP
-early summer	DATE	JJ,NN
-less than 20%	PERCENT	JJR,IN,CD,NN
-Navajo	NORP	NNP
-20%	PERCENT	CD,NN
-Trachoma	GPE	NNP
-Trachoma	PERSON	NNP
-Indians	NORP	NNPS
-Trachoma	GPE	NNP
-San Juan	GPE	NNP,NNP
-Physician	ORG	NNP
-Shiprock	GPE	NNP
-Physician	NORP	NNP
-Toadlena	ORG	NNP
-San Juan Agency	GPE	NNP,NNP,NNP
-101 acres	QUANTITY	SP,CD,NNS
-25 acres	QUANTITY	CD,NNS
-79 acres	QUANTITY	CD,NNS
-50 acres	QUANTITY	CD,NNS
-Sweet Corn	PERSON	NNP,NNP
-two	CARDINAL	CD
-San Juan	GPE	NNP,NNP
-Mesa	ORG	NNP
-two	CARDINAL	CD
-the Illoadlena School	ORG	DT,NNP,NNP
-three	CARDINAL	CD
-OOO	ORG	NNP
-half	CARDINAL	NN
-San Juan	GPE	NNP,NNP
-this year	DATE	DT,NN
-The Toadlena School	ORG	DT,NNP,NNP
-one	CARDINAL	CD
-Toadlena	GPE	NNP
-three	CARDINAL	CD
-1925	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-Spring	LOC	NN
-90%	PERCENT	CD,NN
-Last season	DATE	JJ,NN
-May	DATE	NNP
-eighteen	CARDINAL	CD
-hundreds	CARDINAL	NNS
-23	DATE	CD
-1925	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-Toadlena	GPE	NNP
-the Chirstian Reformed Church	ORG	DT,NNP,NNP,NNP
-L. P. Brink	PERSON	NNP,NNP,NNP
-Shiprock	ORG	NNP
-Manse	ORG	NNP
-Campbell	PERSON	NNP
-Shiprock	ORG	NNP
-decade	DATE	NN
-Church	ORG	NNP
-Indian	NORP	JJ
-Peyote	ORG	NNP
-Indian	NORP	JJ
-20 to 50 miles	DATE	CD,IN,CD,NNS
-15¢	CARDINAL	CD
-1925	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-San Juan Agency	ORG	NNP,NNP,NNP
-two hundred	CARDINAL	CD,CD
-the year	DATE	SP,DT,NN
-two hundred and thirty	CARDINAL	CD,CD,CC,CD
-two hundred and fifteen	CARDINAL	CD,CD,CC,CD
-The Mesa School	ORG	DT,NNP,NNP
-Shiprock	ORG	NNP
-two hundred	CARDINAL	SP,CD,CD
-Indian	NORP	JJ
-Farmington	GPE	NNP
-two	CARDINAL	CD
-one	CARDINAL	CD
-Dining Room Matron	WORK_OF_ART	SP,NN,NN,NNP
-the Mesa School	ORG	DT,NNP,NNP
-seventh	ORDINAL	JJ
-eighth	ORDINAL	JJ
-Juan School	PERSON	NNP,NNP
-Indians	NORP	NNPS
-Indians	NORP	NNPS
-Indians	NORP	NNPS
-4	CARDINAL	CD
-1925	DATE	CD
-at least one	CARDINAL	IN,JJS,CD
-Physician	NORP	NNP
-Trachoma	GPE	NNP
-Hospital	PRODUCT	NNP
-Physician	NORP	NNP
-Surgeon	GPE	NNP
-Indians	NORP	NNPS
-Indian Medicine Men	ORG	JJ,NNP,NNPS
-Indians	NORP	NNPS
-5	CARDINAL	CD
-Physicians	NORP	NNPS
-1925	DATE	CD
-San Juan	GPE	NNP,NNP
-Seeps	FAC	NNP
-Last spring	DATE	JJ,NN
-nine	CARDINAL	CD
-half	CARDINAL	NN
-last season	DATE	JJ,NN
-1	CARDINAL	CD
-One	CARDINAL	CD
-1924	DATE	CD
-Service	LOC	NNP
-San Juan Agency	ORG	NNP,NNP,NNP
-The Public School	ORG	DT,NNP,NNP
-Toadlena Boarding School	ORG	NNP,NNP,NNP
-150	CARDINAL	CD
-Toadlena Boarding School	ORG	NNP,NNP,NNP
-200	CARDINAL	CD
-September 1st 1925	DATE	NNP,NN,CD
-Toadlena Public School	ORG	NNP,NNP,NNP
-ten	CARDINAL	CD
-~ Sherman Institute	ORG	NNP,NNP,NNP
-Phoenix	GPE	NNP
-Santa Fe	GPE	NNP,NNP
-Ignacio	PERSON	NNP
-Theodore	PERSON	NNP
-each year	DATE	DT,NN
-some eight miles	QUANTITY	DT,CD,NNS
-Thirty acres	QUANTITY	CD,NNS
-one	CARDINAL	CD
-The°school	ORG	NNP
-150	CARDINAL	CD
-200	CARDINAL	CD
-1925	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-M. M. Carmichael	PERSON	NNP,NNP,NNP
-Shiprock	GPE	NNP
-Indian	NORP	JJ
-Indian	NORP	JJ
-Indians	NORP	NNPS
-1	CARDINAL	CD
-Indians	NORP	NNPS
-Trachoma	PERSON	NNP
-Venereal	GPE	NNP
-one	CARDINAL	CD
-Phagocite	NORP	NNP
-one	CARDINAL	CD
-1925	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-Indians	NORP	NNPS
-	CARDINAL	SP
-Carpentny	GPE	NNP
-Farming	GPE	NNP
-Gardning	GPE	NNP
-Dairying	GPE	NNP
-the Industrial Departments	ORG	DT,NNP,NNP
-the day	DATE	DT,NN
-Bakery	ORG	NNP
-Kitchen	PERSON	NNP
-Indians	NORP	NNPS
-Indian	NORP	JJ
+Entity_Orth,Entity_Label,Parts_of_Speech
+1925,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
+10 miles,QUANTITY,SP CD NNS
+Farmington,GPE,NNP
+less than two hours,DATE,JJR IN CD NNS
+the past year,DATE,DT JJ NN
+Gallup,ORG,NNP
+Federal Aid Highway,ORG,NNP NNP NNP
+A few days later,DATE,DT JJ NNS RB
+San Juan,GPE,NNP NNP
+Shiprock,GPE,NNP
+Physician,ORG,NNP
+Presbyterianmghggch,ORG,NNP
+Physician,NORP,NN
+Red Rocks,ORG,NNP NNPS
+Shiprock,GPE,NNP
+the Medicine Men,ORG,DT NNP NNPS
+the Saw Mill,ORG,DT NNP NNP
+Mesa Boarding School,ORG,NNP NNP NNP
+San Juan,GPE,NNP NNP
+the New Hospital,ORG,DT NNP NNP
+several years ago,DATE,JJ NNS RB
+Agency,ORG,NNP
+The Field Force,ORG,DT NNP NNP
+Stockman,PERSON,NNP
+Shiprock,FAC,NNP
+1925,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
+the year two cases,DATE,DT NN CD NNS
+the Indian Court,ORG,DT NNP NNP
+the last day,DATE,DT JJ NN
+two days,DATE,CD NNS
+the third day,DATE,DT JJ NN
+Agency,ORG,NNP
+Indian,NORP,JJ
+Agency,ORG,NNP
+San Juan Agency,ORG,NNP NNP NNP
+Juan School,PERSON,NNP NNP
+Typhoid,GPE,NNP
+November,DATE,NNP
+December,DATE,NNP
+the Toadlena School,ORG,DT NNP NNP
+James D. Kennedy,PERSON,NNP NNP NNP
+September,DATE,NNP
+Shiprock,GPE,NNP
+Several months,DATE,JJ NNS
+Diphtheria,GPE,NNP
+Shiprock,GPE,NNP
+San Juan Agency,ORG,NNP NNP NNP
+five or six,MONEY,CD CC CD
+Agency,ORG,NNP
+San Juan,GPE,NNP NNP
+the past year,DATE,DT JJ NN
+the preceding year,DATE,DT JJ NN
+the County Clerk,ORG,DT NNP NNP
+1925,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
+the year,DATE,DT NN
+Fifty miles,QUANTITY,CD NNS
+Clara,GPE,NNP
+Barker,PERSON,NNP
+Bast,PERSON,NNP
+Missionaries,LOC,NNPS
+Tes Nos Pos,FAC,NNP NNP NNP
+50 miles,QUANTITY,CD NNS
+Shiprock,GPE,NNP
+Abney,PERSON,NNP
+Red Rocks,ORG,NNP NNPS
+50 miles,QUANTITY,CD NNS
+Physician,ORG,NNP
+Thomas Snoddy,PERSON,NNP NNP
+1925,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
+Study,FAC,NNP
+Daily,FAC,NNP
+Sewing,GPE,NNP
+Engineering,GPE,NNP
+Farming,GPE,NNP
+Animal Husbandry,PERSON,NNP NNP
+Shoe Repair,ORG,NNP NNP
+four days,DATE,CD NNS
+the year,DATE,DT NN
+during_the year,DATE,SP DT NN
+Simcoe School,ORG,NNP NNP
+Yakima,GPE,NNP
+Washington,GPE,NNP
+San Juan Agency,ORG,NNP NNP NNP
+Indians,NORP,NNPS
+Toadlena,PERSON,NNP
+"100,000 feet",QUANTITY,CD NNS
+Physicians,NORP,NNPS
+Navajo,NORP,NNP
+Physician,ORG,NNP
+Physicians,NORP,NNPS
+1925,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
+John D. Kennedy,PERSON,NNP NNP NNP
+the Toadlena School,ORG,DT NNP NNP
+About January a,DATE,IN NNP DT
+Indian,NORP,JJ
+Indians,NORP,NNPS
+Forte Defiance,FAC,NNP NNP
+Arizona,GPE,NNP
+the J-ndians,ORG,DT NNP HYPH NNS
+1925,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
+the Agency Hospital,ORG,DT NNP NNP
+Tubercular,NORP,JJ
+the HOSpital,FAC,DT NN
+Trachoma,GPE,NNP
+Wigglesworth,PERSON,NNP
+several weeks,DATE,JJ NNS
+late spring,DATE,JJ NN
+early summer,DATE,JJ NN
+Navajo,NORP,NNP
+Trachoma,GPE,NNP
+Trachoma,PERSON,NNP
+Indians,NORP,NNPS
+Trachoma,GPE,NNP
+San Juan,GPE,NNP NNP
+Physician,ORG,NNP
+Shiprock,GPE,NNP
+Physician,NORP,NNP
+Toadlena,ORG,NNP
+San Juan Agency,GPE,NNP NNP NNP
+101 acres,QUANTITY,SP CD NNS
+25 acres,QUANTITY,CD NNS
+79 acres,QUANTITY,CD NNS
+50 acres,QUANTITY,CD NNS
+Sweet Corn,PERSON,NNP NNP
+San Juan,GPE,NNP NNP
+Mesa,ORG,NNP
+the Illoadlena School,ORG,DT NNP NNP
+OOO,ORG,NNP
+San Juan,GPE,NNP NNP
+this year,DATE,DT NN
+The Toadlena School,ORG,DT NNP NNP
+Toadlena,GPE,NNP
+1925,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
+Spring,LOC,NN
+Last season,DATE,JJ NN
+May,DATE,NNP
+1925,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
+Toadlena,GPE,NNP
+the Chirstian Reformed Church,ORG,DT NNP NNP NNP
+L. P. Brink,PERSON,NNP NNP NNP
+Shiprock,ORG,NNP
+Manse,ORG,NNP
+Campbell,PERSON,NNP
+Shiprock,ORG,NNP
+decade,DATE,NN
+Church,ORG,NNP
+Indian,NORP,JJ
+Peyote,ORG,NNP
+Indian,NORP,JJ
+20 to 50 miles,DATE,CD IN CD NNS
+1925,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
+the year,DATE,SP DT NN
+The Mesa School,ORG,DT NNP NNP
+Shiprock,ORG,NNP
+Indian,NORP,JJ
+Farmington,GPE,NNP
+Dining Room Matron,WORK_OF_ART,SP NN NN NNP
+the Mesa School,ORG,DT NNP NNP
+Juan School,PERSON,NNP NNP
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+1925,DATE,CD
+Physician,NORP,NNP
+Trachoma,GPE,NNP
+Hospital,PRODUCT,NNP
+Physician,NORP,NNP
+Surgeon,GPE,NNP
+Indians,NORP,NNPS
+Indian Medicine Men,ORG,JJ NNP NNPS
+Indians,NORP,NNPS
+Physicians,NORP,NNPS
+1925,DATE,CD
+San Juan,GPE,NNP NNP
+Seeps,FAC,NNP
+Last spring,DATE,JJ NN
+last season,DATE,JJ NN
+1924,DATE,CD
+Service,LOC,NNP
+San Juan Agency,ORG,NNP NNP NNP
+The Public School,ORG,DT NNP NNP
+Toadlena Boarding School,ORG,NNP NNP NNP
+Toadlena Boarding School,ORG,NNP NNP NNP
+September 1st 1925,DATE,NNP NN CD
+Toadlena Public School,ORG,NNP NNP NNP
+~ Sherman Institute,ORG,NNP NNP NNP
+Phoenix,GPE,NNP
+Santa Fe,GPE,NNP NNP
+Ignacio,PERSON,NNP
+Theodore,PERSON,NNP
+each year,DATE,DT NN
+some eight miles,QUANTITY,DT CD NNS
+Thirty acres,QUANTITY,CD NNS
+The°school,ORG,NNP
+1925,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
+M. M. Carmichael,PERSON,NNP NNP NNP
+Shiprock,GPE,NNP
+Indian,NORP,JJ
+Indian,NORP,JJ
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+Trachoma,PERSON,NNP
+Venereal,GPE,NNP
+Phagocite,NORP,NNP
+1925,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
+Indians,NORP,NNPS
+Carpentny,GPE,NNP
+Farming,GPE,NNP
+Gardning,GPE,NNP
+Dairying,GPE,NNP
+the Industrial Departments,ORG,DT NNP NNP
+the day,DATE,DT NN
+Bakery,ORG,NNP
+Kitchen,PERSON,NNP
+Indians,NORP,NNPS
+Indian,NORP,JJ
 "this
-year"	DATE	DT,SP,NN
-W. H. HaShbarger	PERSON	NNP,NNP,NNP
-4	CARDINAL	CD
-5	CARDINAL	CD
-Indians	NORP	NNPS
-Indian	NORP	JJ
-___~__§)_	MONEY	CD
-2	CARDINAL	CD
-Indians	NORP	NNPS
-Fines	PERSON	NNP
-Indian	NORP	JJ
-Indians	NORP	NNPS
-_____o.--	MONEY	CD
-Fran	PERSON	NNP
-three	CARDINAL	CD
-1925	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-the year	DATE	DT,NN
-Indian	NORP	JJ
-Sanitarium	ORG	NN
-3	CARDINAL	CD
-Sanitarium	ORG	NNP
-Indians	NORP	NNPS
-Indian	NORP	JJ
-Indians	NORP	NNPS
-1:3nt	CARDINAL	CD
-1925	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-One hundred and thmtty cases	CARDINAL	CD,CD,CC,JJ,NNS
-Physician	ORG	NNP
-One	CARDINAL	CD
-two	CARDINAL	CD
-ten	CARDINAL	CD
-Navajo	NORP	JJ
-Thysiciah	PRODUCT	NNP
-Physician	NORP	NNP
-Head Matron	PERSON	NNP,NNP
-Clinesmith	PERSON	NNP
-4	CARDINAL	CD
-two	CARDINAL	CD
-one	CARDINAL	CD
-Indian	NORP	JJ
-Navajo	NORP	JJ
-Navajos	NORP	NNPS
-San Juan_Agency	GPE	NNP,NNP
-Navajo	NORP	NNP
-The Midwest Oil 30	ORG	DT,NNP,NNP,CD
-Farmington	GPE	NNP
-Navajos	ORG	NNP
-Mesa	ORG	NNP
-Navajos	ORG	NNP
-Navajo	NORP	NNP
-WhiCh	ORG	NNP
-Navajo	NORP	NNP
-200	CARDINAL	CD
-500	CARDINAL	CD
-the Navajo Tribe	ORG	DT,NNP,NNP
-San Juan	GPE	NNP,NNP
-Indians	NORP	NNPS
-12	CARDINAL	CD
-1	CARDINAL	LS
-2	CARDINAL	CD
-13	CARDINAL	CD
-13	CARDINAL	CD
-768	CARDINAL	CD
-half	CARDINAL	NN
-half	CARDINAL	NN
-San Juan	GPE	NNP,NNP
-Indians	NORP	NNPS
-Indians	NORP	NNPS
-State	ORG	NNP
-10	CARDINAL	CD
-English	LANGUAGE	JJ
-Indians	NORP	NNPS
-English	LANGUAGE	JJ
-San Juan Reservation	GPE	NNP,NNP,NNP
-3	CARDINAL	CD
-1	CARDINAL	LS
-2	CARDINAL	CD
-1	CARDINAL	CD
-Headgates -...	PERSON	NNPS,HYPH,NFP
-January	DATE	NNP
-February ________ 5	DATE	NNP,SYM,CD
-March ___________	DATE	NNP,NN
-1	CARDINAL	CD
-September	DATE	NNP
-3'	QUANTITY	CD,''
-October	DATE	NNP
-1	CARDINAL	CD
-November	DATE	NNP
-1	CARDINAL	CD
-December	DATE	NNP
-2	CARDINAL	CD
-Total for year	DATE	JJ,IN,NN
-San Juan Agency	ORG	NNP,NNP,NNP
-San Juan Boarding School	ORG	NNP,NNP,NNP,NNP
-the Academic Department	ORG	DT,NNP,NNP
-Altho	PERSON	NNP
-This year	DATE	DT,NN
-two	CARDINAL	CD
-One	CARDINAL	CD
-March	DATE	NNP
-5,505 feet	QUANTITY	CD,NNS
-4% to 6%	PERCENT	CD,NN,TO,CD,NN
-ten years	DATE	CD,NNS
-second	ORDINAL	JJ
-June	DATE	NNP
-3% to 4%	PERCENT	CD,NN,TO,CD,NN
-two	CARDINAL	CD
-San Juan School	ORG	NNP,NNP,NNP
-San Juan Agency	ORG	NNP,NNP,NNP
-2/53	CARDINAL	CD
-School	ORG	NNP
-to—day	DATE	NN
-a year ago	DATE	DT,NN,RB
-San Juan	GPE	NNP,NNP
-101 acres	QUANTITY	SP,CD,NNS
-25 acres	QUANTITY	CD,NNS
-11 acres	QUANTITY	CD,NNS
-79 acres	QUANTITY	CD,NNS
-50 acres	QUANTITY	CD,NNS
-the past two years	DATE	DT,JJ,CD,NNS
-This year	DATE	DT,NN
-the Mesa School	ORG	DT,NNP,NNP
-4,000	CARDINAL	CD
-half	CARDINAL	NN
-the Toadlena School	FAC	DT,NNP,NNP
-40 miles	QUANTITY	CD,NNS
-Shiprock	GPE	NNP
-eight miles	QUANTITY	CD,NNS
-18 acres	QUANTITY	CD,NNS
-three	CARDINAL	CD
-100 tons	QUANTITY	CD,NNS
-5	CARDINAL	CD
-Indians	NORP	NNPS
-the current fiscal year	DATE	DT,JJ,JJ,NN
-2	CARDINAL	CD
-Indians	NORP	NNPS
-Indians	NORP	NNPS
-2	CARDINAL	CD
-Indian	NORP	NNP
-3	CARDINAL	LS
-1	CARDINAL	LS
-3	CARDINAL	CD
-Indians	NORP	NNPS
-Juan Agency	PERSON	NNP,NNP
-Navajo	NORP	NNP
+year",DATE,DT SP NN
+W. H. HaShbarger,PERSON,NNP NNP NNP
+Indians,NORP,NNPS
+Indian,NORP,JJ
+___~__§)_,MONEY,CD
+Indians,NORP,NNPS
+Fines,PERSON,NNP
+Indian,NORP,JJ
+Indians,NORP,NNPS
+_____o.--,MONEY,CD
+Fran,PERSON,NNP
+1925,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
+the year,DATE,DT NN
+Indian,NORP,JJ
+Sanitarium,ORG,NN
+Sanitarium,ORG,NNP
+Indians,NORP,NNPS
+Indian,NORP,JJ
+Indians,NORP,NNPS
+1925,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
+Physician,ORG,NNP
+Navajo,NORP,JJ
+Thysiciah,PRODUCT,NNP
+Physician,NORP,NNP
+Head Matron,PERSON,NNP NNP
+Clinesmith,PERSON,NNP
+Indian,NORP,JJ
+Navajo,NORP,JJ
+Navajos,NORP,NNPS
+San Juan_Agency,GPE,NNP NNP
+Navajo,NORP,NNP
+The Midwest Oil 30,ORG,DT NNP NNP CD
+Farmington,GPE,NNP
+Navajos,ORG,NNP
+Mesa,ORG,NNP
+Navajos,ORG,NNP
+Navajo,NORP,NNP
+WhiCh,ORG,NNP
+Navajo,NORP,NNP
+the Navajo Tribe,ORG,DT NNP NNP
+San Juan,GPE,NNP NNP
+Indians,NORP,NNPS
+San Juan,GPE,NNP NNP
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+State,ORG,NNP
+English,LANGUAGE,JJ
+Indians,NORP,NNPS
+English,LANGUAGE,JJ
+San Juan Reservation,GPE,NNP NNP NNP
+Headgates -...,PERSON,NNPS HYPH NFP
+January,DATE,NNP
+February ________ 5,DATE,NNP SYM CD
+March ___________,DATE,NNP NN
+September,DATE,NNP
+October,DATE,NNP
+November,DATE,NNP
+December,DATE,NNP
+Total for year,DATE,JJ IN NN
+San Juan Agency,ORG,NNP NNP NNP
+San Juan Boarding School,ORG,NNP NNP NNP NNP
+the Academic Department,ORG,DT NNP NNP
+Altho,PERSON,NNP
+This year,DATE,DT NN
+March,DATE,NNP
+"5,505 feet",QUANTITY,CD NNS
+ten years,DATE,CD NNS
+June,DATE,NNP
+San Juan School,ORG,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
+School,ORG,NNP
+to—day,DATE,NN
+a year ago,DATE,DT NN RB
+San Juan,GPE,NNP NNP
+101 acres,QUANTITY,SP CD NNS
+25 acres,QUANTITY,CD NNS
+11 acres,QUANTITY,CD NNS
+79 acres,QUANTITY,CD NNS
+50 acres,QUANTITY,CD NNS
+the past two years,DATE,DT JJ CD NNS
+This year,DATE,DT NN
+the Mesa School,ORG,DT NNP NNP
+the Toadlena School,FAC,DT NNP NNP
+40 miles,QUANTITY,CD NNS
+Shiprock,GPE,NNP
+eight miles,QUANTITY,CD NNS
+18 acres,QUANTITY,CD NNS
+100 tons,QUANTITY,CD NNS
+Indians,NORP,NNPS
+the current fiscal year,DATE,DT JJ JJ NN
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+Indian,NORP,NNP
+Indians,NORP,NNPS
+Juan Agency,PERSON,NNP NNP
+Navajo,NORP,NNP
 "three
-years"	DATE	CD,SP,NNS
-Indians	NORP	NNPS
-San	NORP	NNP
-Sunday	DATE	NNP
-ten cents	MONEY	CD,NNS
-1925	DATE	CD
-San Juan Agency	ORG	NNP,NNP,NNP
-one hundred tons	QUANTITY	CD,CD,NNS
-more than one	CARDINAL	JJR,IN,CD
-four	CARDINAL	CD
-Toadlena	GPE	NNP
-Toadlena	FAC	NNP
-three	CARDINAL	CD
-all three	CARDINAL	DT,CD
-year	DATE	NN
-Frank I. Inloes	PERSON	NNP,NNP,NNP
+years",DATE,CD SP NNS
+Indians,NORP,NNPS
+San,NORP,NNP
+Sunday,DATE,NNP
+ten cents,MONEY,CD NNS
+1925,DATE,CD
+San Juan Agency,ORG,NNP NNP NNP
+one hundred tons,QUANTITY,CD CD NNS
+Toadlena,GPE,NNP
+Toadlena,FAC,NNP
+year,DATE,NN
+Frank I. Inloes,PERSON,NNP NNP NNP
 "the San Juan Boarding
-School"	ORG	DT,NNP,NNP,NNP,SP,NNP
-follows:-	PERSON	JJ
-a Public School	ORG	DT,NNP,NNP
-past year	DATE	SP,JJ,NN
-three	CARDINAL	CD
-Indian	NORP	JJ
-Indian	NORP	JJ
-San Juan	GPE	NNP,NNP
-one hundred and eighty	CARDINAL	CD,CD,CC,CD
-419-	CARDINAL	CD
-San Juan State	GPE	NNP,NNP,NNP
-14-00	DATE	CD,SYM,CD
-100	CARDINAL	CD
-400	CARDINAL	CD
-Three-fourths	CARDINAL	CD,HYPH,NNS
-the current fiscal year	DATE	DT,JJ,JJ,NN
-Indian	NORP	JJ
-5	CARDINAL	CD
-under 8 years old	DATE	IN,CD,NNS,JJ
-6	CARDINAL	CD
-72	DATE	CD
-San Juan Agency	ORG	NNP,NNP,NNP
-Indians	NORP	NNPS
-Havajos	PERSON	NNP
-Indians	NORP	NNPS
+School",ORG,DT NNP NNP NNP SP NNP
+follows:-,PERSON,JJ
+a Public School,ORG,DT NNP NNP
+past year,DATE,SP JJ NN
+Indian,NORP,JJ
+Indian,NORP,JJ
+San Juan,GPE,NNP NNP
+San Juan State,GPE,NNP NNP NNP
+14-00,DATE,CD SYM CD
+the current fiscal year,DATE,DT JJ JJ NN
+Indian,NORP,JJ
+under 8 years old,DATE,IN CD NNS JJ
+San Juan Agency,ORG,NNP NNP NNP
+Indians,NORP,NNPS
+Havajos,PERSON,NNP
+Indians,NORP,NNPS
 "James
-D. Kennedy"	PERSON	NNP,SP,NNP,NNP
-Havajos	PERSON	NNP
-the year	DATE	DT,NN
-the year 1924-25	DATE	DT,NN,CD,SYM,CD
-66	CARDINAL	CD
-51	CARDINAL	CD
-150	CARDINAL	CD
-Indian	NORP	JJ
-year to year	DATE	NN,IN,NN
-Indian	NORP	JJ
-many years	DATE	JJ,NNS
-zsghmxsa'wmmwxzflnmmw	CARDINAL	CD
-1925	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-9000	CARDINAL	CD
-532	CARDINAL	CD
-White Arsenic	ORG	NNP,NNP
-162	CARDINAL	CD
-Lemons	PERSON	NNP
-524	CARDINAL	CD
-About 150	CARDINAL	RB,CD
-Indians	NORP	NNPS
-Indians	NORP	NNPS
-Bruce M. Barnard	PERSON	NNP,NNP,NNP
-Ho	PERSON	NNP
-ten-acre	QUANTITY	CD,HYPH,NN
-150	CARDINAL	CD
-Four hundred	CARDINAL	CD,CD
-last fall	DATE	JJ,NN
-Indians	NORP	NNPS
-two hundred and seventy-nine	CARDINAL	SP,CD,CD,CC,CD,HYPH,CD
-one third	CARDINAL	CD,NN
-1925	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-Stockman Jensen	PERSON	NNP,NNP
-H. E. Pine	PERSON	NNP,NNP,NNP
-Aztec	NORP	NNP
-H. M. for the present	PERSON	NNP,NNP,IN,DT,JJ
-Particularyy	PERSON	NNP
-Jensen	PERSON	NNP
-December	DATE	NNP
-January	DATE	NNP
-the last day	DATE	DT,JJ,NN
-the year	DATE	DT,NN
-years	DATE	NNS
-years	DATE	NNS
-Indians	NORP	NNPS
-Hereford	GPE	NNP
-five and six year old	DATE	CD,CC,CD,NN,JJ
-fiscal year	DATE	JJ,NN
-San Juan	GPE	NNP,NNP
-Robert	PERSON	NNP
-Wilmer	PERSON	NNP
-Scott	PERSON	NNP
+D. Kennedy",PERSON,NNP SP NNP NNP
+Havajos,PERSON,NNP
+the year,DATE,DT NN
+the year 1924-25,DATE,DT NN CD SYM CD
+Indian,NORP,JJ
+year to year,DATE,NN IN NN
+Indian,NORP,JJ
+many years,DATE,JJ NNS
+1925,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
+White Arsenic,ORG,NNP NNP
+Lemons,PERSON,NNP
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+Bruce M. Barnard,PERSON,NNP NNP NNP
+ten-acre,QUANTITY,CD HYPH NN
+last fall,DATE,JJ NN
+Indians,NORP,NNPS
+1925,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
+Stockman Jensen,PERSON,NNP NNP
+H. E. Pine,PERSON,NNP NNP NNP
+Aztec,NORP,NNP
+H. M. for the present,PERSON,NNP NNP IN DT JJ
+Particularyy,PERSON,NNP
+Jensen,PERSON,NNP
+December,DATE,NNP
+January,DATE,NNP
+the last day,DATE,DT JJ NN
+the year,DATE,DT NN
+years,DATE,NNS
+years,DATE,NNS
+Indians,NORP,NNPS
+Hereford,GPE,NNP
+five and six year old,DATE,CD CC CD NN JJ
+fiscal year,DATE,JJ NN
+San Juan,GPE,NNP NNP
+Robert,PERSON,NNP
+Wilmer,PERSON,NNP
+Scott,PERSON,NNP
 "William "" ' "" ""
-Sells"	PERSON	NNP,``,'','','',SP,NNP
-Marshall	PERSON	NNP
-Singer	ORG	NNP
-"Lawrence "" "" """	PERSON	NNP,``,'',''
-Tsosi	ORG	NNP
+Sells",PERSON,NNP `` '' '' '' SP NNP
+Marshall,PERSON,NNP
+Singer,ORG,NNP
+"Lawrence "" "" """,PERSON,NNP `` '' ''
+Tsosi,ORG,NNP
 "Mark "" "" ""
-White"	PERSON	NNP,``,'','',SP,NNP
-Enderson	WORK_OF_ART	SP,NNP
-Atsonebah	PERSON	NNP
-Bitsui	PERSON	NNP
-Barberetcilly	PERSON	NNP
-Kathleen	PERSON	NNP
-Blyis	PERSON	NNP
-Pearl	LOC	NNP
-Charles	PERSON	NNP
-Ethel	PERSON	NNP
-Cudai	PERSON	NNP
+White",PERSON,NNP `` '' '' SP NNP
+Enderson,WORK_OF_ART,SP NNP
+Atsonebah,PERSON,NNP
+Bitsui,PERSON,NNP
+Barberetcilly,PERSON,NNP
+Kathleen,PERSON,NNP
+Blyis,PERSON,NNP
+Pearl,LOC,NNP
+Charles,PERSON,NNP
+Ethel,PERSON,NNP
+Cudai,PERSON,NNP
 "Laura "" - "" ""
-Daholtah"	PERSON	NNP,'',:,'','',SP,NNP
+Daholtah",PERSON,NNP '' : '' '' SP NNP
 "Katherine "" "" ""
-Dealbenally"	PERSON	NNP,``,'','',SP,NNP
-Flora	PERSON	NNP
-Deschene	PERSON	NNP
+Dealbenally",PERSON,NNP `` '' '' SP NNP
+Flora,PERSON,NNP
+Deschene,PERSON,NNP
 "Louise "" "" ""
-Dewdrop"	PERSON	NNP,``,'','',SP,NNP
-"Sarah "" "" """	PERSON	NNP,``,'',''
-Enospah	PERSON	NNP
+Dewdrop",PERSON,NNP `` '' '' SP NNP
+"Sarah "" "" """,PERSON,NNP `` '' ''
+Enospah,PERSON,NNP
 "Martha "" ~ "" ""
-Enospah"	PERSON	NNP,``,NNP,'',``,SP,NNP
-Minnie	PERSON	NNP
-Hototles	PERSON	NNP
-Lenao	PERSON	NNP
-Henty	PERSON	NNP
+Enospah",PERSON,NNP `` NNP '' `` SP NNP
+Minnie,PERSON,NNP
+Hototles,PERSON,NNP
+Lenao,PERSON,NNP
+Henty,PERSON,NNP
 "Mary L u "" "" ""
-Hobson"	PERSON	NNP,NNP,NNP,'','','',SP,NNP
-Amy 0	PERSON	NNP,CD
-Eva	PERSON	NNP
-Hutton	PERSON	NNP
-"Catherine "" ""' """	PERSON	NNP,``,``,'',''
-Joe,	WORK_OF_ART	SP,NNP,,
+Hobson",PERSON,NNP NNP NNP '' '' '' SP NNP
+Amy 0,PERSON,NNP CD
+Eva,PERSON,NNP
+Hutton,PERSON,NNP
+"Catherine "" ""' """,PERSON,NNP `` `` '' ''
+"Joe,",WORK_OF_ART,"SP NNP ,"
 "Maggie "" "" ""
-Kedah"	PERSON	NNP,``,'','',SP,NNP
-Jesse	PERSON	NNP
-Larson	PERSON	NNP
-"Thelma "" W """	PERSON	NNP,``,NNP,'',SP
-Lonehln	PERSON	NNP
-Winona	PERSON	NNP
-"Mable "" W _ """	PERSON	NNP,``,NNP,'',''
-Nakiyazzie	ORG	NNP
+Kedah",PERSON,NNP `` '' '' SP NNP
+Jesse,PERSON,NNP
+Larson,PERSON,NNP
+"Thelma "" W """,PERSON,NNP `` NNP '' SP
+Lonehln,PERSON,NNP
+Winona,PERSON,NNP
+"Mable "" W _ """,PERSON,NNP `` NNP '' ''
+Nakiyazzie,ORG,NNP
 "Doris "" "" ""
-Marohene"	PERSON	NNP,``,'','',SP,NNP
+Marohene",PERSON,NNP `` '' '' SP NNP
 "Gene "" "" ""
-Nakaibega"	PERSON	NNP,``,'','',SP,NNP
-Dorris	PERSON	NNP
-Armada	ORG	NNP
-Dora	PERSON	NNP
-Agnes	PERSON	NNP
-Todoohene	PERSON	NNP
-Lillie	PERSON	NNP
-Nellie	PERSON	NNP
-Wadsworth	PERSON	NNP
-Margarete	PERSON	NNP
-Wilson	ORG	NNP
+Nakaibega",PERSON,NNP `` '' '' SP NNP
+Dorris,PERSON,NNP
+Armada,ORG,NNP
+Dora,PERSON,NNP
+Agnes,PERSON,NNP
+Todoohene,PERSON,NNP
+Lillie,PERSON,NNP
+Nellie,PERSON,NNP
+Wadsworth,PERSON,NNP
+Margarete,PERSON,NNP
+Wilson,ORG,NNP
 "Janet "" "" ""
-Yellowhead"	PERSON	NNP,``,'','',SP,NNP
-Myra	PERSON	NNP
-Yethdexbah	PERSON	NNP
-Vera	PERSON	NNP
+Yellowhead",PERSON,NNP `` '' '' SP NNP
+Myra,PERSON,NNP
+Yethdexbah,PERSON,NNP
+Vera,PERSON,NNP
 "9
-Canada Mission School"	WORK_OF_ART	CD,SP,NNP,NNP,NNP
-Morris Navajo	PERSON	NNP,NNP
-San Juan	GPE	NNP,NNP
+Canada Mission School",WORK_OF_ART,CD SP NNP NNP NNP
+Morris Navajo,PERSON,NNP NNP
+San Juan,GPE,NNP NNP
 "Max "" "" ""
-King"	PERSON	NNP,``,'','',SP,NNP
-"Jerome "" "" """	PERSON	NNP,``,'','',SP
-9-3	TIME	CD,SYM,CD,SP
-1925	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-Navajos	NORP	NNPS
-one	CARDINAL	CD
-one	CARDINAL	CD
-at least another	DATE	RB,RBS,DT
-Indians	NORP	NNPS
-Navajo	NORP	NNP
-42 mileS.	PERCENT	CD,NN
-San Juan Agency	ORG	NNP,NNP,NNP
-Last year	DATE	JJ,NN
-two	CARDINAL	CD
-last year	DATE	JJ,NN
-first	ORDINAL	JJ
-third	ORDINAL	JJ
-Observer	ORG	NNP
-San Juan	GPE	NNP,NNP
-two	CARDINAL	CD
-two	CARDINAL	CD
-second	ORDINAL	NN
-Two	CARDINAL	CD
-Indian Office	ORG	JJ,NNP
-San Juan Agency	ORG	NNP,NNP,NNP
-Indians	NORP	NNPS
-NaVajo	ORG	NNP
-Navajo	NORP	NNP
-Navajos	NORP	NNPS
-the past year	DATE	DT,JJ,NN
-Indian	NORP	JJ
-Toggenberg	ORG	NNP
-the Toadlena Schbbl	FAC	DT,NNP,NNP
-Indians	NORP	NNPS
-Angora	NORP	NNP
-flin%m%figwfih%	PERCENT	CD,NN
-1925	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-Hogan	PERSON	NNP
-Last summer	DATE	JJ,NN
-two	CARDINAL	CD
-two	CARDINAL	CD
-one	CARDINAL	CD
-the Toadlena School	ORG	DT,NNP,NNP
-one	CARDINAL	CD
-100,000 feet	QUANTITY	CD,NNS
-February	DATE	NNP
-March	DATE	NNP
-Navajos	NORP	NNPS
-Indians	NORP	NNPS
-San Juan Agency	GPE	NNP,NNP,NNP
-One	CARDINAL	CD
-Toadlena	GPE	NNP
-Henry Pine	PERSON	NNP,NNP
-the Bureau of Animal Industry	ORG	DT,NNP,IN,NNP,NNP
-Agency Stockman	PERSON	NNP,NNP
-Jensen	PERSON	NNP
-last fall	DATE	JJ,NN
-November	DATE	NNP
-two	CARDINAL	CD
-November	DATE	NNP
-Stockman Jensen	PERSON	NNP,NNP
-Kreso	PERSON	NNP
-1	CARDINAL	CD
-this fall	DATE	DT,NN
-late years	DATE	JJ,NNS
-the Bureau of Animal	ORG	DT,NNP,IN,NNP
-San Juan	GPE	NNP,NNP
-two	CARDINAL	CD
-five	CARDINAL	CD
-two hundred	CARDINAL	CD,CD
-one	CARDINAL	CD
-First	ORDINAL	RB
-Second	ORDINAL	RB
-second	ORDINAL	JJ
-NaVajo	ORG	NNP
-Miss Gouberg	PERSON	NNP,NNP
-the past year	DATE	DT,JJ,NN
-ten	CARDINAL	CD
-the year	DATE	DT,NN
-Ignacio	ORG	NNP
-the Mesa School	ORG	DT,NNP,NNP
-Toadlena	GPE	NNP
-Fort Wingate	FAC	NNP,NNP
-Sheepmen	GPE	NNP
-San Juan	GPE	NNP,NNP
-Jurisdiction	GPE	NNP
-San Juan =	GPE	NNP,NNP,NNP
-State	ORG	NNP
-17	CARDINAL	CD
-Indians	NORP	NNPS
-Canton	GPE	NNP
-18	CARDINAL	CD
-School	ORG	NNP
-Sanatorium	GPE	NNP
-Brick	PERSON	NNP
-fiscal year	DATE	JJ,NN
-fiscal year	DATE	JJ,NN
-fiscal year	DATE	JJ,NN
-fiscal year	DATE	JJ,NN
-22	CARDINAL	CD
-8	CARDINAL	CD
-1925	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-Navajo	ORG	NNP
-last February	DATE	JJ,NNP
-about a week	DATE	RB,DT,NN
-Navajos	NORP	NNPS
-ten days	DATE	CD,NNS
-one	CARDINAL	CD
-15%	PERCENT	CD,NN
-Indian	NORP	JJ
-May	DATE	NNP
-Bruce M. Barnard	PERSON	NNP,NNP,NNP
-Indians	NORP	NNPS
-Agency	ORG	NNP
-Farmington	GPE	NNP
-Sophus Jansen	PERSON	NNP,NNP
-Agency Stockman	PERSON	NNP,NNP
-San Juan Agency	ORG	NNP,NNP,NNP
-at least	CARDINAL	RB,RBS
-One	CARDINAL	CD
-the year	DATE	DT,NN
-Two	CARDINAL	CD
-February	DATE	NNP
-IViarch	GPE	NNP
-5,505 feet	QUANTITY	CD,NNS
-4% to 6%	PERCENT	CD,NN,TO,CD,NN
-half	CARDINAL	NN
-approximately 60 acres	QUANTITY	RB,CD,NNS
-the past ten years	DATE	DT,JJ,CD,NNS
-second	ORDINAL	JJ
-June	PERSON	NNP
-first	ORDINAL	RB
-mid-June	DATE	JJ,SYM,NNP
-over 4,000 feet	QUANTITY	IN,CD,NNS
-5% to 4%	PERCENT	CD,NN,TO,CD,NN
-Navajo	NORP	NNP
-Ditch	PERSON	NNP
-2	CARDINAL	CD
-1	CARDINAL	CD
-two	CARDINAL	CD
-two	CARDINAL	CD
-School	ORG	NNP
-San Juan Agency	ORG	NNP,NNP,NNP
-four	CARDINAL	CD
-four hours	TIME	CD,NNS
-one	QUANTITY	CD,SP
-about three	CARDINAL	IN,CD
-a few years	DATE	DT,JJ,NNS
-Toadlena	GPE	NNP
-Navajos	NORP	NNPS
-winter	DATE	NN
-two	CARDINAL	CD
-Navajo	NORP	NNP
-Spring	ORG	NNP
-San Juan	GPE	NNP,NNP
-this coming winter	DATE	DT,VBG,NN
-last winter	DATE	JJ,NN
-1924	DATE	CD
-Havajos	ORG	NNP
-winter	DATE	NN
-1925	DATE	CD
-34:9	CARDINAL	PDT
-San Juan Reservation	GPE	NNP,NNP,NNP
-4.. Number of	ORG	CD,NFP,NN,IN
-6	CARDINAL	CD
-18 years	DATE	CD,NNS
-3	CARDINAL	CD
-2	CARDINAL	CD
-2	CARDINAL	CD
-3	CARDINAL	CD
-Climbs-Children	PERSON	NNP,HYPH,NNP
-Laser-w	PERSON	NNP,HYPH,NNP
-2	CARDINAL	CD
-5	CARDINAL	CD
-Indians	NORP	NNPS
-Indians	NORP	NNPS
-Apache	ORG	NNP
-San Juan	GPE	NNP,NNP
-Holstein	PERSON	NNP
-Holstein	PERSON	NNP
-Durhams	PERSON	NNP
-The Holstein Bullecalf	ORG	DT,NNP,NNP
-last year	DATE	JJ,NN
-Indian School	ORG	JJ,NNP
-Last year	DATE	JJ,NN
-the year just ending, while	DATE	DT,NN,RB,VBG,,,IN
-the Blanket Industry	ORG	DT,NNP,NNP
-1925	DATE	CD
-four	CARDINAL	CD
-a few years ago	DATE	DT,JJ,NNS,RB
-two	CARDINAL	CD
-One	CARDINAL	CD
-three	CARDINAL	CD
-Farmer	ORG	NNP
-the year	DATE	SP,DT,NN
-two	CARDINAL	CD
-one	CARDINAL	CD
-3	CARDINAL	CD
-7	CARDINAL	CD
-Indians	NORP	NNPS
-9	CARDINAL	LS
-10	CARDINAL	CD
-9	CARDINAL	CD
-Indians	NORP	NNPS
-number--	CARDINAL	CD
-11	CARDINAL	CD
-fiscal year	DATE	JJ,NN
-18	MONEY	CD,SP
-Females I. Total	PERSON	NNS,NNP,NNP
-fiscal year	DATE	JJ,NN
-59	CARDINAL	CD
-1 2	CARDINAL	CD,CD
-5	MONEY	CD
-Tix'rs'EJfi'rgfij'fijv	CARDINAL	NNP
-"V'yjA'fin)!fiwfigflafigfi'ifi3:1.""31p}{5135Tflfifiw'fl'fflgflgfimfiwgT)fiay'zgpjfi'p;n:nv"	LOC	NNP
-San Juan Agency	ORG	NNP,NNP,NNP
-75%	PERCENT	CD,NN
-Navajo	NORP	JJ
-Wool	PERSON	NNP
-Navajo	NORP	NNP
-Navajos	NORP	NNPS
-50¢	CARDINAL	CD
-Navajo	NORP	NNP
-25¢.	CARDINAL	CD
-four	CARDINAL	CD
-Bob Bekiss	PERSON	SP,NNP,NNP
-eight	QUANTITY	CD
-1924	DATE	CD
-The Bureau of Animal Industry	ORG	DT,NNP,IN,NNP,NNP
-Indians	NORP	NNPS
-one	CARDINAL	CD
-	CARDINAL	SP
-a few years ago	DATE	DT,JJ,NNS,IN
-Indians	NORP	NNPS
-San Juan	GPE	NNP,NNP
-Indian School	ORG	JJ,NNP
-San Juan Reservation	GPE	NNP,NNP,NNP
-3	CARDINAL	LS
-5	CARDINAL	CD
-Noncontract boarding-—	PERSON	NNP,NNP
-Nonreservation	GPE	NNP
-fiscal year	DATE	JJ,NN
-Anderson	PERSON	NNP
-Lois Navajo	PERSON	NNP,NNP
-San Juan	GPE	NNP,NNP
+King",PERSON,NNP `` '' '' SP NNP
+"Jerome "" "" """,PERSON,NNP `` '' '' SP
+1925,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
+Navajos,NORP,NNPS
+at least another,DATE,RB RBS DT
+Indians,NORP,NNPS
+Navajo,NORP,NNP
+San Juan Agency,ORG,NNP NNP NNP
+Last year,DATE,JJ NN
+last year,DATE,JJ NN
+Observer,ORG,NNP
+San Juan,GPE,NNP NNP
+Indian Office,ORG,JJ NNP
+San Juan Agency,ORG,NNP NNP NNP
+Indians,NORP,NNPS
+NaVajo,ORG,NNP
+Navajo,NORP,NNP
+Navajos,NORP,NNPS
+the past year,DATE,DT JJ NN
+Indian,NORP,JJ
+Toggenberg,ORG,NNP
+the Toadlena Schbbl,FAC,DT NNP NNP
+Indians,NORP,NNPS
+Angora,NORP,NNP
+1925,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
+Hogan,PERSON,NNP
+Last summer,DATE,JJ NN
+the Toadlena School,ORG,DT NNP NNP
+"100,000 feet",QUANTITY,CD NNS
+February,DATE,NNP
+March,DATE,NNP
+Navajos,NORP,NNPS
+Indians,NORP,NNPS
+San Juan Agency,GPE,NNP NNP NNP
+Toadlena,GPE,NNP
+Henry Pine,PERSON,NNP NNP
+the Bureau of Animal Industry,ORG,DT NNP IN NNP NNP
+Agency Stockman,PERSON,NNP NNP
+Jensen,PERSON,NNP
+last fall,DATE,JJ NN
+November,DATE,NNP
+November,DATE,NNP
+Stockman Jensen,PERSON,NNP NNP
+Kreso,PERSON,NNP
+this fall,DATE,DT NN
+late years,DATE,JJ NNS
+the Bureau of Animal,ORG,DT NNP IN NNP
+San Juan,GPE,NNP NNP
+NaVajo,ORG,NNP
+Miss Gouberg,PERSON,NNP NNP
+the past year,DATE,DT JJ NN
+the year,DATE,DT NN
+Ignacio,ORG,NNP
+the Mesa School,ORG,DT NNP NNP
+Toadlena,GPE,NNP
+Fort Wingate,FAC,NNP NNP
+Sheepmen,GPE,NNP
+San Juan,GPE,NNP NNP
+Jurisdiction,GPE,NNP
+San Juan =,GPE,NNP NNP NNP
+State,ORG,NNP
+Indians,NORP,NNPS
+Canton,GPE,NNP
+School,ORG,NNP
+Sanatorium,GPE,NNP
+Brick,PERSON,NNP
+fiscal year,DATE,JJ NN
+fiscal year,DATE,JJ NN
+fiscal year,DATE,JJ NN
+fiscal year,DATE,JJ NN
+1925,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
+Navajo,ORG,NNP
+last February,DATE,JJ NNP
+about a week,DATE,RB DT NN
+Navajos,NORP,NNPS
+ten days,DATE,CD NNS
+Indian,NORP,JJ
+May,DATE,NNP
+Bruce M. Barnard,PERSON,NNP NNP NNP
+Indians,NORP,NNPS
+Agency,ORG,NNP
+Farmington,GPE,NNP
+Sophus Jansen,PERSON,NNP NNP
+Agency Stockman,PERSON,NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
+the year,DATE,DT NN
+February,DATE,NNP
+IViarch,GPE,NNP
+"5,505 feet",QUANTITY,CD NNS
+approximately 60 acres,QUANTITY,RB CD NNS
+the past ten years,DATE,DT JJ CD NNS
+June,PERSON,NNP
+mid-June,DATE,JJ SYM NNP
+"over 4,000 feet",QUANTITY,IN CD NNS
+Navajo,NORP,NNP
+Ditch,PERSON,NNP
+School,ORG,NNP
+San Juan Agency,ORG,NNP NNP NNP
+one,QUANTITY,CD SP
+a few years,DATE,DT JJ NNS
+Toadlena,GPE,NNP
+Navajos,NORP,NNPS
+winter,DATE,NN
+Navajo,NORP,NNP
+Spring,ORG,NNP
+San Juan,GPE,NNP NNP
+this coming winter,DATE,DT VBG NN
+last winter,DATE,JJ NN
+1924,DATE,CD
+Havajos,ORG,NNP
+winter,DATE,NN
+1925,DATE,CD
+San Juan Reservation,GPE,NNP NNP NNP
+4.. Number of,ORG,CD NFP NN IN
+18 years,DATE,CD NNS
+Climbs-Children,PERSON,NNP HYPH NNP
+Laser-w,PERSON,NNP HYPH NNP
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+Apache,ORG,NNP
+San Juan,GPE,NNP NNP
+Holstein,PERSON,NNP
+Holstein,PERSON,NNP
+Durhams,PERSON,NNP
+The Holstein Bullecalf,ORG,DT NNP NNP
+last year,DATE,JJ NN
+Indian School,ORG,JJ NNP
+Last year,DATE,JJ NN
+"the year just ending, while",DATE,"DT NN RB VBG , IN"
+the Blanket Industry,ORG,DT NNP NNP
+1925,DATE,CD
+a few years ago,DATE,DT JJ NNS RB
+Farmer,ORG,NNP
+the year,DATE,SP DT NN
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+fiscal year,DATE,JJ NN
+Females I. Total,PERSON,NNS NNP NNP
+fiscal year,DATE,JJ NN
+"V'yjA'fin)!fiwfigflafigfi'ifi3:1.""31p}{5135Tflfifiw'fl'fflgflgfimfiwgT)fiay'zgpjfi'p;n:nv",LOC,NNP
+San Juan Agency,ORG,NNP NNP NNP
+Navajo,NORP,JJ
+Wool,PERSON,NNP
+Navajo,NORP,NNP
+Navajos,NORP,NNPS
+Navajo,NORP,NNP
+Bob Bekiss,PERSON,SP NNP NNP
+eight,QUANTITY,CD
+1924,DATE,CD
+The Bureau of Animal Industry,ORG,DT NNP IN NNP NNP
+Indians,NORP,NNPS
+a few years ago,DATE,DT JJ NNS IN
+Indians,NORP,NNPS
+San Juan,GPE,NNP NNP
+Indian School,ORG,JJ NNP
+San Juan Reservation,GPE,NNP NNP NNP
+Noncontract boarding-—,PERSON,NNP NNP
+Nonreservation,GPE,NNP
+fiscal year,DATE,JJ NN
+Anderson,PERSON,NNP
+Lois Navajo,PERSON,NNP NNP
+San Juan,GPE,NNP NNP
 "Nora "" '"" "" ""
-Duncan"	PERSON	NNP,``,'','','','',SP,NNP
-Deneteue	PERSON	NNP
-Amadore	PERSON	NNP
-Jackson	PERSON	NNP
-"Mary Louise """	PERSON	NNP,NNP,''
-Janis	PERSON	NNP
-Jane	PERSON	NNP
-Miller	WORK_OF_ART	SP,NNP
-Sannah	PERSON	NNP
-Cahe	PERSON	NNP
-Sebah	PERSON	NNP
-"Helen "" "" """	PERSON	NNP,``,'',''
-Tawk	PERSON	NNP
-Dorothy	PERSON	NNP
-Tilcheew Emma	WORK_OF_ART	SP,NNP,NNP
-Usohin	GPE	NNP
-Opal	GPE	NNP
-Uschin	GPE	NNP
+Duncan",PERSON,NNP `` '' '' '' '' SP NNP
+Deneteue,PERSON,NNP
+Amadore,PERSON,NNP
+Jackson,PERSON,NNP
+"Mary Louise """,PERSON,NNP NNP ''
+Janis,PERSON,NNP
+Jane,PERSON,NNP
+Miller,WORK_OF_ART,SP NNP
+Sannah,PERSON,NNP
+Cahe,PERSON,NNP
+Sebah,PERSON,NNP
+"Helen "" "" """,PERSON,NNP `` '' ''
+Tawk,PERSON,NNP
+Dorothy,PERSON,NNP
+Tilcheew Emma,WORK_OF_ART,SP NNP NNP
+Usohin,GPE,NNP
+Opal,GPE,NNP
+Uschin,GPE,NNP
 "Bessie "" "" ""
-Woods"	PERSON	NNP,``,'','',SP,NNP
-Irene	PERSON	NNP
-Yanapah	PERSON	NNP
-UlthneZ	PERSON	NNP
-Apache Indian School	ORG	NNP,NNP,NNP
-Asa Navajo	PERSON	NNP,NNP
-San Juan	GPE	NNP,NNP
-"Benjamin "" n"	PERSON	NNP,``,LS
-Benally	PERSON	NNP
-"Barnard "" Iv"	PERSON	NNP,``,NNP
-Benally	PERSON	NNP
-Walter	PERSON	NNP
-"Jim """	PERSON	NNP,''
-Leonard	PERSON	NNP
-"Scott """	PERSON	NNP,``
-"Dan "" II"	PERSON	NNP,``,NNP
-Burbank	GPE	NNP
-"Clifford """	PERSON	NNP,``
-Burbank	GPE	NNP
-11	CARDINAL	CD
-Clah	ORG	NNP
-"John "" n n"	PERSON	NNP,``,CC,XX
-Deschene	GPE	NNP
-Garfield	GPE	NNP
-Diewood	PERSON	NNP
-Woody	PERSON	NNP
-Eske	PERSON	NNP
-Byron	PERSON	NNP
-Guy	PERSON	NNP
-Donald	PERSON	NNP
-Kbeswood	PERSON	NNP
-"James "" n n"	PERSON	NNP,``,CC,XX
-Everett	PERSON	NNP
-"Eldon """	PERSON	NNP,``
-Te	PERSON	NNP
-Lansing	GPE	NNP
-"Herbert "" u"	PERSON	NNP,``,XX
-Myresea	PERSON	NNP
-"Clyde "" W W"	PERSON	NNP,``,NNP,NNP
-Moffitt	PERSON	NNP
-Thomae W	ORG	NNP,NNP
-Dennison	ORG	NNP
-"Eugene "" L a"	PERSON	NNP,``,NNP,NNP
-Leonard	PERSON	NNP,SP
-San Juan	GPE	NNP,NNP
-San Juan	GPE	NNP,NNP
-11	CARDINAL	CD
-Indian	NORP	JJ
-768	CARDINAL	CD
-Post Office	ORG	NNP,NNP
-Tribe	PERSON	NNP
-State	ORG	NNP
-1925	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-One	CARDINAL	CD
-Farmers	ORG	NNP
-Aneth	GPE	NNP
-Utah	GPE	NNP
-55 miles	QUANTITY	CD,NNS
-Agency Headquarters	WORK_OF_ART	NNP,NNPS
-Tocito	GPE	NNP
-29 miles	QUANTITY	CD,NNS
-Ford	ORG	NNP
-Aneth	ORG	NNP
-fourteen	CARDINAL	CD
-one	CARDINAL	CD
-32	CARDINAL	CD
-Toadlena	ORG	NNP
-the year	DATE	DT,NN
-Indians	NORP	NNPS
-this year	DATE	DT,NN
-Indians	NORP	NNPS
-Juan Indian School	ORG	NNP,NNP,NNP
-Distributiou	PERSON	NNP
-2	CARDINAL	CD
-3	CARDINAL	CD
-Teadl—em-«éo $_-__1.00,00	MONEY	$,$,CD
-21,000.09	MONEY	CD
-1925	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-fiscal year	DATE	SP,JJ,NN
-Koho	PERSON	NNP
-James Nave o	PERSON	NNP,NNP,NNP
-Keetso	PERSON	NNP
-3	CARDINAL	CD
-Hubert fl	PERSON	NNP,NNP
-"Harvey "" n"	PERSON	NNP,``,CC
-Mikeboy	PERSON	NNP
-"Richard ""h n"	PERSON	NNP,``,NN,RB
-"Louis """	PERSON	NNP,``
-Natonibega	PERSON	NNP
-Peter	PERSON	NNP
-Nataebega	PERSON	NNP
-Carl	PERSON	NNP
-Natoniahahlozbega,01yde W	ORG	NNP,NNP
-Shoemaker	PERSON	NNP
-Wallace	PERSON	NNP
-Smith	PERSON	NNP
-Frank	PERSON	NNP
-Yazzie	PERSON	NNP
-Freed	PERSON	NNP
-9	CARDINAL	CD
-Yazzie	ORG	NNP
-"Harry "" n"	PERSON	NNP,``,CC
-Yazzie	PERSON	NNP
-Roy	PERSON	NNP
-Denetolaw	PERSON	NNP
-Theodore W	PERSON	NNP,NNP
-Belonebega	PERSON	NNP
-Baehabage	PERSON	NNP
-Ruby	PRODUCT	NNP
-Begay	PERSON	NNP
-Bessie	PERSON	NNP
-Begay	PERSON	NNP
-Elsie	PERSON	NNP
-Benai	PERSON	NNP
-Bertha	PERSON	NNP
-Benair	PERSON	NNP
-Grace	PERSON	NNP
-Curley	ORG	NNP
-"Louise """	PERSON	NNP,``
-Dixon	PERSON	NNP
-"Jesse """	PERSON	NNP,``
-Al	PERSON	NNP
-Desea	PERSON	NNP
-"May """	DATE	NNP,''
-Frank	PERSON	NNP
-Ruth	PERSON	NNP
-Nospah	ORG	NNP
-Hashebegay	PERSON	NNP
-Hopahanteoei	PERSON	NNP
-Lucy	PERSON	NNP
-"Mary "" I!"	PERSON	NNP,``,PRP,.
-Illthypah	GPE	NNP
-Ada	GPE	NNP
-Blanche	ORG	NNP
-Keenapah	PERSON	NNP
-"Ellen "" u"	PERSON	NNP,``,NN
-Kbenapah	PERSON	NNP
-Nona	PERSON	NNP
-Kattie	PERSON	NNP
+Woods",PERSON,NNP `` '' '' SP NNP
+Irene,PERSON,NNP
+Yanapah,PERSON,NNP
+UlthneZ,PERSON,NNP
+Apache Indian School,ORG,NNP NNP NNP
+Asa Navajo,PERSON,NNP NNP
+San Juan,GPE,NNP NNP
+"Benjamin "" n",PERSON,NNP `` LS
+Benally,PERSON,NNP
+"Barnard "" Iv",PERSON,NNP `` NNP
+Benally,PERSON,NNP
+Walter,PERSON,NNP
+"Jim """,PERSON,NNP ''
+Leonard,PERSON,NNP
+"Scott """,PERSON,NNP ``
+"Dan "" II",PERSON,NNP `` NNP
+Burbank,GPE,NNP
+"Clifford """,PERSON,NNP ``
+Burbank,GPE,NNP
+Clah,ORG,NNP
+"John "" n n",PERSON,NNP `` CC XX
+Deschene,GPE,NNP
+Garfield,GPE,NNP
+Diewood,PERSON,NNP
+Woody,PERSON,NNP
+Eske,PERSON,NNP
+Byron,PERSON,NNP
+Guy,PERSON,NNP
+Donald,PERSON,NNP
+Kbeswood,PERSON,NNP
+"James "" n n",PERSON,NNP `` CC XX
+Everett,PERSON,NNP
+"Eldon """,PERSON,NNP ``
+Lansing,GPE,NNP
+"Herbert "" u",PERSON,NNP `` XX
+Myresea,PERSON,NNP
+"Clyde "" W W",PERSON,NNP `` NNP NNP
+Moffitt,PERSON,NNP
+Thomae W,ORG,NNP NNP
+Dennison,ORG,NNP
+"Eugene "" L a",PERSON,NNP `` NNP NNP
+Leonard,PERSON,NNP SP
+San Juan,GPE,NNP NNP
+San Juan,GPE,NNP NNP
+Indian,NORP,JJ
+Post Office,ORG,NNP NNP
+Tribe,PERSON,NNP
+State,ORG,NNP
+1925,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
+Farmers,ORG,NNP
+Aneth,GPE,NNP
+Utah,GPE,NNP
+55 miles,QUANTITY,CD NNS
+Agency Headquarters,WORK_OF_ART,NNP NNPS
+Tocito,GPE,NNP
+29 miles,QUANTITY,CD NNS
+Ford,ORG,NNP
+Aneth,ORG,NNP
+Toadlena,ORG,NNP
+the year,DATE,DT NN
+Indians,NORP,NNPS
+this year,DATE,DT NN
+Indians,NORP,NNPS
+Juan Indian School,ORG,NNP NNP NNP
+Distributiou,PERSON,NNP
+"Teadl—em-«éo $_-__1.00,00",MONEY,$ $ CD
+"21,000.09",MONEY,CD
+1925,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
+fiscal year,DATE,SP JJ NN
+Koho,PERSON,NNP
+James Nave o,PERSON,NNP NNP NNP
+Keetso,PERSON,NNP
+Hubert fl,PERSON,NNP NNP
+"Harvey "" n",PERSON,NNP `` CC
+Mikeboy,PERSON,NNP
+"Richard ""h n",PERSON,NNP `` NN RB
+"Louis """,PERSON,NNP ``
+Natonibega,PERSON,NNP
+Peter,PERSON,NNP
+Nataebega,PERSON,NNP
+Carl,PERSON,NNP
+"Natoniahahlozbega,01yde W",ORG,NNP NNP
+Shoemaker,PERSON,NNP
+Wallace,PERSON,NNP
+Smith,PERSON,NNP
+Frank,PERSON,NNP
+Yazzie,PERSON,NNP
+Freed,PERSON,NNP
+Yazzie,ORG,NNP
+"Harry "" n",PERSON,NNP `` CC
+Yazzie,PERSON,NNP
+Roy,PERSON,NNP
+Denetolaw,PERSON,NNP
+Theodore W,PERSON,NNP NNP
+Belonebega,PERSON,NNP
+Baehabage,PERSON,NNP
+Ruby,PRODUCT,NNP
+Begay,PERSON,NNP
+Bessie,PERSON,NNP
+Begay,PERSON,NNP
+Elsie,PERSON,NNP
+Benai,PERSON,NNP
+Bertha,PERSON,NNP
+Benair,PERSON,NNP
+Grace,PERSON,NNP
+Curley,ORG,NNP
+"Louise """,PERSON,NNP ``
+Dixon,PERSON,NNP
+"Jesse """,PERSON,NNP ``
+Desea,PERSON,NNP
+"May """,DATE,NNP ''
+Frank,PERSON,NNP
+Ruth,PERSON,NNP
+Nospah,ORG,NNP
+Hashebegay,PERSON,NNP
+Hopahanteoei,PERSON,NNP
+Lucy,PERSON,NNP
+"Mary "" I!",PERSON,NNP `` PRP .
+Illthypah,GPE,NNP
+Ada,GPE,NNP
+Blanche,ORG,NNP
+Keenapah,PERSON,NNP
+"Ellen "" u",PERSON,NNP `` NN
+Kbenapah,PERSON,NNP
+Nona,PERSON,NNP
+Kattie,PERSON,NNP
 "Rita "" n ""
-Manulito"	PERSON	NNP,``,CC,'',SP,NNP
-Harriett	ORG	NNP
-Mable	FAC	NNP
-Mullett	PERSON	NNP
-Mable	PERSON	NNP
-Nakadine	PERSON	NNP
-"Nellie "" l"	PERSON	NNP,``,NN
-San Juan	GPE	NNP,NNP
-Opal u	GPE	NNP,NNP
-Beulah	PERSON	NNP
-Carrie	PERSON	NNP
-Kate	PERSON	NNP
-6	CARDINAL	CD
-San Juan	GPE	NNP,NNP
-1	CARDINAL	CD
-23	CARDINAL	CD
-1	CARDINAL	CD
-Indians	NORP	NNPS
-48	CARDINAL	CD
-Indians	NORP	NNPS
-5	CARDINAL	CD
-2	CARDINAL	CD
-3	CARDINAL	CD
-4	CARDINAL	CD
-5	CARDINAL	CD
-Indian	NORP	JJ
-Value of	ORG	NN,IN
-Indian	NORP	JJ
-_____________	MONEY	NFP
-Indians	NORP	NNPS
-Indians	NORP	NNPS
-Unallotted Indians	NORP	NNP,NNPS
-Indians	NORP	NNPS
-Indians	NORP	NNPS
-Unallotted Indians	NORP	NNP,NNPS
-27	CARDINAL	CD
-0	CARDINAL	CD
-Juan Agency	PERSON	NNP,NNP
-Indian	NORP	JJ
-Affiairs	PERSON	NNP
-Nonreservation Schools	GPE	NNP,NNP
-fiscal year	DATE	JJ,NN
-Theodore	PERSON	NNP
-Edna Navajo Gan Juan	PERSON	NNP,NNP,NNP,NNP
-"Alma "" "" """	PERSON	NNP,``,'',''
-Yazzie	PERSON	NNP
-Yazzie	PERSON	NNP
+Manulito",PERSON,NNP `` CC '' SP NNP
+Harriett,ORG,NNP
+Mable,FAC,NNP
+Mullett,PERSON,NNP
+Mable,PERSON,NNP
+Nakadine,PERSON,NNP
+"Nellie "" l",PERSON,NNP `` NN
+San Juan,GPE,NNP NNP
+Opal u,GPE,NNP NNP
+Beulah,PERSON,NNP
+Carrie,PERSON,NNP
+Kate,PERSON,NNP
+San Juan,GPE,NNP NNP
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+Indian,NORP,JJ
+Value of,ORG,NN IN
+Indian,NORP,JJ
+_____________,MONEY,NFP
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+Unallotted Indians,NORP,NNP NNPS
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+Unallotted Indians,NORP,NNP NNPS
+Juan Agency,PERSON,NNP NNP
+Indian,NORP,JJ
+Affiairs,PERSON,NNP
+Nonreservation Schools,GPE,NNP NNP
+fiscal year,DATE,JJ NN
+Theodore,PERSON,NNP
+Edna Navajo Gan Juan,PERSON,NNP NNP NNP NNP
+"Alma "" "" """,PERSON,NNP `` '' ''
+Yazzie,PERSON,NNP
+Yazzie,PERSON,NNP
 "Lucille "" "" ""
-Yazzie"	PERSON	NNP,``,'','',SP,NNP
+Yazzie",PERSON,NNP `` '' '' SP NNP
 "Harriett "" "" ""
 
-Sherman Institute—Riverside"	PERSON	NNP,``,'','',SP,NNP,NNP
-California	GPE	NNP
-Arthur	PERSON	NNP
-Harry Navajo ' San '	PERSON	NNP,NNP,``,NNP,''
+Sherman Institute—Riverside",PERSON,NNP `` '' '' SP NNP NNP
+California,GPE,NNP
+Arthur,PERSON,NNP
+Harry Navajo ' San ',PERSON,NNP NNP `` NNP ''
 "Harry "" "" ' ""
-Ball George"	PERSON	NNP,``,``,'','',SP,NNP,NNP
-Barton	PERSON	NNP
-Stewart	PERSON	NNP
-Begaym Frances '	PERSON	NNP,NNP,POS
-Begay	PERSON	NNP
-Sam Capitan	PERSON	NNP,NNP
-"Homer "" '"	PERSON	NNP,``,''
-3	CARDINAL	CD
-Benally	PERSON	NNP
+Ball George",PERSON,NNP `` `` '' '' SP NNP NNP
+Barton,PERSON,NNP
+Stewart,PERSON,NNP
+Begaym Frances ',PERSON,NNP NNP POS
+Begay,PERSON,NNP
+Sam Capitan,PERSON,NNP NNP
+"Homer "" '",PERSON,NNP `` ''
+Benally,PERSON,NNP
 "Edward "" "" ""
-Charles"	PERSON	NNP,``,'','',SP,NNP
-Richard	PERSON	NNP
-Charley	PERSON	NNP
-Richard	PERSON	NNP
-Charley	PERSON	NNP
-Schuler	PERSON	NNP
-Chase	ORG	NNP
+Charles",PERSON,NNP `` '' '' SP NNP
+Richard,PERSON,NNP
+Charley,PERSON,NNP
+Richard,PERSON,NNP
+Charley,PERSON,NNP
+Schuler,PERSON,NNP
+Chase,ORG,NNP
 "Leonard "" "" ""
-Coggeehall"	PERSON	NNP,``,'','',SP,NNP
+Coggeehall",PERSON,NNP `` '' '' SP NNP
 "Harold "" "" ""
-Craig"	PERSON	NNP,``,'','',SP,NNP
-"Hugh """	PERSON	NNP,''
-"Vincent "" "" """	PERSON	NNP,``,'',''
-Dugahe	WORK_OF_ART	SP,NNP
-Dugai	PERSON	NNP
+Craig",PERSON,NNP `` '' '' SP NNP
+"Hugh """,PERSON,NNP ''
+"Vincent "" "" """,PERSON,NNP `` '' ''
+Dugahe,WORK_OF_ART,SP NNP
+Dugai,PERSON,NNP
 "Calvin "" "" ""
-Deschene"	PERSON	NNP,``,'','',SP,NNP
+Deschene",PERSON,NNP `` '' '' SP NNP
 "Fred "" _ "" ""
-Fulton"	PERSON	NNP,``,:,'',``,SP,NNP
+Fulton",PERSON,NNP `` : '' `` SP NNP
 "Robert "" "" ""
-Gouldm Ghee '"	PERSON	NNP,'','',``,SP,NNP,NNP,POS
+Gouldm Ghee '",PERSON,NNP '' '' `` SP NNP NNP POS
 "Samuel "" "" ""
-Hadethechattle"	PERSON	NNP,``,'','',SP,NNP
+Hadethechattle",PERSON,NNP `` '' '' SP NNP
 "George "" "" ""
-Hobson"	PERSON	NNP,``,'','',SP,NNP
+Hobson",PERSON,NNP `` '' '' SP NNP
 "Richard "" "" ""
-Hoeka"	PERSON	NNP,``,'','',SP,NNP
+Hoeka",PERSON,NNP `` '' '' SP NNP
 "Julia "" "" ""
-Johson"	PERSON	NNP,``,'','',SP,NNP
-Jordon	PERSON	NNP
-Lewis	PERSON	NNP
-Lambert	PERSON	NNP
+Johson",PERSON,NNP `` '' '' SP NNP
+Jordon,PERSON,NNP
+Lewis,PERSON,NNP
+Lambert,PERSON,NNP
 "Gerald "" ' "" ""
-mcKenzie"	PERSON	NNP,``,'','','',SP,NN
-Edwin	PERSON	NNP
-Manulito	PERSON	NNP
-"James "" "" W"	PERSON	NNP,'',``,NNP,SP
-McDonald	ORG	NNP
+mcKenzie",PERSON,NNP `` '' '' '' SP NN
+Edwin,PERSON,NNP
+Manulito,PERSON,NNP
+"James "" "" W",PERSON,NNP '' `` NNP SP
+McDonald,ORG,NNP
 "William "" - "" ""
-Nahtz"	PERSON	NNP,'',:,'','',SP,NNP
-Frank	PERSON	NNP
-Page	WORK_OF_ART	SP,NN
-Dana	PERSON	NNP
-Patrick	PERSON	NNP
-"Amos W "" """	PERSON	NNP,NNP,'',''
-Patrick	PERSON	NNP
+Nahtz",PERSON,NNP '' : '' '' SP NNP
+Frank,PERSON,NNP
+Page,WORK_OF_ART,SP NN
+Dana,PERSON,NNP
+Patrick,PERSON,NNP
+"Amos W "" """,PERSON,NNP NNP '' ''
+Patrick,PERSON,NNP
 "Clyde "" "" ""
-Partick"	PERSON	NNP,``,'','',SP,NNP
-Joe	PERSON	NNP
-Indians	NORP	NNPS
-2	CARDINAL	CD
-4	CARDINAL	CD
-5	CARDINAL	CD
-6	CARDINAL	CD
-39	DATE	CD
-Indians	NORP	NNPS
-Male s	WORK_OF_ART	SP,NN,NN
-2	CARDINAL	CD
-3	CARDINAL	CD
-4	CARDINAL	CD
-5	CARDINAL	CD
-6	CARDINAL	CD
-Mentally	NORP	RB
-40	CARDINAL	CD
-Indians	NORP	NNPS
-2	CARDINAL	CD
-5	CARDINAL	CD
-4	CARDINAL	CD
-Indians	NORP	NNPS
-2	CARDINAL	CD
-3	CARDINAL	CD
-4	CARDINAL	CD
-5	CARDINAL	CD
-6	CARDINAL	CD
-San Juan	GPE	NNP,NNP
-39	DATE	CD
-June 80	DATE	NNP,CD
-Indians	NORP	NNPS
-Indians	NORP	NNPS
-51	CARDINAL	CD
-3	CARDINAL	CD
-4	CARDINAL	CD
-5	CARDINAL	CD
-6	CARDINAL	CD
-0	MONEY	NFP
-200	CARDINAL	CD
-99.99 - 00	PERCENT	CD,SYM,CD
-Weber	PERSON	NNP
-622	CARDINAL	CD
-Stallions	PERSON	NNS
-3.7300	CARDINAL	CD
-3	CARDINAL	LS
-4	CARDINAL	LS
-Indians	NORP	NNPS
-33	CARDINAL	CD
-Indians	NORP	NNPS
-Indians	NORP	NNPS
-Indian	NORP	JJ
-33	CARDINAL	CD
-Indians	NORP	NNPS
-Indians	NORP	NNPS
-Indian	NORP	JJ
-Totallof Nos	PERSON	NNP,NNP
-33	CARDINAL	CD
-Nos	PERSON	NNP
-Mentally	NORP	RB
-Indians	NORP	NNPS
-2	CARDINAL	LS
-3	CARDINAL	CD
-16	CARDINAL	CD
-Indian School	ORG	JJ,NNP
-1	CARDINAL	CD
-1	CARDINAL	LS
-2	CARDINAL	LS
-4	CARDINAL	LS
-5	CARDINAL	CD
-6	CARDINAL	CD
-Authorityfor Organization	ORG	NNP,NNP
-5	CARDINAL	CD
-2	CARDINAL	LS
-0	CARDINAL	CD
-3	CARDINAL	CD
-4	CARDINAL	CD
-1%	PERCENT	CD,NN
-Nonreservation	GPE	NNP
-fiscal year	DATE	JJ,NN
-Navajo	NORP	NNP
-Juan	NORP	NNP
-"Harrison """	PERSON	NNP,``
-Taylor	PERSON	NNP
-Ford	ORG	NNP
-"George "" u """	PERSON	NNP,``,NN,''
-Taswood	ORG	NNP
-"Andrew V "" u"	PERSON	NNP,NNP,'',NN
-"Edward "" n"	PERSON	NNP,``,CC
-John	PERSON	NNP
-"Harry "" n """	PERSON	NNP,``,CC,''
-Yanseh	GPE	NNP
-Carl	PERSON	NNP
-Yanseh	PERSON	NNP
-Otto	PERSON	NNP
-Wazzio	PERSON	NNP
-"Henry "" u"	PERSON	NNP,``,PRP
-Clark	PERSON	NNP
-Sandavol	PERSON	NNP
-Kbnepah	PERSON	NNP
-9-5	TIME	CD,SYM,CD,SP
-San Juan	GPE	NNP,NNP
-4	CARDINAL	CD
-Reservation	LAW	NNP,SP
-21	CARDINAL	CD
-Indians	NORP	NNPS
-2	CARDINAL	CD
-3	CARDINAL	CD
-2	CARDINAL	CD
-1	CARDINAL	CD
-2	CARDINAL	CD
-Indians	NORP	NNPS
-1	CARDINAL	LS
-Quantity	PERSON	NNP
-.90 000.00	TIME	CD,CD
-San Juan	GPE	NNP,NNP
-11	CARDINAL	CD
-11 1	CARDINAL	CD,CD
-110015 Location	WORK_OF_ART	CD,NN
-Indian	NORP	JJ
-Makethis	ORG	NNP
-Indians	NORP	NNPS
-2	CARDINAL	CD
-U. S.	PERSON	NNP,NNP,SP
-Indian	NORP	JJ
-Indian	NORP	JJ
-San Juan Indian	GPE	NNP,NNP,NNP
-8	CARDINAL	CD
-91	DATE	CD
-3	CARDINAL	CD
-Indians	NORP	NNPS
-B. M. '-______-_	PERSON	NNP,NNP,'',:
-5	CARDINAL	CD
-1	CARDINAL	CD
-3	CARDINAL	CD
-9	CARDINAL	CD
-12009	DATE	CD
-10	CARDINAL	CD
-Juan Indian School	ORG	NNP,NNP,NNP
-1	CARDINAL	CD
-Reservationr	PERSON	NNP
-2	CARDINAL	LS
-3	CARDINAL	CD
-13	CARDINAL	CD
-The Camp School Unit of	ORG	DT,NNP,NNP,NNP,IN
-the Mesa School	ORG	DT,NNP,NNP
-late June 1925	DATE	JJ,NNP,CD
-San Juan	GPE	NNP,NNP
-the summer	DATE	DT,NN
-Walker	PERSON	NNP
-Elliott	PERSON	NNP
-Elliott	PERSON	NNP
-Sundays	DATE	NNPS
-Shiprock	ORG	NNP
-two	CARDINAL	CD
-three	CARDINAL	CD
-two	CARDINAL	CD
-7	CARDINAL	CD
-San Juan	GPE	NNP,NNP
-District Farmers	ORG	NNP,NNP
-one	CARDINAL	CD
-Stockman	PERSON	NNP
-one	CARDINAL	CD
-two	CARDINAL	CD
-Lilcewise	PERSON	NNP
-two	CARDINAL	CD
-Toadlena forty miles	QUANTITY	NNP,CD,NNS
-Shiprock	GPE	NNP
-Navajo	NORP	NNP
-one	CARDINAL	CD
-the year	DATE	DT,NN
-two	CARDINAL	CD
-Yabaitsi	ORG	NNP
-the winter months	DATE	DT,NN,NNS
-500	MONEY	CD
-two	CARDINAL	CD
-the year	DATE	DT,NN
-2	CARDINAL	CD
-14	CARDINAL	CD
-3	CARDINAL	CD
-3 Acreage.-	MONEY	CD,NN
-_§23—4—9—!990'00	MONEY	CD
-5	CARDINAL	CD
-1	CARDINAL	CD
-1	CARDINAL	CD
-2	CARDINAL	CD
-5	CARDINAL	CD
-15	QUANTITY	CD
-E§Q_____ Indian School	ORG	NNP,JJ,NNP
-16	CARDINAL	CD
-3	CARDINAL	CD
-4	CARDINAL	CD
-Indian	NORP	JJ
-3	CARDINAL	CD
-Miles	PERSON	NNP
-00511 ____________________	MONEY	CD,NFP
-$.___.Q_..'_ $	MONEY	$,CD,CD
---.Q.—..-—--	MONEY	CD
-0061	DATE	CD
-Miles	PERSON	NNP
-3%	PERCENT	CD,NN
-3	CARDINAL	CD
-5	CARDINAL	CD
-4	CARDINAL	CD
-__1.QQ_-	MONEY	CD
-1926	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-Indian	NORP	JJ
-San Juan	GPE	NNP,NNP
-Toadlena	GPE	NNP
-200	QUANTITY	CD
-Missionary	PERSON	NNP
-nine	CARDINAL	CD
-Indian	NORP	JJ
-the past year	DATE	DT,JJ,NN
-Indians	NORP	NNPS
-Toadlena	GPE	NNP
-two	CARDINAL	CD
-Indian	NORP	JJ
-Shiprock	GPE	NNP
-Indian	NORP	JJ
-two	CARDINAL	CD
+Partick",PERSON,NNP `` '' '' SP NNP
+Joe,PERSON,NNP
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+Male s,WORK_OF_ART,SP NN NN
+Mentally,NORP,RB
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+San Juan,GPE,NNP NNP
+June 80,DATE,NNP CD
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+Weber,PERSON,NNP
+Stallions,PERSON,NNS
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+Indian,NORP,JJ
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+Indian,NORP,JJ
+Totallof Nos,PERSON,NNP NNP
+Nos,PERSON,NNP
+Mentally,NORP,RB
+Indians,NORP,NNPS
+Indian School,ORG,JJ NNP
+Authorityfor Organization,ORG,NNP NNP
+Nonreservation,GPE,NNP
+fiscal year,DATE,JJ NN
+Navajo,NORP,NNP
+Juan,NORP,NNP
+"Harrison """,PERSON,NNP ``
+Taylor,PERSON,NNP
+Ford,ORG,NNP
+"George "" u """,PERSON,NNP `` NN ''
+Taswood,ORG,NNP
+"Andrew V "" u",PERSON,NNP NNP '' NN
+"Edward "" n",PERSON,NNP `` CC
+John,PERSON,NNP
+"Harry "" n """,PERSON,NNP `` CC ''
+Yanseh,GPE,NNP
+Carl,PERSON,NNP
+Yanseh,PERSON,NNP
+Otto,PERSON,NNP
+Wazzio,PERSON,NNP
+"Henry "" u",PERSON,NNP `` PRP
+Clark,PERSON,NNP
+Sandavol,PERSON,NNP
+Kbnepah,PERSON,NNP
+San Juan,GPE,NNP NNP
+Reservation,LAW,NNP SP
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+Quantity,PERSON,NNP
+San Juan,GPE,NNP NNP
+110015 Location,WORK_OF_ART,CD NN
+Indian,NORP,JJ
+Makethis,ORG,NNP
+Indians,NORP,NNPS
+U. S.,PERSON,NNP NNP SP
+Indian,NORP,JJ
+Indian,NORP,JJ
+San Juan Indian,GPE,NNP NNP NNP
+Indians,NORP,NNPS
+B. M. '-______-_,PERSON,NNP NNP '' :
+12009,DATE,CD
+Juan Indian School,ORG,NNP NNP NNP
+Reservationr,PERSON,NNP
+The Camp School Unit of,ORG,DT NNP NNP NNP IN
+the Mesa School,ORG,DT NNP NNP
+late June 1925,DATE,JJ NNP CD
+San Juan,GPE,NNP NNP
+the summer,DATE,DT NN
+Walker,PERSON,NNP
+Elliott,PERSON,NNP
+Elliott,PERSON,NNP
+Sundays,DATE,NNPS
+Shiprock,ORG,NNP
+San Juan,GPE,NNP NNP
+District Farmers,ORG,NNP NNP
+Stockman,PERSON,NNP
+Lilcewise,PERSON,NNP
+Toadlena forty miles,QUANTITY,NNP CD NNS
+Shiprock,GPE,NNP
+Navajo,NORP,NNP
+the year,DATE,DT NN
+Yabaitsi,ORG,NNP
+the winter months,DATE,DT NN NNS
+500,MONEY,CD
+the year,DATE,DT NN
+3 Acreage.-,MONEY,CD NN
+_§23—4—9—!990'00,MONEY,CD
+E§Q_____ Indian School,ORG,NNP JJ NNP
+Indian,NORP,JJ
+Miles,PERSON,NNP
+00511 ____________________,MONEY,CD NFP
+$.___.Q_..'_ $,MONEY,$ CD CD
+--.Q.—..-—--,MONEY,CD
+0061,DATE,CD
+Miles,PERSON,NNP
+__1.QQ_-,MONEY,CD
+1926,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
+Indian,NORP,JJ
+San Juan,GPE,NNP NNP
+Toadlena,GPE,NNP
+200,QUANTITY,CD
+Missionary,PERSON,NNP
+Indian,NORP,JJ
+the past year,DATE,DT JJ NN
+Indians,NORP,NNPS
+Toadlena,GPE,NNP
+Indian,NORP,JJ
+Shiprock,GPE,NNP
+Indian,NORP,JJ
 "last
-year"	DATE	RB,SP,NN
-sixth	ORDINAL	JJ
-Sherman	PERSON	NNP
-last fall	DATE	JJ,NN
-the summer months	DATE	DT,NN,NNS
-Colorado	GPE	NNP
-first	ORDINAL	RB
-Indian	NORP	JJ
-WhiCh	GPE	NNP
-seventh	ORDINAL	JJ
-Farmington	GPE	NNP
-one	CARDINAL	CD
-Farmington	GPE	NNP
-three	CARDINAL	CD
-Indians	NORP	NNPS
-San Juan	GPE	NNP,NNP
-San Juan	GPE	NNP,NNP
-400	CARDINAL	CD
-three	CARDINAL	CD
-1926	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-Navajos	NORP	NNP
-Navajos	NORP	NNPS
-the Indian Court	ORG	DT,NNP,NNP
-two	CARDINAL	CD
-the last day	DATE	DT,JJ,NN
-two days	DATE	CD,NNS
+year",DATE,RB SP NN
+Sherman,PERSON,NNP
+last fall,DATE,JJ NN
+the summer months,DATE,DT NN NNS
+Colorado,GPE,NNP
+Indian,NORP,JJ
+WhiCh,GPE,NNP
+Farmington,GPE,NNP
+Farmington,GPE,NNP
+Indians,NORP,NNPS
+San Juan,GPE,NNP NNP
+San Juan,GPE,NNP NNP
+1926,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
+Navajos,NORP,NNP
+Navajos,NORP,NNPS
+the Indian Court,ORG,DT NNP NNP
+the last day,DATE,DT JJ NN
+two days,DATE,CD NNS
 "third
-day"	DATE	JJ,SP,NN
-five	CARDINAL	CD
-four	CARDINAL	CD
-the past year	DATE	DT,JJ,NN
-the Roman Catholics	ORG	DT,JJ,NNPS
-Waterflow	GPE	NNP
-H. M.	PERSON	NNP,NNP
-Indians	NORP	NNPS
-Shiprock	GPE	NNP
-the year	DATE	DT,NN
-Toadlena	GPE	NNP
-Farmington	GPE	NNP
-the Toadlena District	LOC	DT,NNP,NNP
-Brink	PERSON	NNP
-Toadlena	FAC	NNP,SP
-the Rev. J. C. Kobes	ORG	DT,NNP,NNP,NNP,NNP
-The Presbyterian Mission	ORG	DT,NNP,NNP
-Shiprock	ORG	NNP
-two	CARDINAL	CD
-San Juan Indian	GPE	NNP,NNP,NNP
-29	CARDINAL	CD
-June 30	DATE	NNP,CD
-3	CARDINAL	CD
-30	CARDINAL	CD
-Indians	NORP	NNPS
-Indians	NORP	NNPS
-1	CARDINAL	CD
-3	CARDINAL	CD
-3	CARDINAL	CD
-Indians	NORP	NNPS
-97	CARDINAL	CD
-12	CARDINAL	CD
-13	CARDINAL	CD
-15	CARDINAL	CD
-13	CARDINAL	CD
-13	CARDINAL	CD
-5 acres	QUANTITY	CD,NNS
-1	CARDINAL	CD
-1936	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-two	CARDINAL	CD
-This past year	DATE	DT,JJ,NN
-year	DATE	NN
-San Juan	GPE	NNP,NNP
-Mesa Schools	ORG	NNP,NNP
-Last year	DATE	JJ,NN
-5,000	CARDINAL	CD
-500 bushels	MONEY	CD,NNS
-the Toadlena School	ORG	DT,NNP,NNP
-This year	DATE	DT,NN
-the Toadlena School	ORG	DT,NNP,NNP,SP
-San Juan School	ORG	NNP,NNP,NNP
-at least 4,000	CARDINAL	IN,JJS,CD
-about'4,000 pounds	QUANTITY	JJ,NNS
-This year	DATE	DT,NN
-the Department of Agricul-	ORG	DT,NNP,IN,NNP
-Shiprock	GPE	NNP
-Shiprock	GPE	NNP
-sixth	ORDINAL	JJ
-San Juan Agency	GPE	NNP,NNP,NNP
-101101!-	MONEY	CD
-the past two years	DATE	DT,JJ,CD,NNS
-the winter 1924-25	DATE	DT,NN,CD,SYM,CD
-Ioadlena	NORP	NNP
-Shiprock	GPE	NNP
-Iar	PERSON	NNP
-Indians	NORP	NNPS
-the year	DATE	DT,NN
-early winter	DATE	JJ,NN
-Iield	GPE	NNP
-Iocito	GPE	NNP
-San Juan	GPE	NNP,NNP
-first	ORDINAL	RB
-Iumps	ORG	NNP
-the year 1924-25	DATE	DT,NN,CD,SYM,CD
-this year	DATE	DT,NN
-the past two years	DATE	DT,JJ,CD,NNS
-Diphtheria	GPE	NNP
-two	CARDINAL	CD
-three	CARDINAL	CD
-San Juan	GPE	NNP,NNP
-March of this year	DATE	NNP,IN,DT,NN
-eight	CARDINAL	CD
-Diphtheria	LOC	NNP
-February	DATE	NNP
-60%	PERCENT	CD,NN
-$74 1:1}?Yffifi	MONEY	$,CD,CD
-Section VII .-—Irrigetion	ORG	NN,NN,NN
-Meridian	ORG	NNP
-2	CARDINAL	CD
-3	CARDINAL	CD
-4	CARDINAL	CD
-5	CARDINAL	CD
-9-299-- -_49---	TIME	CD,HYPH,CD,NN
-June 30	DATE	NNP,CD
-Indians	NORP	NNPS
-Indians	NORP	NNPS
-June 30	DATE	NNP,CD
-June 30	DATE	NNP,CD
-Indians	NORP	NNPS
-2	CARDINAL	CD
-1926	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-a few years	DATE	DT,JJ,NNS
-14 or 16 years	DATE	CD,CC,CD,NNS
-Colerado	GPE	NNP
-New Mexican	GPE	NNP,NNP
-three to five dollars	DATE	CD,IN,CD,NNS
-English	LANGUAGE	NNP
-three year's	DATE	CD,NN,POS
-Navajo	NORP	NNP
-the first year	DATE	DT,JJ,NN
-June 30th 1924	DATE	NNP,NN,CD
-Navajo	NORP	NNP
-Indian School	ORG	NNP,NNP
-June 30	DATE	NNP,CD
-2	CARDINAL	CD
-current fiscal year	DATE	JJ,JJ,NN
-Amount	PERSON	NNP
-Indians	NORP	NNPS
-8	CARDINAL	CD
-Indians	NORP	NNPS
-9	CARDINAL	CD
-Indians	NORP	NNPS
-0	CARDINAL	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-Eleanor D. Gregg	PERSON	NNP,NNP,NNP
-Field Nurses	ORG	NNP,NNPS
-Field Matrons	PERSON	NNP,NNPS
-Toadlena	ORG	NNP
-one	CARDINAL	CD
-the year	DATE	DT,NN
-1210	CARDINAL	CD
-76	CARDINAL	CD
-one	CARDINAL	CD
-two	CARDINAL	CD
-Gregg	PERSON	NNP
-the Toadlena School	ORG	DT,NNP,NNP
-Program	ORG	NNP
-Indian School	ORG	JJ,NNP
-2	CARDINAL	LS
-$ 100 $	MONEY	$,CD,HYPH,SP
-1.11	CARDINAL	CD
-51,059	MONEY	CD
-30	CARDINAL	CD
-1'	QUANTITY	CD,NN
-5	CARDINAL	CD
-5	CARDINAL	CD
-5	CARDINAL	LS
-1	CARDINAL	LS
-11,1	CARDINAL	CD
-3	CARDINAL	CD
-7	CARDINAL	CD
-1926	DATE	CD
-San Juan	GPE	NNP,NNP
-Navajo	NORP	NNP
-about 550	CARDINAL	RB,CD
-San Juan	GPE	NNP,NNP
-the year	DATE	DT,NN
-Two hundred and twenty	CARDINAL	CD,CD,CC,CD
-Mesa	ORG	NNP
-San Juan	GPE	NNP,NNP
-about one hundred	CARDINAL	IN,CD,CD
-San Juan	GPE	NNP,NNP
-March	DATE	NNP
-Missionaries	ORG	NNS
-Indians	NORP	NNPS
-Indians	NORP	NNPS
-about 150	CARDINAL	IN,CD
-two	CARDINAL	CD
-this season	DATE	DT,NN
-100	CARDINAL	CD
-San Juan Agency	ORG	NNP,NNP,NNP
-two hundred	CARDINAL	CD,CD
-the Primary Division	ORG	DT,NNP,NNP
-four	CARDINAL	CD
-one	CARDINAL	CD
-third	ORDINAL	JJ
-this year	DATE	DT,NN
-each year	DATE	DT,NN
-six	CARDINAL	CD
-1929	DATE	CD
-1	CARDINAL	CD
-Indians	NORP	NNPS
-	CARDINAL	SP
-the pest year	DATE	DT,NN,NN
-first	ORDINAL	JJ
-Theodore	PERSON	NNP
-Roosevelt	PERSON	NNP
+day",DATE,JJ SP NN
+the past year,DATE,DT JJ NN
+the Roman Catholics,ORG,DT JJ NNPS
+Waterflow,GPE,NNP
+H. M.,PERSON,NNP NNP
+Indians,NORP,NNPS
+Shiprock,GPE,NNP
+the year,DATE,DT NN
+Toadlena,GPE,NNP
+Farmington,GPE,NNP
+the Toadlena District,LOC,DT NNP NNP
+Brink,PERSON,NNP
+Toadlena,FAC,NNP SP
+the Rev. J. C. Kobes,ORG,DT NNP NNP NNP NNP
+The Presbyterian Mission,ORG,DT NNP NNP
+Shiprock,ORG,NNP
+San Juan Indian,GPE,NNP NNP NNP
+June 30,DATE,NNP CD
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+5 acres,QUANTITY,CD NNS
+1936,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
+This past year,DATE,DT JJ NN
+year,DATE,NN
+San Juan,GPE,NNP NNP
+Mesa Schools,ORG,NNP NNP
+Last year,DATE,JJ NN
+500 bushels,MONEY,CD NNS
+the Toadlena School,ORG,DT NNP NNP
+This year,DATE,DT NN
+the Toadlena School,ORG,DT NNP NNP SP
+San Juan School,ORG,NNP NNP NNP
+"about'4,000 pounds",QUANTITY,JJ NNS
+This year,DATE,DT NN
+the Department of Agricul-,ORG,DT NNP IN NNP
+Shiprock,GPE,NNP
+Shiprock,GPE,NNP
+San Juan Agency,GPE,NNP NNP NNP
+101101!-,MONEY,CD
+the past two years,DATE,DT JJ CD NNS
+the winter 1924-25,DATE,DT NN CD SYM CD
+Ioadlena,NORP,NNP
+Shiprock,GPE,NNP
+Iar,PERSON,NNP
+Indians,NORP,NNPS
+the year,DATE,DT NN
+early winter,DATE,JJ NN
+Iield,GPE,NNP
+Iocito,GPE,NNP
+San Juan,GPE,NNP NNP
+Iumps,ORG,NNP
+the year 1924-25,DATE,DT NN CD SYM CD
+this year,DATE,DT NN
+the past two years,DATE,DT JJ CD NNS
+Diphtheria,GPE,NNP
+San Juan,GPE,NNP NNP
+March of this year,DATE,NNP IN DT NN
+Diphtheria,LOC,NNP
+February,DATE,NNP
+$74 1:1}?Yffifi,MONEY,$ CD CD
+Section VII .-—Irrigetion,ORG,NN NN NN
+Meridian,ORG,NNP
+June 30,DATE,NNP CD
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+June 30,DATE,NNP CD
+June 30,DATE,NNP CD
+Indians,NORP,NNPS
+1926,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
+a few years,DATE,DT JJ NNS
+14 or 16 years,DATE,CD CC CD NNS
+Colerado,GPE,NNP
+New Mexican,GPE,NNP NNP
+three to five dollars,DATE,CD IN CD NNS
+English,LANGUAGE,NNP
+three year's,DATE,CD NN POS
+Navajo,NORP,NNP
+the first year,DATE,DT JJ NN
+June 30th 1924,DATE,NNP NN CD
+Navajo,NORP,NNP
+Indian School,ORG,NNP NNP
+June 30,DATE,NNP CD
+current fiscal year,DATE,JJ JJ NN
+Amount,PERSON,NNP
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+San Juan Agency,GPE,NNP NNP NNP
+Eleanor D. Gregg,PERSON,NNP NNP NNP
+Field Nurses,ORG,NNP NNPS
+Field Matrons,PERSON,NNP NNPS
+Toadlena,ORG,NNP
+the year,DATE,DT NN
+Gregg,PERSON,NNP
+the Toadlena School,ORG,DT NNP NNP
+Program,ORG,NNP
+Indian School,ORG,JJ NNP
+$ 100 $,MONEY,$ CD HYPH SP
+"51,059",MONEY,CD
+1926,DATE,CD
+San Juan,GPE,NNP NNP
+Navajo,NORP,NNP
+San Juan,GPE,NNP NNP
+the year,DATE,DT NN
+Mesa,ORG,NNP
+San Juan,GPE,NNP NNP
+San Juan,GPE,NNP NNP
+March,DATE,NNP
+Missionaries,ORG,NNS
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+this season,DATE,DT NN
+San Juan Agency,ORG,NNP NNP NNP
+the Primary Division,ORG,DT NNP NNP
+this year,DATE,DT NN
+each year,DATE,DT NN
+1929,DATE,CD
+Indians,NORP,NNPS
+the pest year,DATE,DT NN NN
+Theodore,PERSON,NNP
+Roosevelt,PERSON,NNP
 "Theodore
 
-Roosevelt"	PERSON	NNP,SP,NNP
-Theodore Roosevelt	PERSON	NNP,NNP
-San Juan	GPE	NNP,NNP
-the TOadlens School	ORG	DT,NNP,NNP
-third	ORDINAL	JJ
-this year	DATE	DT,NN
-The Course of Study require—	ORG	DT,NNP,IN,NNP,NNP,SP
-1926	DATE	CD
-San Juan Agency	ORG	NNP,NNP,NNP
-Toilets	PERSON	NNS
-Wednesday	DATE	NNP
-monthly	DATE	JJ
-1926	DATE	CD
-San Juan Agency	ORG	NNP,NNP,NNP
-1924	DATE	CD
-Hogan	PERSON	NNP
-90%	PERCENT	CD,NN
-1	CARDINAL	CD
-first	ORDINAL	RB
-I'-	PERSON	NNP
-Emmanuel	PERSON	NNP
-1:3	CARDINAL	CD
-Santa Fe	GPE	NNP,NNP
-ML. July 2'7	PERSON	NNP,NNP,NNP
-Indian Employment	LOC	NNP,NNP
-Agency	ORG	NNP
-2	CARDINAL	LS
-the fiscal year 1910	DATE	DT,JJ,NN,CD
-68	CARDINAL	CD
-6	CARDINAL	CD
-2295.62	MONEY	CD
-6	CARDINAL	CD
-2478.41-	MONEY	CD
-Pueblo	ORG	NNP
-three days	DATE	CD,NNS
-Indian	NORP	JJ
-Indian	NORP	JJ
-Indian	NORP	JJ
-1	CARDINAL	CD
-18	CARDINAL	CD
-15	CARDINAL	CD
-Indian	NORP	JJ
-Agency	ORG	NNP
-Indian	NORP	JJ
-San Juan Agency	ORG	NNP,NNP,NNP
-Navajo	ORG	NNP
-Havajos	PERSON	NNP
-75,000.00	MONEY	CD
-Fifty	CARDINAL	CD
-four	CARDINAL	CD
-Farmington	GPE	NNP
-Ho	PERSON	NNP
-17	CARDINAL	CD
-20 inch	QUANTITY	CD,NN
-four inch	QUANTITY	CD,NN
-L A	GPE	NNP,NNP
-3	CARDINAL	CD
-twelve	CARDINAL	CD
-twelve	CARDINAL	CD
-San Juan	GPE	NNP,NNP
-Indians	NORP	NNPS
-5	CARDINAL	CD
-1926	DATE	CD
-San Juan Agency	ORG	NNP,NNP,NNP
-Indians	NORP	NNPS
-last year	DATE	JJ,NN
-the summer	DATE	DT,NN
-two	CARDINAL	CD
-two	CARDINAL	CD
-one	CARDINAL	CD
-San Juan	GPE	NNP,NNP
-Toadlena	GPE	NNP
-February	DATE	NNP
-March	DATE	NNP
-this past season	DATE	DT,JJ,NN
-some 50,000 feet	QUANTITY	DT,CD,NNS
-early winter	DATE	JJ,NN
-Indians	NORP	NNPS
-twenty dollars	MONEY	CD,NNS
-for~some years	DATE	CD,NNS
-Indians	NORP	NNPS
-Indians	NORP	NNPS
-this year	DATE	DT,NN
-Colo.and	GPE	NNP
-Cortez	GPE	NNP
-Shiprockuto	GPE	NNP
-Gallup	ORG	NNP
-Shiprock	GPE	NNP
-20 miles	QUANTITY	CD,NNS
-San Juan	GPE	NNP,NNP
-San Juan	GPE	NNP,NNP
-50,000 feet	QUANTITY	CD,NNS
-two	CARDINAL	CD
-Toadlena	FAC	NNP
-20,000 feet	QUANTITY	CD,NNS
-Shiprock	GPE	NNP
-60,000 feet	QUANTITY	CD,NNS
-15,000	CARDINAL	CD
-50,000	CARDINAL	CD
-San Juan	GPE	NNP,NNP
-Navajo	NORP	NNP
-Santa Fe	ORG	NNP,NNP
-July 27, 1910	DATE	NNP,CD,,,CD
-Santa Fe	ORG	NNP,NNP
-7000	CARDINAL	CD
-7 degrees'below zero	DATE	CD,JJ,CD
-Tao's	ORG	NNP,POS
-Picuris	GPE	NNP
-Santa Fe	ORG	NNP,NNP
-San Juan	GPE	NNP,NNP
-Nembe	GPE	NNP
-San Ildefonso	GPE	NNP,NNP
-Tesuque	GPE	NNP
-Santo Domingo	PERSON	NNP,NNP
-two	CARDINAL	CD
-Juan Indian School	ORG	NNP,NNP,NNP
-5	CARDINAL	CD
-Indian	NORP	JJ
-9119	DATE	CD
-6	CARDINAL	CD
-9	CARDINAL	CD
-7	DATE	CD
-	CARDINAL	SP
-Indian	NORP	NNP
-the current fiscal	DATE	DT,JJ,JJ
-'	DATE	SP,''
-9	CARDINAL	CD
-Indian	NORP	JJ
-Indian	NORP	JJ
-9	CARDINAL	CD
-3	CARDINAL	LS
-1	CARDINAL	CD
-1	CARDINAL	CD
-Han	NORP	NNP
-Indian School	ORG	NNP,NNP
-1	CARDINAL	CD
-Indians	NORP	NNPS
-0	CARDINAL	CD
-Indians	PERSON	SP,NNPS
-19	CARDINAL	CD
-Indians	NORP	NNPS
-Indians	NORP	NNPS
-20	CARDINAL	CD
-Indians	NORP	NNPS
-27	CARDINAL	CD
-28	CARDINAL	CD
-3	CARDINAL	CD
-0	CARDINAL	CD
-54.1	CARDINAL	CD
-9	CARDINAL	CD
-543	CARDINAL	CD
-4/30	CARDINAL	CD
-3.11	CARDINAL	CD
-July 27	DATE	NNP,CD
-Indian	NORP	JJ
-Pueblos	ORG	NNP
-two	CARDINAL	CD
-Indians	NORP	NNPS
-one	CARDINAL	CD
-Jemez	GPE	NNP
-Cochiti	ORG	NNP
-two	CARDINAL	CD
-Indians	NORP	NNPS
-500	MONEY	CD
-two	CARDINAL	CD
-Indians	NORP	NNPS
-one	CARDINAL	CD
-1950	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-Navajo	NORP	NNP
-the past three years	DATE	DT,JJ,CD,NNS
-early winter	DATE	JJ,NN
-1100 to	CARDINAL	CD,IN
-Navajos	ORG	NNPS
-to—day	DATE	NN
-75%	PERCENT	CD,NN
-Rambouillet	PERSON	NNP
+Roosevelt",PERSON,NNP SP NNP
+Theodore Roosevelt,PERSON,NNP NNP
+San Juan,GPE,NNP NNP
+the TOadlens School,ORG,DT NNP NNP
+this year,DATE,DT NN
+The Course of Study require—,ORG,DT NNP IN NNP NNP SP
+1926,DATE,CD
+San Juan Agency,ORG,NNP NNP NNP
+Toilets,PERSON,NNS
+Wednesday,DATE,NNP
+monthly,DATE,JJ
+1926,DATE,CD
+San Juan Agency,ORG,NNP NNP NNP
+1924,DATE,CD
+Hogan,PERSON,NNP
+I'-,PERSON,NNP
+Emmanuel,PERSON,NNP
+Santa Fe,GPE,NNP NNP
+ML. July 2'7,PERSON,NNP NNP NNP
+Indian Employment,LOC,NNP NNP
+Agency,ORG,NNP
+the fiscal year 1910,DATE,DT JJ NN CD
+2295.62,MONEY,CD
+2478.41-,MONEY,CD
+Pueblo,ORG,NNP
+three days,DATE,CD NNS
+Indian,NORP,JJ
+Indian,NORP,JJ
+Indian,NORP,JJ
+Indian,NORP,JJ
+Agency,ORG,NNP
+Indian,NORP,JJ
+San Juan Agency,ORG,NNP NNP NNP
+Navajo,ORG,NNP
+Havajos,PERSON,NNP
+"75,000.00",MONEY,CD
+Farmington,GPE,NNP
+20 inch,QUANTITY,CD NN
+four inch,QUANTITY,CD NN
+L A,GPE,NNP NNP
+San Juan,GPE,NNP NNP
+Indians,NORP,NNPS
+1926,DATE,CD
+San Juan Agency,ORG,NNP NNP NNP
+Indians,NORP,NNPS
+last year,DATE,JJ NN
+the summer,DATE,DT NN
+San Juan,GPE,NNP NNP
+Toadlena,GPE,NNP
+February,DATE,NNP
+March,DATE,NNP
+this past season,DATE,DT JJ NN
+"some 50,000 feet",QUANTITY,DT CD NNS
+early winter,DATE,JJ NN
+Indians,NORP,NNPS
+twenty dollars,MONEY,CD NNS
+for~some years,DATE,CD NNS
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+this year,DATE,DT NN
+Colo.and,GPE,NNP
+Cortez,GPE,NNP
+Shiprockuto,GPE,NNP
+Gallup,ORG,NNP
+Shiprock,GPE,NNP
+20 miles,QUANTITY,CD NNS
+San Juan,GPE,NNP NNP
+San Juan,GPE,NNP NNP
+"50,000 feet",QUANTITY,CD NNS
+Toadlena,FAC,NNP
+"20,000 feet",QUANTITY,CD NNS
+Shiprock,GPE,NNP
+"60,000 feet",QUANTITY,CD NNS
+San Juan,GPE,NNP NNP
+Navajo,NORP,NNP
+Santa Fe,ORG,NNP NNP
+"July 27, 1910",DATE,"NNP CD , CD"
+Santa Fe,ORG,NNP NNP
+7 degrees'below zero,DATE,CD JJ CD
+Tao's,ORG,NNP POS
+Picuris,GPE,NNP
+Santa Fe,ORG,NNP NNP
+San Juan,GPE,NNP NNP
+Nembe,GPE,NNP
+San Ildefonso,GPE,NNP NNP
+Tesuque,GPE,NNP
+Santo Domingo,PERSON,NNP NNP
+Juan Indian School,ORG,NNP NNP NNP
+Indian,NORP,JJ
+9119,DATE,CD
+Indian,NORP,NNP
+the current fiscal,DATE,DT JJ JJ
+Indian,NORP,JJ
+Indian,NORP,JJ
+Han,NORP,NNP
+Indian School,ORG,NNP NNP
+Indians,NORP,NNPS
+Indians,PERSON,SP NNPS
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+July 27,DATE,NNP CD
+Indian,NORP,JJ
+Pueblos,ORG,NNP
+Indians,NORP,NNPS
+Jemez,GPE,NNP
+Cochiti,ORG,NNP
+Indians,NORP,NNPS
+500,MONEY,CD
+Indians,NORP,NNPS
+1950,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
+Navajo,NORP,NNP
+the past three years,DATE,DT JJ CD NNS
+early winter,DATE,JJ NN
+Navajos,ORG,NNPS
+to—day,DATE,NN
+Rambouillet,PERSON,NNP
 "58
-pounds"	QUANTITY	CD,SP,NNS
-one	CARDINAL	CD
-68 pounds	QUANTITY	CD,NNS
-this spring	DATE	DT,NN
-one	CARDINAL	CD
-Hereford	GPE	NNP
-several thousand	CARDINAL	JJ,CD
-Indians	NORP	NNPS
-Havajos	PERSON	NNP
-758	CARDINAL	CD
-STATISTICAL	ORG	NNP
-San Juan '	GPE	NNP,NNP,POS
-Indian School	ORG	JJ,NNP
-88	CARDINAL	CD
-June Emma-1:149:11	PERSON	NNP,NNP
-fiscal year	DATE	JJ,NN
-United States	GPE	NNP,NNP
-0 $ 0	MONEY	CD,$,CD
-400	CARDINAL	CD
-89.00	CARDINAL	CD
-1593.90	CARDINAL	CD
-15.25	CARDINAL	CD
-18	CARDINAL	CD
-40	QUANTITY	CD,SP
-Juan Indian School	ORG	NNP,NNP,NNP
-1	CARDINAL	CD
-30,-	CARDINAL	CD
-1.2	CARDINAL	CD
-4	CARDINAL	LS
-1	CARDINAL	CD
-000	CARDINAL	CD
-June 30	DATE	NNP,CD
+pounds",QUANTITY,CD SP NNS
+68 pounds,QUANTITY,CD NNS
+this spring,DATE,DT NN
+Hereford,GPE,NNP
+Indians,NORP,NNPS
+Havajos,PERSON,NNP
+STATISTICAL,ORG,NNP
+San Juan ',GPE,NNP NNP POS
+Indian School,ORG,JJ NNP
+June Emma-1:149:11,PERSON,NNP NNP
+fiscal year,DATE,JJ NN
+United States,GPE,NNP NNP
+0 $ 0,MONEY,CD $ CD
+Juan Indian School,ORG,NNP NNP NNP
+June 30,DATE,NNP CD
 "fiscal
 
-year"	DATE	JJ,SP,NN
-5	CARDINAL	CD
-Allottetl	NORP	NNP
-___________	MONEY	NFP
-Unallotteé	PERSON	NNP
-r-74r-500'OO	MONEY	CD
-53	CARDINAL	CD
-5	CARDINAL	CD
-4	CARDINAL	CD
-130%	PERCENT	CD,NN
-4	CARDINAL	CD
-3	CARDINAL	CD
-3	CARDINAL	LS
-1	CARDINAL	CD
-2	CARDINAL	CD
-3	CARDINAL	CD
-Miles	PERSON	NNP
-994.33	CARDINAL	CD
-Indian School	ORG	JJ,NNP
+year",DATE,JJ SP NN
+Allottetl,NORP,NNP
+___________,MONEY,NFP
+Unallotteé,PERSON,NNP
+r-74r-500'OO,MONEY,CD
+Miles,PERSON,NNP
+Indian School,ORG,JJ NNP
 "T'——""""""—'——g
 
-Damage"	WORK_OF_ART	XX,SP,NN
-5	CARDINAL	CD
-3	CARDINAL	CD
-1	CARDINAL	CD
-9	CARDINAL	CD
-51	DATE	CD
-4	CARDINAL	CD
-0 MGM-1%	PERCENT	CD,CD,NN
-43%	PERCENT	CD,NN
-July 27	DATE	NNP,CD
-19	CARDINAL	CD
-Indians	NORP	NNPS
-4	CARDINAL	CD
-Indiana	GPE	NNP
-M.	PERSON	NNP
-Maw-gm	PERSON	NNP,HYPH,NNP
-4	CARDINAL	CD
-331143331	CARDINAL	CD
-5	CARDINAL	CD
-(Board	ORG	SP,-LRB-,NNP
--flQQQeflQ	MONEY	CD
-7	CARDINAL	CD
-one year	DATE	CD,NN
-8	CARDINAL	CD
-the current fiscal year	DATE	DT,JJ,JJ,NN
-4)	TIME	CD,-RRB-
-Indians—-—	CARDINAL	CD
-San Juan	GPE	NNP,NNP
-Indians	NORP	NNPS
-Indians	NORP	NNPS
-Indian	NORP	JJ
-Indians	NORP	NNPS
-Indians	NORP	NNPS
-Federal juris—	ORG	NNP,NNP
-1	CARDINAL	CD
-June 30	DATE	NNP,CD
-fiscal year	DATE	JJ,NN
-Indians	NORP	NNPS
-Indians	NORP	NNPS
-San Juan Agency	GPE	NNP,NNP,NNP
-Indian	NORP	JJ
-Indians	NORP	NNPS
-one	CARDINAL	CD
-Indian	NORP	JJ
-Medicine	GPE	NNP
-the East Farm	GPE	DT,NNP,NNP
-Laguna	GPE	NNP
-the Toadlena School	ORG	DT,NNP,NNP
-James D. Kennedy	PERSON	NNP,NNP,NNP
-about 50 to a half	CARDINAL	IN,CD,TO,DT,NN
-Wigglesworth	PERSON	NNP
-Wigglesworth	PERSON	NNP
-The San Juan Hospital	ORG	DT,NNP,NNP,NNP
-San Juan	GPE	NNP,NNP
-Indian School	ORG	JJ,NNP
-3	CARDINAL	CD
-Indians	NORP	NNPS
-2	CARDINAL	CD
-____Q	MONEY	CD
-_;Q__..f	MONEY	CD
-0	CARDINAL	CD
-1926	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-The San Juan	ORG	DT,NNP,NNP
-one	CARDINAL	CD
-five	CARDINAL	CD
-Navajo	NORP	NNP
-three	CARDINAL	CD
-New Mexico	GPE	NNP,NNP
-Utah	GPE	NNP
-approximately loo miles	QUANTITY	RB,FW,NNS
-150 miles	QUANTITY	CD,NNS
-one	CARDINAL	CD
-approximately 80 miles	QUANTITY	RB,CD,NNS
-80 miles	QUANTITY	CD,NNS
-Indians	NORP	NNPS
-Shiprock	GPE	NNP
-N. M.,	PERSON	NNP,NNP,,
-San Juan	GPE	NNP,NNP
-Camp	ORG	NNP
-Juan Hospital	PERSON	NNP,NNP
-two	CARDINAL	CD
-30st Office	ORG	NN,NN
-100 miles	QUANTITY	CD,NNS
-Gallup	GPE	NNP
-N. M.	PERSON	NNP,NNP
-Federal Aid Highway	ORG	NNP,NNP,NNP
-52 miles	QUANTITY	CD,NNS
-Farmington	GPE	NNP
-N. M. from	PERSON	NNP,NNP,IN
-State Highway	ORG	SP,NNP,NNP
-Gallup	ORG	NNP
-S. F. Ry..	PERSON	NNP,NNP,NNP,NFP
-Farmington	GPE	NNP
-Shiprock	ORG	NNP
-Farmington	GPE	NNP
-Bell	PERSON	NNP
-Sunday	DATE	NNP
-Shiprock	GPE	NNP
-the Old Hospital	ORG	DT,NNP,NNP
-second	ORDINAL	JJ
-.~	PERSON	NNP
-7	CARDINAL	CD
-1212	DATE	CD
-5	CARDINAL	LS
-3	CARDINAL	LS
-San Juan	GPE	NNP,NNP
-19 2	PERCENT	CD,CD
-Indians	NORP	NNPS
-W00	MONEY	CD
-soiooo.oo	MONEY	CD
-4	MONEY	CD
-___..______	MONEY	-RRB-
-205	MONEY	CD
-552000.00	MONEY	CD
-1	MONEY	CD
-1926	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-1925	DATE	CD
-March	DATE	NNP
-a few days	DATE	DT,JJ,NNS
-daily	DATE	JJ
-only a few years	DATE	RB,DT,JJ,NNS
-1925	DATE	CD
-the same year	DATE	DT,JJ,NN
-1925-24 and this	TIME	CD,SYM,CD,CC,DT
-1925	DATE	CD
-the winter months	DATE	DT,NN,NNS
-Iiogback	NORP	NNP
-Juan Indian School	ORG	NNP,NNP,NNP
-San Juan Reservation	GPE	NNP,NNP,NNP
-1	CARDINAL	CD
-6	CARDINAL	CD
-18 years	DATE	CD,NNS
-3	CARDINAL	CD
-3	CARDINAL	CD
-49.1.-	CARDINAL	CD
-2	CARDINAL	CD
-3	CARDINAL	CD
-3	CARDINAL	LS
-2	CARDINAL	CD
-3	CARDINAL	CD
-4	CARDINAL	LS
-Indians	NORP	NNPS
-Indians	NORP	NNPS
-San Juan Agency	GPE	NNP,NNP,NNP
-the Shiprock Schools	ORG	DT,NNP,NNP
-San Juan'River	GPE	NNP,NNP
-two	CARDINAL	CD
-Indians	NORP	NNPS
-the Health Program	ORG	DT,NNP,NNP
-Toadlena	GPE	NNP
-San Juan	GPE	NNP,NNP
-Navajos	NORP	NNP
-650	CARDINAL	CD
-two	CARDINAL	CD
-Government	ORG	NNP
-Missionaries	ORG	NNPS
-Dan	PERSON	NNP
-Indian	NORP	JJ
-the year	DATE	DT,NN
-1.3	CARDINAL	CD
-past year	DATE	JJ,NN
-	CARDINAL	SP
-Indian	NORP	NNP
+Damage",WORK_OF_ART,XX SP NN
+July 27,DATE,NNP CD
+Indians,NORP,NNPS
+Indiana,GPE,NNP
+Maw-gm,PERSON,NNP HYPH NNP
+(Board,ORG,SP -LRB- NNP
+-flQQQeflQ,MONEY,CD
+one year,DATE,CD NN
+the current fiscal year,DATE,DT JJ JJ NN
+San Juan,GPE,NNP NNP
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+Indian,NORP,JJ
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+Federal juris—,ORG,NNP NNP
+June 30,DATE,NNP CD
+fiscal year,DATE,JJ NN
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+San Juan Agency,GPE,NNP NNP NNP
+Indian,NORP,JJ
+Indians,NORP,NNPS
+Indian,NORP,JJ
+Medicine,GPE,NNP
+the East Farm,GPE,DT NNP NNP
+Laguna,GPE,NNP
+the Toadlena School,ORG,DT NNP NNP
+James D. Kennedy,PERSON,NNP NNP NNP
+Wigglesworth,PERSON,NNP
+Wigglesworth,PERSON,NNP
+The San Juan Hospital,ORG,DT NNP NNP NNP
+San Juan,GPE,NNP NNP
+Indian School,ORG,JJ NNP
+Indians,NORP,NNPS
+____Q,MONEY,CD
+_;Q__..f,MONEY,CD
+1926,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
+The San Juan,ORG,DT NNP NNP
+Navajo,NORP,NNP
+New Mexico,GPE,NNP NNP
+Utah,GPE,NNP
+approximately loo miles,QUANTITY,RB FW NNS
+150 miles,QUANTITY,CD NNS
+approximately 80 miles,QUANTITY,RB CD NNS
+80 miles,QUANTITY,CD NNS
+Indians,NORP,NNPS
+Shiprock,GPE,NNP
+"N. M.,",PERSON,"NNP NNP ,"
+San Juan,GPE,NNP NNP
+Camp,ORG,NNP
+Juan Hospital,PERSON,NNP NNP
+30st Office,ORG,NN NN
+100 miles,QUANTITY,CD NNS
+Gallup,GPE,NNP
+N. M.,PERSON,NNP NNP
+Federal Aid Highway,ORG,NNP NNP NNP
+52 miles,QUANTITY,CD NNS
+Farmington,GPE,NNP
+N. M. from,PERSON,NNP NNP IN
+State Highway,ORG,SP NNP NNP
+Gallup,ORG,NNP
+S. F. Ry..,PERSON,NNP NNP NNP NFP
+Farmington,GPE,NNP
+Shiprock,ORG,NNP
+Farmington,GPE,NNP
+Bell,PERSON,NNP
+Sunday,DATE,NNP
+Shiprock,GPE,NNP
+the Old Hospital,ORG,DT NNP NNP
+1212,DATE,CD
+San Juan,GPE,NNP NNP
+Indians,NORP,NNPS
+W00,MONEY,CD
+soiooo.oo,MONEY,CD
+___..______,MONEY,-RRB-
+205,MONEY,CD
+552000.00,MONEY,CD
+1926,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
+1925,DATE,CD
+March,DATE,NNP
+a few days,DATE,DT JJ NNS
+daily,DATE,JJ
+only a few years,DATE,RB DT JJ NNS
+1925,DATE,CD
+the same year,DATE,DT JJ NN
+1925,DATE,CD
+the winter months,DATE,DT NN NNS
+Iiogback,NORP,NNP
+Juan Indian School,ORG,NNP NNP NNP
+San Juan Reservation,GPE,NNP NNP NNP
+18 years,DATE,CD NNS
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+San Juan Agency,GPE,NNP NNP NNP
+the Shiprock Schools,ORG,DT NNP NNP
+San Juan'River,GPE,NNP NNP
+Indians,NORP,NNPS
+the Health Program,ORG,DT NNP NNP
+Toadlena,GPE,NNP
+San Juan,GPE,NNP NNP
+Navajos,NORP,NNP
+Government,ORG,NNP
+Missionaries,ORG,NNPS
+Dan,PERSON,NNP
+Indian,NORP,JJ
+the year,DATE,DT NN
+past year,DATE,JJ NN
+Indian,NORP,NNP
 "the current fiscal
-year ending June 30"	DATE	DT,JJ,JJ,SP,NN,VBG,NNP,CD
-9	CARDINAL	CD
-Indian	NORP	JJ
-10	CARDINAL	CD
-Indian	NORP	JJ
-1	CARDINAL	LS
-9	CARDINAL	CD
-1926	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-H. J. Hagerman	PERSON	NNP,NNP,NNP
-Toadlena	GPE	NNP
-April	PERSON	NNP
-first	ORDINAL	JJ
-this year	DATE	DT,NN
-about $1000	MONEY	IN,$,CD
-the Toadlena School	ORG	DT,NNP,NNP
-Indian	NORP	JJ
-Fort Defiance	FAC	NNP,NNP
-Phoenix	GPE	NNP
-A. M. Wiggles-	PERSON	NNP,NNP,NNP
-Toadlena	GPE	NNP
-July	DATE	NNP
-August	DATE	NNP
-September	DATE	NNP
-Red Rocks	ORG	NNP,NNPS
-Aneth	PERSON	NNP
-September	DATE	NNP
-1924	DATE	CD
-1926	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-one	CARDINAL	CD
-two	CARDINAL	CD
-two	CARDINAL	CD
+year ending June 30",DATE,DT JJ JJ SP NN VBG NNP CD
+Indian,NORP,JJ
+Indian,NORP,JJ
+1926,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
+H. J. Hagerman,PERSON,NNP NNP NNP
+Toadlena,GPE,NNP
+April,PERSON,NNP
+this year,DATE,DT NN
+about $1000,MONEY,IN $ CD
+the Toadlena School,ORG,DT NNP NNP
+Indian,NORP,JJ
+Fort Defiance,FAC,NNP NNP
+Phoenix,GPE,NNP
+A. M. Wiggles-,PERSON,NNP NNP NNP
+Toadlena,GPE,NNP
+July,DATE,NNP
+August,DATE,NNP
+September,DATE,NNP
+Red Rocks,ORG,NNP NNPS
+Aneth,PERSON,NNP
+September,DATE,NNP
+1924,DATE,CD
+1926,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
 "Home
-Training"	ORG	NNP,SP,NNP
-Domestic Science	ORG	SP,JJ,NN
-four days	DATE	CD,NNS
-thirty minutes	TIME	CD,NNS
-eighteen years old	DATE	CD,NNS,JJ
-Physician	NORP	NNP
-J1eed Matron	PERSON	NNP,NNP
-last summer	DATE	JJ,NN
-150	CARDINAL	CD
-200	CARDINAL	CD
-26	CARDINAL	CD
-33	CARDINAL	CD
-11	CARDINAL	CD
-Indian	NORP	JJ
-Whites Indians	NORP	NNPS,NNPS
-2	CARDINAL	CD
-U. S.	PERSON	NNP,NNP,SP
-Indian	NORP	JJ
-Indian	NORP	JJ
-San Juan Agency	GPE	NNP,NNP,NNP
-WATRI.	ORG	NNP
-First	ORDINAL	JJ
-weeks	DATE	NNS
-one	CARDINAL	CD
-Indians	NORP	NNPS
-1924	DATE	CD
-1925	DATE	CD
-H. F. Robinson	PERSON	SP,NNP,NNP,NNP
-annually	DATE	RB
-San Juan	GPE	NNP,NNP
-	PERSON	SP
-Robinson	PERSON	NNP
-Indians	NORP	NNPS
-Two	CARDINAL	CD
-First	ORDINAL	JJ
-Hogan	PERSON	NNP
-Hogan	PERSON	NNP
-San Juan Agency	ORG	NNP,NNP,NNP
-year or two	DATE	NN,CC,CD
-17	CARDINAL	CD
-Navajo	NORP	JJ
-1400 feet	QUANTITY	CD,NNS
-about 700 feet	QUANTITY	RB,CD,NNS
-27,000.00	MONEY	CD
-Rattlesanke	PRODUCT	NNP
-eight miles	QUANTITY	CD,NNS
-Shiprock	GPE	NNP
-One	CARDINAL	CD
-Shiprock	ORG	NNP
-1924	DATE	CD
-1925	DATE	CD
-third	ORDINAL	JJ
-San Juan	GPE	NNP,NNP
-San Juan	GPE	NNP,NNP
-1925	DATE	CD
-Shiprock	FAC	NNP
-1000	CARDINAL	CD
+Training",ORG,NNP SP NNP
+Domestic Science,ORG,SP JJ NN
+four days,DATE,CD NNS
+eighteen years old,DATE,CD NNS JJ
+Physician,NORP,NNP
+J1eed Matron,PERSON,NNP NNP
+last summer,DATE,JJ NN
+Indian,NORP,JJ
+Whites Indians,NORP,NNPS NNPS
+U. S.,PERSON,NNP NNP SP
+Indian,NORP,JJ
+Indian,NORP,JJ
+San Juan Agency,GPE,NNP NNP NNP
+WATRI.,ORG,NNP
+weeks,DATE,NNS
+Indians,NORP,NNPS
+1924,DATE,CD
+1925,DATE,CD
+H. F. Robinson,PERSON,SP NNP NNP NNP
+annually,DATE,RB
+San Juan,GPE,NNP NNP
+Robinson,PERSON,NNP
+Indians,NORP,NNPS
+Hogan,PERSON,NNP
+Hogan,PERSON,NNP
+San Juan Agency,ORG,NNP NNP NNP
+year or two,DATE,NN CC CD
+Navajo,NORP,JJ
+1400 feet,QUANTITY,CD NNS
+about 700 feet,QUANTITY,RB CD NNS
+"27,000.00",MONEY,CD
+Rattlesanke,PRODUCT,NNP
+eight miles,QUANTITY,CD NNS
+Shiprock,GPE,NNP
+Shiprock,ORG,NNP
+1924,DATE,CD
+1925,DATE,CD
+San Juan,GPE,NNP NNP
+San Juan,GPE,NNP NNP
+1925,DATE,CD
+Shiprock,FAC,NNP
 "this
-year's"	DATE	DT,SP,NN,POS
-last year	DATE	JJ,NN
-Last fall	DATE	JJ,VB
-this fall	DATE	DT,NN
-Toadlena School	ORG	NNP,NNP
+year's",DATE,DT SP NN POS
+last year,DATE,JJ NN
+Last fall,DATE,JJ VB
+this fall,DATE,DT NN
+Toadlena School,ORG,NNP NNP
 "last
-year"	DATE	JJ,SP,NN
-Two hundred and fifty	CARDINAL	CD,CD,CC,CD
-this past spring	DATE	DT,JJ,NN
-Indians	NORP	NNPS
-Four thousand pounds	QUANTITY	CD,CD,NNS
-Indians	NORP	NNPS
-	GPE	SP
-1925	DATE	CD
-Agent	ORG	NNP
-Indians	NORP	NNPS
-early spring months	DATE	JJ,NN,NNS
-Indians	NORP	NNPS
-San Juan Agency	GPE	NNP,NNP,NNP
+year",DATE,JJ SP NN
+this past spring,DATE,DT JJ NN
+Indians,NORP,NNPS
+Four thousand pounds,QUANTITY,CD CD NNS
+Indians,NORP,NNPS
+1925,DATE,CD
+Agent,ORG,NNP
+Indians,NORP,NNPS
+early spring months,DATE,JJ NN NNS
+Indians,NORP,NNPS
+San Juan Agency,GPE,NNP NNP NNP
 "W. H.
-Hashbarger"	PERSON	NNP,NNP,SP,NNP
-the Toadlena School	ORG	DT,NNP,NNP,SP
-the past six years	DATE	DT,JJ,CD,NNS
-nine	CARDINAL	CD
-Navajo	NORP	JJ
-Indian	NORP	JJ
-Super-	ORG	NNP
-Field Nurses	ORG	NNP,NNPS
-One	CARDINAL	CD
-H- J. Hagerman	PERSON	NNP,NNP,NNP
-Tribe	PERSON	NNP
-late April	DATE	JJ,NNP
-Toadlena	ORG	NNP
-four	CARDINAL	CD
-the United States	GPE	DT,NNP,NNP
-1	CARDINAL	CD
-100-	MONEY	CD
-.1 _________	MONEY	CD,$
-ZLsQQDLOO	MONEY	CD
-686.52	MONEY	CD,SP
-0	CARDINAL	CD
-7	CARDINAL	CD
-1	CARDINAL	CD
-Y'wlix's'v'lsx	CARDINAL	NNP
-7	CARDINAL	CD
-Santa Fe School	ORG	NNP,NNP,NNP
-San Juan Agency	ORG	NNP,NNP,NNP
-three	CARDINAL	CD
-four	CARDINAL	CD
-five year old	DATE	CD,NN,JJ
-an occasional quarter	DATE	DT,JJ,NN
-the World War	EVENT	DT,NNP,NNP
-the past few months	DATE	DT,JJ,JJ,NNS
-The year	DATE	DT,NN
-Juan School	ORG	NNP,NNP
-Two	CARDINAL	CD
-years	DATE	NNS
-this year	DATE	DT,NN
-Last fall	DATE	JJ,NN
-at least one	CARDINAL	IN,JJS,CD
-Two	CARDINAL	CD
-two	CARDINAL	CD
-years	DATE	NNS
-This year	DATE	DT,NN
-about one	CARDINAL	RB,CD
-second	ORDINAL	JJ
-last year	DATE	JJ,NN
-the past 10 or 12 years	DATE	DT,NN,CD,CC,CD,NNS
-100	CARDINAL	CD
-50	CARDINAL	CD
-50	CARDINAL	CD
-2	CARDINAL	CD
-1	CARDINAL	CD
-1-1/2	DATE	CD,SYM,CD
-1.33.9	CARDINAL	CD
-Pueblos	LOC	NNP
-Pueblos	ORG	NNP
-Mexican	NORP	JJ
-12	CARDINAL	CD
-one	CARDINAL	CD
-one	CARDINAL	CD
-Indian	NORP	JJ
-fifty	CARDINAL	CD
-Indian	NORP	JJ
-Indians	NORP	NNPS
-Indian	NORP	JJ
-Pueblos	ORG	NNP
-Ilhich	GPE	NNP
-Pueblo	ORG	NNP
-Pueblo	ORG	NNP
-San Juan Agency	ORG	NNP,NNP,NNP
-75%	PERCENT	CD,NN
-one	CARDINAL	CD
-Rambouillet	ORG	NNP
-58 pounds	QUANTITY	CD,NNS
-many years	DATE	JJ,NNS
-few thousand	MONEY	SP,JJ,CD
-1925	DATE	CD
+Hashbarger",PERSON,NNP NNP SP NNP
+the Toadlena School,ORG,DT NNP NNP SP
+the past six years,DATE,DT JJ CD NNS
+Navajo,NORP,JJ
+Indian,NORP,JJ
+Super-,ORG,NNP
+Field Nurses,ORG,NNP NNPS
+H- J. Hagerman,PERSON,NNP NNP NNP
+Tribe,PERSON,NNP
+late April,DATE,JJ NNP
+Toadlena,ORG,NNP
+the United States,GPE,DT NNP NNP
+100-,MONEY,CD
+.1 _________,MONEY,CD $
+ZLsQQDLOO,MONEY,CD
+686.52,MONEY,CD SP
+Santa Fe School,ORG,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
+five year old,DATE,CD NN JJ
+an occasional quarter,DATE,DT JJ NN
+the World War,EVENT,DT NNP NNP
+the past few months,DATE,DT JJ JJ NNS
+The year,DATE,DT NN
+Juan School,ORG,NNP NNP
+years,DATE,NNS
+this year,DATE,DT NN
+Last fall,DATE,JJ NN
+years,DATE,NNS
+This year,DATE,DT NN
+last year,DATE,JJ NN
+the past 10 or 12 years,DATE,DT NN CD CC CD NNS
+1-1/2,DATE,CD SYM CD
+Pueblos,LOC,NNP
+Pueblos,ORG,NNP
+Mexican,NORP,JJ
+Indian,NORP,JJ
+Indian,NORP,JJ
+Indians,NORP,NNPS
+Indian,NORP,JJ
+Pueblos,ORG,NNP
+Ilhich,GPE,NNP
+Pueblo,ORG,NNP
+Pueblo,ORG,NNP
+San Juan Agency,ORG,NNP NNP NNP
+Rambouillet,ORG,NNP
+58 pounds,QUANTITY,CD NNS
+many years,DATE,JJ NNS
+few thousand,MONEY,SP JJ CD
+1925,DATE,CD
 "the Bureau of
-Animal Industry"	ORG	DT,NNP,IN,SP,NNP,NNP
-second	ORDINAL	JJ
-Black Leaf	LOC	NNP,NNP
-40	DATE	CD
-Last fall	DATE	JJ,NN
-first	ORDINAL	JJ
-early summer	DATE	JJ,NN
-1	CARDINAL	CD
+Animal Industry",ORG,DT NNP IN SP NNP NNP
+Black Leaf,LOC,NNP NNP
+Last fall,DATE,JJ NN
+early summer,DATE,JJ NN
 "H. E.
-Pine"	PERSON	NNP,NNP,SP,NNP
-B. h. I.	ORG	NNP,NNP,NN
-Albuquerque	GPE	NNP
-three	CARDINAL	CD
-B. A.	GPE	NNP,NNP
-this year	DATE	DT,NN
-OLEAN	ORG	NNP
-Sophus Jensen	PERSON	NNP,NNP
-Agency Stockman	PERSON	NNP,NNP
-768	CARDINAL	CD
-Sgn 1301a	DATE	NNP,CD
-Indians	NORP	NNPS
--4	MONEY	CD
-4+§Q44QQQ-00	MONEY	CD
-410133	MONEY	CD
-11.3ggjgogmo	MONEY	CD
-1926	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-the summer months	DATE	DT,NN,NNS
-twelve months of the year	DATE	CD,NNS,IN,DT,NN
-two	CARDINAL	CD
-12 million gallons	QUANTITY	CD,CD,NNS
-Hogback	PRODUCT	NNP
-winter months	DATE	SP,NN,NNS
-first	ORDINAL	RB
-about July first 1925	DATE	IN,NNP,JJ,CD
-September 18th	DATE	NNP,NN
-about one	CARDINAL	RB,CD
-December'first	ORG	NNP
-SURFACE	ORG	NNP
-the spring of 1926	DATE	DT,NN,IN,CD
-Indian	NORP	JJ
-Item-lo	WORK_OF_ART	NNP,HYPH,NNP
-5	CARDINAL	CD
-3	DATE	CD
-3	CARDINAL	CD
-7732.50	MONEY	CD
-150	CARDINAL	CD
-50	CARDINAL	CD
-H. Burke School	ORG	NNP,NNP,NNP
-this year	DATE	DT,NN
-100	CARDINAL	CD
-Phoenix	GPE	NNP
-daily	DATE	JJ
-220	CARDINAL	CD
-5	CARDINAL	CD
-16	DATE	CD
-one	CARDINAL	CD
-English	LANGUAGE	NNP
-one	CARDINAL	CD
-English	LANGUAGE	NNP
-One	CARDINAL	CD
-One	CARDINAL	CD
-"half
-hour"	TIME	NN,SP,NN
-three mornings	TIME	CD,NNS
-one hour	TIME	CD,NN
-Tuesday	DATE	NNP
-Indian	NORP	NNP
-2	CARDINAL	CD
-3	CARDINAL	CD
-Southern Ute	PERSON	NNP,NNP
-Mission Schools :	WORK_OF_ART	SP,NNP,NNPS,:
-1	CARDINAL	CD
-Totél	PERSON	NNP
-Annuel Report	PERSON	NNP,NNP
-San Juen Agency	ORG	NNP,NNP,NNP
-December	DATE	NNP
-about 50%	PERCENT	IN,CD,NN
-the early summer	DATE	DT,JJ,NN
-1925	DATE	CD
-50%	PERCENT	CD,NN
-4:50 A.	MONEY	CD,NNP
-three quarters	DATE	CD,NNS
-San Juen	GPE	NNP,NNP
-the winter 1925-26	DATE	DT,NN,CD,SYM,CD
-the worst year	DATE	DT,JJS,NN
-1925	DATE	CD
-September 18th	DATE	NNP,NN
-Hogback	GPE	NNP
-December	DATE	NNP
-January	DATE	NNP
-October	DATE	NNP
-Bevember	PERSON	NNP
-December first	DATE	NNP,RB
-winter	DATE	NN
-453	CARDINAL	CD
-C. J. Crandall	PERSON	NNP,NNP,NNP
-Santa Fe Indian School	ORG	NNP,NNP,NNP,NNP
-Santa Fe	GPE	NNP,NNP
-New Mexico	GPE	NNP,NNP
+Pine",PERSON,NNP NNP SP NNP
+B. h. I.,ORG,NNP NNP NN
+Albuquerque,GPE,NNP
+B. A.,GPE,NNP NNP
+this year,DATE,DT NN
+OLEAN,ORG,NNP
+Sophus Jensen,PERSON,NNP NNP
+Agency Stockman,PERSON,NNP NNP
+Sgn 1301a,DATE,NNP CD
+Indians,NORP,NNPS
+4+§Q44QQQ-00,MONEY,CD
+410133,MONEY,CD
+11.3ggjgogmo,MONEY,CD
+1926,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
+the summer months,DATE,DT NN NNS
+twelve months of the year,DATE,CD NNS IN DT NN
+12 million gallons,QUANTITY,CD CD NNS
+Hogback,PRODUCT,NNP
+winter months,DATE,SP NN NNS
+about July first 1925,DATE,IN NNP JJ CD
+September 18th,DATE,NNP NN
+December'first,ORG,NNP
+SURFACE,ORG,NNP
+the spring of 1926,DATE,DT NN IN CD
+Indian,NORP,JJ
+Item-lo,WORK_OF_ART,NNP HYPH NNP
+7732.50,MONEY,CD
+H. Burke School,ORG,NNP NNP NNP
+this year,DATE,DT NN
+Phoenix,GPE,NNP
+daily,DATE,JJ
+English,LANGUAGE,NNP
+English,LANGUAGE,NNP
+Tuesday,DATE,NNP
+Indian,NORP,NNP
+Southern Ute,PERSON,NNP NNP
+Mission Schools :,WORK_OF_ART,SP NNP NNPS :
+Totél,PERSON,NNP
+Annuel Report,PERSON,NNP NNP
+San Juen Agency,ORG,NNP NNP NNP
+December,DATE,NNP
+the early summer,DATE,DT JJ NN
+1925,DATE,CD
+4:50 A.,MONEY,CD NNP
+three quarters,DATE,CD NNS
+San Juen,GPE,NNP NNP
+the winter 1925-26,DATE,DT NN CD SYM CD
+the worst year,DATE,DT JJS NN
+1925,DATE,CD
+September 18th,DATE,NNP NN
+Hogback,GPE,NNP
+December,DATE,NNP
+January,DATE,NNP
+October,DATE,NNP
+Bevember,PERSON,NNP
+December first,DATE,NNP RB
+winter,DATE,NN
+C. J. Crandall,PERSON,NNP NNP NNP
+Santa Fe Indian School,ORG,NNP NNP NNP NNP
+Santa Fe,GPE,NNP NNP
+New Mexico,GPE,NNP NNP
 "the past fiscal
 
-year"	DATE	DT,JJ,JJ,SP,NN
-three years ago	DATE	CD,NNS,RB
-three	CARDINAL	CD
-two	CARDINAL	CD
-40	CARDINAL	CD
-Wigglesworth	PERSON	NNP
-Kennedy	PERSON	NNP
-210	CARDINAL	CD
+year",DATE,DT JJ JJ SP NN
+three years ago,DATE,CD NNS RB
+Wigglesworth,PERSON,NNP
+Kennedy,PERSON,NNP
 "this
-year"	DATE	DT,SP,NN
-50	CARDINAL	CD
-this year	DATE	DT,NN
-this year	DATE	DT,NN
-Indians	NORP	NNPS
-County	GPE	NNP
-Indians	NORP	NNPS
-the Intertribal Indian Ceremonial	ORG	DT,NNP,NNP,NNP
-San Juan Agency	ORG	NNP,NNP,NNP
-Shiprock	GPE	NNP
-Tocito	GPE	NNP
-N. M.	PERSON	NNP,NNP
-29 miles	QUANTITY	CD,NNS
-Shiprock	GPE	NNP
-Ford	ORG	NNP
-Aneth	ORG	NNP
-four	CARDINAL	CD
-year	DATE	SP,NN
-Stockman	PERSON	NNP
-Jensen	PERSON	NNP
-the past three years	DATE	DT,JJ,CD,NNS
-Jensen	PERSON	NNP
-Indians	NORP	NNPS
-the Bureau	ORG	DT,NNP
-Navajos	NORP	NNPS
-San Juan Navajo	GPE	NNP,NNP,NNP
-10,000	CARDINAL	CD
-the spring	DATE	DT,NN
-July	DATE	NNP
-July	DATE	NNP
-3 9'	DATE	CD,CD,''
-San Juan Agemcy	GPE	NNP,NNP,NNP
-Gallup	FAC	NNP
-San Juan Agency	ORG	NNP,NNP,NNP
-3	CARDINAL	CD
-90%	PERCENT	CD,NN
-Public Domain	ORG	NNP,NNP
-2	CARDINAL	LS
-San Juan	GPE	NNP,NNP
-24	CARDINAL	CD
-about	CARDINAL	IN,SP
-200	CARDINAL	CD
-Mesa	ORG	NNP
-Mesa	ORG	NNP
-the same day	DATE	DT,JJ,NN
-Missouri	GPE	NNP
-this spring	DATE	DT,NN
-6mm	CARDINAL	NN
-Norway	GPE	NNP
-about 50 acres	QUANTITY	RB,CD,NNS
-Last year	DATE	JJ,NN
-Toadlena Schools	PERSON	NNP,NNP
-50,000	CARDINAL	CD
-This year	DATE	DT,NN
-Shipreck	GPE	NNP
-Ship-	ORG	NNP
-this year	DATE	DT,NN
-one	CARDINAL	CD
-next year	DATE	JJ,NN
-last year	DATE	JJ,NN
-1926	DATE	CD
-San Juan Agency	ORG	NNP,NNP,NNP
-Mission	ORG	NNP
-Individual Indian Moneys	ORG	NNP,JJ,NNP
-Indians	NORP	NNPS
-San Juan Agency	GPE	NNP,NNP,NNP
-fourteen	CARDINAL	CD
-one	CARDINAL	CD
-Navajo	NORP	NNP
-J~ndians	NORP	NNPS
-the Oil Companies	ORG	DT,NNP,NNS
-Indians	NORP	NNPS
-Shiprock	GPE	NNP
-Havajos	ORG	NNP
-Indians	NORP	NNPS
-Mesa Verde	ORG	NNP,NNP
-Last year	DATE	JJ,NN
-one	CARDINAL	CD
-2.00	MONEY	CD
-eight hours	TIME	CD,NNS
-15	CARDINAL	CD
-a week	DATE	DT,NN
-A few years ago	DATE	DT,JJ,NNS,RB
-Farmington	GPE	NNP
-150,000 pounds	QUANTITY	CD,NNS
-four inch	QUANTITY	CD,NN
-"four
-hours"	TIME	CD,SP,NNS
-10,000	CARDINAL	CD
-14,000 pounds	QUANTITY	CD,NNS
-San Juan Agency	GPE	NNP,NNP,NNP
-H. E. Pine	PERSON	NNP,NNP,NNP
-One	CARDINAL	CD
-the year	DATE	DT,NN
-Bistai	GPE	NNP
-the Agency Stockman	ORG	DT,NNP,NNP
-Indians	NORP	NNPS
-Indians	NORP	NNPS
-Bistai	PERSON	NNP
-1925—26	FAC	NNP
-March	DATE	NNP
-April	DATE	NNP
-several weeks	DATE	JJ,NNS
-seVerel years	DATE	NN,NNS
-several hundred	CARDINAL	JJ,CD
-one	CARDINAL	CD
-Holsteins	PERSON	NNP
-the year	DATE	DT,NN
-Mesa	ORG	NNP
-the year	DATE	DT,NN
-Holstein	PERSON	NNP
-Indian School	ORG	NNP,NNP
-1924	DATE	CD
-Holstein	PERSON	NNP
-Colorado Springs	GPE	NNP,NNP
-2	CARDINAL	CD
-Santa re	GPE	NNP,NNP
-July 27, 1919	DATE	NNP,CD,,,CD
-35	CARDINAL	CD
-5	MONEY	CD
-Indian	NORP	JJ
-New Mexico	GPE	NNP,NNP
-Indian	NORP	JJ
-New Mexico	GPE	NNP,NNP
-Indian	NORP	JJ
-Day	ORG	NN
-Indian	NORP	JJ
-One	CARDINAL	CD
-1	CARDINAL	CD
-Juan	PERSON	NNP,SP
-DEA	ORG	NNP
-Li	PERSON	NNP
-half	CARDINAL	NN
-half	CARDINAL	NN
-5500	CARDINAL	CD
-4	CARDINAL	CD
-3	CARDINAL	CD
-%	PERCENT	SP,NN
-2	CARDINAL	CD
-1930	DATE	CD
-San Juan Agency	GPE	NNP,NNP,NNP
-Holstein	PERSON	NNP
-Jicarilla Indian School	ORG	NNP,NNP,NNP
-Dulce	GPE	NNP
-N. H.	PERSON	NNP,NNP
-Holstein	PERSON	NNP
-Toggenburg	GPE	NNP
-the Toedlena School	ORG	DT,NNP,NNP
-1925	DATE	CD
-two	CARDINAL	CD
-one	CARDINAL	CD
-40	CARDINAL	CD
-Last fall	DATE	JJ,VB
-Wisconsin	GPE	NNP
-Ship~	ORG	NNP
-"6X""80t6d"	CARDINAL	CD
-this past year	DATE	DT,JJ,NN
-1925	DATE	CD
-400,000 pounds	QUANTITY	CD,NNS
-season	DATE	NN
-10¢ to 17¢ per pound	TIME	CD,IN,CD,IN,NN
-50,000.00	MONEY	CD
-Indians	NORP	NNPS
-the Oil Companies	ORG	DT,NNP,NNS
-Shiprock	GPE	NNP
-over $75,000.00	MONEY	IN,$,CD
-Navajo for	ORG	NNP,IN
-500,000.00	MONEY	CD
-two	CARDINAL	CD
-District Farmers	ORG	NNP,NNP
-one	CARDINAL	CD
-Stockmsn	NORP	NNP
-One	CARDINAL	CD
-Farmers	ORG	NNP
-Aneth	GPE	NNP
-6	CARDINAL	CD
-130191va	MONEY	JJ
-7	CARDINAL	CD
-Winemingthg	GPE	NNP
-Indians	NORP	NNPS
-Indian	NORP	JJ
-Pueblos	ORG	NNP
-Pueblos	NORP	NNP
-Pueblos	NORP	NNPS
-	GPE	SP
-two	CARDINAL	CD
-four	CARDINAL	CD
-two	CARDINAL	CD
-Indians	NORP	NNPS
+year",DATE,DT SP NN
+this year,DATE,DT NN
+this year,DATE,DT NN
+Indians,NORP,NNPS
+County,GPE,NNP
+Indians,NORP,NNPS
+the Intertribal Indian Ceremonial,ORG,DT NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
+Shiprock,GPE,NNP
+Tocito,GPE,NNP
+N. M.,PERSON,NNP NNP
+29 miles,QUANTITY,CD NNS
+Shiprock,GPE,NNP
+Ford,ORG,NNP
+Aneth,ORG,NNP
+year,DATE,SP NN
+Stockman,PERSON,NNP
+Jensen,PERSON,NNP
+the past three years,DATE,DT JJ CD NNS
+Jensen,PERSON,NNP
+Indians,NORP,NNPS
+the Bureau,ORG,DT NNP
+Navajos,NORP,NNPS
+San Juan Navajo,GPE,NNP NNP NNP
+the spring,DATE,DT NN
+July,DATE,NNP
+July,DATE,NNP
+3 9',DATE,CD CD ''
+San Juan Agemcy,GPE,NNP NNP NNP
+Gallup,FAC,NNP
+San Juan Agency,ORG,NNP NNP NNP
+Public Domain,ORG,NNP NNP
+San Juan,GPE,NNP NNP
+Mesa,ORG,NNP
+Mesa,ORG,NNP
+the same day,DATE,DT JJ NN
+Missouri,GPE,NNP
+this spring,DATE,DT NN
+Norway,GPE,NNP
+about 50 acres,QUANTITY,RB CD NNS
+Last year,DATE,JJ NN
+Toadlena Schools,PERSON,NNP NNP
+This year,DATE,DT NN
+Shipreck,GPE,NNP
+Ship-,ORG,NNP
+this year,DATE,DT NN
+next year,DATE,JJ NN
+last year,DATE,JJ NN
+1926,DATE,CD
+San Juan Agency,ORG,NNP NNP NNP
+Mission,ORG,NNP
+Individual Indian Moneys,ORG,NNP JJ NNP
+Indians,NORP,NNPS
+San Juan Agency,GPE,NNP NNP NNP
+Navajo,NORP,NNP
+J~ndians,NORP,NNPS
+the Oil Companies,ORG,DT NNP NNS
+Indians,NORP,NNPS
+Shiprock,GPE,NNP
+Havajos,ORG,NNP
+Indians,NORP,NNPS
+Mesa Verde,ORG,NNP NNP
+Last year,DATE,JJ NN
+2.00,MONEY,CD
+a week,DATE,DT NN
+A few years ago,DATE,DT JJ NNS RB
+Farmington,GPE,NNP
+"150,000 pounds",QUANTITY,CD NNS
+four inch,QUANTITY,CD NN
+"14,000 pounds",QUANTITY,CD NNS
+San Juan Agency,GPE,NNP NNP NNP
+H. E. Pine,PERSON,NNP NNP NNP
+the year,DATE,DT NN
+Bistai,GPE,NNP
+the Agency Stockman,ORG,DT NNP NNP
+Indians,NORP,NNPS
+Indians,NORP,NNPS
+Bistai,PERSON,NNP
+1925—26,FAC,NNP
+March,DATE,NNP
+April,DATE,NNP
+several weeks,DATE,JJ NNS
+seVerel years,DATE,NN NNS
+Holsteins,PERSON,NNP
+the year,DATE,DT NN
+Mesa,ORG,NNP
+the year,DATE,DT NN
+Holstein,PERSON,NNP
+Indian School,ORG,NNP NNP
+1924,DATE,CD
+Holstein,PERSON,NNP
+Colorado Springs,GPE,NNP NNP
+Santa re,GPE,NNP NNP
+"July 27, 1919",DATE,"NNP CD , CD"
+Indian,NORP,JJ
+New Mexico,GPE,NNP NNP
+Indian,NORP,JJ
+New Mexico,GPE,NNP NNP
+Indian,NORP,JJ
+Day,ORG,NN
+Indian,NORP,JJ
+Juan,PERSON,NNP SP
+DEA,ORG,NNP
+1930,DATE,CD
+San Juan Agency,GPE,NNP NNP NNP
+Holstein,PERSON,NNP
+Jicarilla Indian School,ORG,NNP NNP NNP
+Dulce,GPE,NNP
+N. H.,PERSON,NNP NNP
+Holstein,PERSON,NNP
+Toggenburg,GPE,NNP
+the Toedlena School,ORG,DT NNP NNP
+1925,DATE,CD
+Last fall,DATE,JJ VB
+Wisconsin,GPE,NNP
+Ship~,ORG,NNP
+this past year,DATE,DT JJ NN
+1925,DATE,CD
+"400,000 pounds",QUANTITY,CD NNS
+season,DATE,NN
+"50,000.00",MONEY,CD
+Indians,NORP,NNPS
+the Oil Companies,ORG,DT NNP NNS
+Shiprock,GPE,NNP
+"over $75,000.00",MONEY,IN $ CD
+Navajo for,ORG,NNP IN
+"500,000.00",MONEY,CD
+District Farmers,ORG,NNP NNP
+Stockmsn,NORP,NNP
+Farmers,ORG,NNP
+Aneth,GPE,NNP
+130191va,MONEY,JJ
+Winemingthg,GPE,NNP
+Indians,NORP,NNPS
+Indian,NORP,JJ
+Pueblos,ORG,NNP
+Pueblos,NORP,NNP
+Pueblos,NORP,NNPS
+Indians,NORP,NNPS
