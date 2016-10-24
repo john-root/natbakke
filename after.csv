@@ -1,23 +1,26 @@
 Entity_Orth,Entity_Label,Parts_of_Speech
 1925,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 Farmington,GPE,NNP
 less than two hours,DATE,JJR IN CD NNS
 the past year,DATE,DT JJ NN
 Gallup,ORG,NNP
 Federal Aid Highway,ORG,NNP NNP NNP
 A few days later,DATE,DT JJ NNS RB
-San Juan,GPE,NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 Shiprock,GPE,NNP
 Physician,ORG,NNP
+Toadlena,GPE,NNP
 Presbyterianmghggch,ORG,NNP
 Physician,NORP,NN
 Red Rocks,ORG,NNP NNPS
 Shiprock,GPE,NNP
 the Medicine Men,ORG,DT NNP NNPS
+San Juan Agency,ORG,NNP NNP NNP
 the Saw Mill,ORG,DT NNP NNP
 Mesa Boarding School,ORG,NNP NNP NNP
-San Juan,GPE,NNP NNP
+San Juan School,ORG,NNP NNP NNP
+San Juan School,ORG,NNP NNP NNP
 the New Hospital,ORG,DT NNP NNP
 several years ago,DATE,JJ NNS RB
 Agency,ORG,NNP
@@ -25,7 +28,7 @@ The Field Force,ORG,DT NNP NNP
 Stockman,PERSON,NNP
 Shiprock,FAC,NNP
 1925,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 the year two cases,DATE,DT NN CD NNS
 the Indian Court,ORG,DT NNP NNP
 the last day,DATE,DT JJ NN
@@ -35,11 +38,11 @@ Agency,ORG,NNP
 Indian,NORP,JJ
 Agency,ORG,NNP
 San Juan Agency,ORG,NNP NNP NNP
-Juan School,PERSON,NNP NNP
-Typhoid,GPE,NNP
+Juan School,ORG,NNP NNP
 November,DATE,NNP
 December,DATE,NNP
-the Toadlena School,ORG,DT NNP NNP
+Toadlena School,ORG,NNP NNP
+of months,DATE,SP IN NNS
 James D. Kennedy,PERSON,NNP NNP NNP
 September,DATE,NNP
 Shiprock,GPE,NNP
@@ -53,7 +56,7 @@ the past year,DATE,DT JJ NN
 the preceding year,DATE,DT JJ NN
 the County Clerk,ORG,DT NNP NNP
 1925,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 the year,DATE,DT NN
 Clara,GPE,NNP
 Barker,PERSON,NNP
@@ -66,7 +69,7 @@ Red Rocks,ORG,NNP NNPS
 Physician,ORG,NNP
 Thomas Snoddy,PERSON,NNP NNP
 1925,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 Study,FAC,NNP
 Daily,FAC,NNP
 Sewing,GPE,NNP
@@ -82,15 +85,15 @@ Yakima,GPE,NNP
 Washington,GPE,NNP
 San Juan Agency,ORG,NNP NNP NNP
 Indians,NORP,NNPS
-Toadlena,PERSON,NNP
+Toadlena,GPE,NNP
 Physicians,NORP,NNPS
 Navajo,NORP,NNP
 Physician,ORG,NNP
 Physicians,NORP,NNPS
 1925,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 John D. Kennedy,PERSON,NNP NNP NNP
-the Toadlena School,ORG,DT NNP NNP
+Toadlena School,ORG,NNP NNP
 About January a,DATE,IN NNP DT
 Indian,NORP,JJ
 Indians,NORP,NNPS
@@ -98,7 +101,7 @@ Forte Defiance,FAC,NNP NNP
 Arizona,GPE,NNP
 the J-ndians,ORG,DT NNP HYPH NNS
 1925,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 the Agency Hospital,ORG,DT NNP NNP
 Tubercular,NORP,JJ
 the HOSpital,FAC,DT NN
@@ -116,22 +119,23 @@ San Juan,GPE,NNP NNP
 Physician,ORG,NNP
 Shiprock,GPE,NNP
 Physician,NORP,NNP
-Toadlena,ORG,NNP
-San Juan Agency,GPE,NNP NNP NNP
+Toadlena,GPE,NNP
+San Juan Agency,ORG,NNP NNP NNP
 Sweet Corn,PERSON,NNP NNP
 San Juan,GPE,NNP NNP
 Mesa,ORG,NNP
 the Illoadlena School,ORG,DT NNP NNP
-San Juan,GPE,NNP NNP
+San Juan School,ORG,NNP NNP NNP
 this year,DATE,DT NN
-The Toadlena School,ORG,DT NNP NNP
+San Juan School,ORG,NNP NNP NNP
+Toadlena School,ORG,NNP NNP
 Toadlena,GPE,NNP
 1925,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 Spring,LOC,NN
 Last season,DATE,JJ NN
 1925,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 Toadlena,GPE,NNP
 the Chirstian Reformed Church,ORG,DT NNP NNP NNP
 L. P. Brink,PERSON,NNP NNP NNP
@@ -146,7 +150,7 @@ Peyote,ORG,NNP
 Indian,NORP,JJ
 20 to 50 miles,DATE,CD IN CD NNS
 1925,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 San Juan Agency,ORG,NNP NNP NNP
 the year,DATE,SP DT NN
 The Mesa School,ORG,DT NNP NNP
@@ -160,7 +164,8 @@ Indians,NORP,NNPS
 Indians,NORP,NNPS
 Indians,NORP,NNPS
 1925,DATE,CD
-Physician,NORP,NNP
+San Juan Agency,ORG,NNP NNP NNP
+Physician,ORG,NNP
 Trachoma,GPE,NNP
 Hospital,PRODUCT,NNP
 Physician,NORP,NNP
@@ -178,10 +183,11 @@ last season,DATE,JJ NN
 Service,LOC,NNP
 San Juan Agency,ORG,NNP NNP NNP
 The Public School,ORG,DT NNP NNP
-Toadlena Boarding School,ORG,NNP NNP NNP
-Toadlena Boarding School,ORG,NNP NNP NNP
+Toadlena,GPE,NNP
+Toadlena,GPE,NNP
+Toadlena,GPE,NNP
 September 1st 1925,DATE,NNP NN CD
-Toadlena Public School,ORG,NNP NNP NNP
+Toadlena,GPE,NNP
 ~ Sherman Institute,ORG,NNP NNP NNP
 Phoenix,GPE,NNP
 Santa Fe,GPE,NNP NNP
@@ -190,9 +196,8 @@ Theodore,PERSON,NNP
 each year,DATE,DT NN
 The°school,ORG,NNP
 1925,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
-M. M. Carmichael,PERSON,NNP NNP NNP
-Shiprock,GPE,NNP
+San Juan Agency,ORG,NNP NNP NNP
+M. M.,FAC,NNP NNP
 Indian,NORP,JJ
 Indian,NORP,JJ
 Indians,NORP,NNPS
@@ -201,7 +206,7 @@ Trachoma,PERSON,NNP
 Venereal,GPE,NNP
 Phagocite,NORP,NNP
 1925,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 Indians,NORP,NNPS
 Carpentny,GPE,NNP
 Farming,GPE,NNP
@@ -216,6 +221,7 @@ Indian,NORP,JJ
 "this
 year",DATE,DT SP NN
 W. H. HaShbarger,PERSON,NNP NNP NNP
+Toadlena,GPE,NNP
 Indians,NORP,NNPS
 Indian,NORP,JJ
 Indians,NORP,NNPS
@@ -224,7 +230,7 @@ Indian,NORP,JJ
 Indians,NORP,NNPS
 Fran,PERSON,NNP
 1925,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 the year,DATE,DT NN
 Indian,NORP,JJ
 Sanitarium,ORG,NN
@@ -233,7 +239,7 @@ Indians,NORP,NNPS
 Indian,NORP,JJ
 Indians,NORP,NNPS
 1925,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 Physician,ORG,NNP
 Navajo,NORP,JJ
 Thysiciah,PRODUCT,NNP
@@ -264,7 +270,7 @@ English,LANGUAGE,JJ
 Indians,NORP,NNPS
 English,LANGUAGE,JJ
 San Juan Reservation,GPE,NNP NNP NNP
-Headgates -.....,PERSON,NNPS HYPH NFP
+Headgates -...,PERSON,NNPS HYPH NFP
 January,DATE,NNP
 February ________ 5,DATE,NNP SYM CD
 March ___________,DATE,NNP NN
@@ -286,11 +292,11 @@ San Juan Agency,ORG,NNP NNP NNP
 School,ORG,NNP
 to—day,DATE,NN
 a year ago,DATE,DT NN RB
-San Juan,GPE,NNP NNP
+San Juan School,ORG,NNP NNP NNP
 the past two years,DATE,DT JJ CD NNS
 This year,DATE,DT NN
 the Mesa School,ORG,DT NNP NNP
-the Toadlena School,FAC,DT NNP NNP
+Toadlena School,ORG,NNP NNP
 Shiprock,GPE,NNP
 Indians,NORP,NNPS
 the current fiscal year,DATE,DT JJ JJ NN
@@ -307,7 +313,7 @@ Sunday,DATE,NNP
 1925,DATE,CD
 San Juan Agency,ORG,NNP NNP NNP
 Toadlena,GPE,NNP
-Toadlena,FAC,NNP
+Toadlena,GPE,NNP
 year,DATE,NN
 Frank I. Inloes,PERSON,NNP NNP NNP
 "the San Juan Boarding
@@ -330,6 +336,7 @@ Indians,NORP,NNPS
 "James
 D. Kennedy",PERSON,NNP SP NNP NNP
 Havajos,PERSON,NNP
+Toadlena,GPE,NNP
 the year,DATE,DT NN
 the year 1924-25,DATE,DT NN CD SYM CD
 Indian,NORP,JJ
@@ -337,7 +344,7 @@ year to year,DATE,NN IN NN
 Indian,NORP,JJ
 many years,DATE,JJ NNS
 1925,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 White Arsenic,ORG,NNP NNP
 Lemons,PERSON,NNP
 Indians,NORP,NNPS
@@ -346,7 +353,7 @@ Bruce M. Barnard,PERSON,NNP NNP NNP
 last fall,DATE,JJ NN
 Indians,NORP,NNPS
 1925,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 Stockman Jensen,PERSON,NNP NNP
 H. E. Pine,PERSON,NNP NNP NNP
 Aztec,NORP,NNP
@@ -359,6 +366,7 @@ the last day,DATE,DT JJ NN
 the year,DATE,DT NN
 years,DATE,NNS
 years,DATE,NNS
+San Juan School,ORG,NNP NNP NNP
 Indians,NORP,NNPS
 Hereford,GPE,NNP
 five and six year old,DATE,CD CC CD NN JJ
@@ -442,8 +450,9 @@ San Juan,GPE,NNP NNP
 "Max "" "" ""
 King",PERSON,NNP `` '' '' SP NNP
 "Jerome "" "" """,PERSON,NNP `` '' '' SP
+II II,FAC,NNP NNP
 1925,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 Navajos,NORP,NNPS
 at least another,DATE,RB RBS DT
 Indians,NORP,NNPS
@@ -453,6 +462,7 @@ Last year,DATE,JJ NN
 last year,DATE,JJ NN
 Observer,ORG,NNP
 San Juan,GPE,NNP NNP
+San Juan School,ORG,NNP NNP NNP
 Indian Office,ORG,JJ NNP
 San Juan Agency,ORG,NNP NNP NNP
 Indians,NORP,NNPS
@@ -460,21 +470,25 @@ NaVajo,ORG,NNP
 Navajo,NORP,NNP
 Navajos,NORP,NNPS
 the past year,DATE,DT JJ NN
+San Juan School,ORG,NNP NNP NNP
 Indian,NORP,JJ
 Toggenberg,ORG,NNP
-the Toadlena Schbbl,FAC,DT NNP NNP
+Toadlena,GPE,NNP
+the nekt ten years,DATE,DT JJ CD NNS
 Indians,NORP,NNPS
 Angora,NORP,NNP
+San Juan School,ORG,NNP NNP NNP
 1925,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 Hogan,PERSON,NNP
 Last summer,DATE,JJ NN
-the Toadlena School,ORG,DT NNP NNP
+Toadlena School,ORG,NNP NNP
+San Juan School,ORG,NNP NNP NNP
 February,DATE,NNP
 March,DATE,NNP
 Navajos,NORP,NNPS
 Indians,NORP,NNPS
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 Toadlena,GPE,NNP
 Henry Pine,PERSON,NNP NNP
 the Bureau of Animal Industry,ORG,DT NNP IN NNP NNP
@@ -512,7 +526,7 @@ fiscal year,DATE,JJ NN
 fiscal year,DATE,JJ NN
 fiscal year,DATE,JJ NN
 1925,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 Navajo,ORG,NNP
 last February,DATE,JJ NNP
 about a week,DATE,RB DT NN
@@ -530,7 +544,6 @@ the year,DATE,DT NN
 February,DATE,NNP
 IViarch,GPE,NNP
 the past ten years,DATE,DT JJ CD NNS
-this season,DATE,DT NN
 June,PERSON,NNP
 mid-June,DATE,JJ SYM NNP
 Navajo,NORP,NNP
@@ -551,13 +564,14 @@ Havajos,ORG,NNP
 winter,DATE,NN
 1925,DATE,CD
 San Juan Reservation,GPE,NNP NNP NNP
+4.. Number of,ORG,CD NFP NN IN
 18 years,DATE,CD NNS
 Climbs-Children,PERSON,NNP HYPH NNP
 Laser-w,PERSON,NNP HYPH NNP
 Indians,NORP,NNPS
 Indians,NORP,NNPS
 Apache,ORG,NNP
-San Juan,GPE,NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 Holstein,PERSON,NNP
 Holstein,PERSON,NNP
 Durhams,PERSON,NNP
@@ -653,7 +667,7 @@ Everett,PERSON,NNP
 Lansing,GPE,NNP
 "Herbert "" u",PERSON,NNP `` XX
 Myresea,PERSON,NNP
-"Clyde "" W W",PERSON,NNP `` NNP NNP
+"Clyde """,PERSON,NNP ``
 Moffitt,PERSON,NNP
 Thomae W,ORG,NNP NNP
 Dennison,ORG,NNP
@@ -666,7 +680,7 @@ Post Office,ORG,NNP NNP
 Tribe,PERSON,NNP
 State,ORG,NNP
 1925,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 Farmers,ORG,NNP
 Aneth,GPE,NNP
 Utah,GPE,NNP
@@ -674,7 +688,7 @@ Agency Headquarters,WORK_OF_ART,NNP NNPS
 Tocito,GPE,NNP
 Ford,ORG,NNP
 Aneth,ORG,NNP
-Toadlena,ORG,NNP
+Toadlena,GPE,NNP
 the year,DATE,DT NN
 Indians,NORP,NNPS
 this year,DATE,DT NN
@@ -682,7 +696,7 @@ Indians,NORP,NNPS
 Juan Indian School,ORG,NNP NNP NNP
 Distributiou,PERSON,NNP
 1925,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 fiscal year,DATE,SP JJ NN
 Koho,PERSON,NNP
 James Nave o,PERSON,NNP NNP NNP
@@ -710,7 +724,7 @@ Denetolaw,PERSON,NNP
 Theodore W,PERSON,NNP NNP
 Belonebega,PERSON,NNP
 Baehabage,PERSON,NNP
-Ruby,PERSON,NNP
+Ruby,PRODUCT,NNP
 Begay,PERSON,NNP
 Bessie,PERSON,NNP
 Begay,PERSON,NNP
@@ -823,7 +837,7 @@ Hoeka",PERSON,NNP `` '' '' SP NNP
 Johson",PERSON,NNP `` '' '' SP NNP
 Jordon,PERSON,NNP
 Lewis,PERSON,NNP
-Lambert,PERSON,NNP
+II II,FAC,NNP NNP
 "Gerald "" ' "" ""
 mcKenzie",PERSON,NNP `` '' '' '' SP NN
 Edwin,PERSON,NNP
@@ -905,8 +919,11 @@ B. M. '-______-_,PERSON,NNP NNP '' :
 12009,DATE,CD
 Juan Indian School,ORG,NNP NNP NNP
 Reservationr,PERSON,NNP
+San Juan Agency,ORG,NNP NNP NNP
 The Camp School Unit of,ORG,DT NNP NNP NNP IN
+San Juan School,ORG,NNP NNP NNP
 the Mesa School,ORG,DT NNP NNP
+San Juan School,ORG,NNP NNP NNP
 late June 1925,DATE,JJ NNP CD
 San Juan,GPE,NNP NNP
 the summer,DATE,DT NN
@@ -919,6 +936,7 @@ San Juan,GPE,NNP NNP
 District Farmers,ORG,NNP NNP
 Stockman,PERSON,NNP
 Lilcewise,PERSON,NNP
+Toadlena,GPE,NNP
 Shiprock,GPE,NNP
 Navajo,NORP,NNP
 the year,DATE,DT NN
@@ -931,9 +949,10 @@ Miles,PERSON,NNP
 0061,DATE,CD
 Miles,PERSON,NNP
 1926,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 Indian,NORP,JJ
 San Juan,GPE,NNP NNP
+Toadlena,GPE,NNP
 Toadlena,GPE,NNP
 Missionary,PERSON,NNP
 Indian,NORP,JJ
@@ -945,19 +964,21 @@ Shiprock,GPE,NNP
 Indian,NORP,JJ
 "last
 year",DATE,RB SP NN
-Sherman,PERSON,NNP
+San Juan School,ORG,NNP NNP NNP
+Sherman,FAC,NNP
 last fall,DATE,JJ NN
 the summer months,DATE,DT NN NNS
 Colorado,GPE,NNP
 Indian,NORP,JJ
 WhiCh,GPE,NNP
+San Juan School,ORG,NNP NNP NNP
 Farmington,GPE,NNP
 Farmington,GPE,NNP
 Indians,NORP,NNPS
 San Juan,GPE,NNP NNP
-San Juan,GPE,NNP NNP
+San Juan School,ORG,NNP NNP NNP
 1926,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 Navajos,NORP,NNP
 Navajos,NORP,NNPS
 the Indian Court,ORG,DT NNP NNP
@@ -974,33 +995,32 @@ Shiprock,GPE,NNP
 the year,DATE,DT NN
 Toadlena,GPE,NNP
 Farmington,GPE,NNP
-the Toadlena District,LOC,DT NNP NNP
+Toadlena,GPE,NNP
 Brink,PERSON,NNP
-Toadlena,FAC,NNP SP
-the Rev. J. C. Kobes,ORG,DT NNP NNP NNP NNP
+Toadlena,GPE,NNP
 The Presbyterian Mission,ORG,DT NNP NNP
-Shiprock,ORG,NNP
+Shiprock,GPE,NNP
 San Juan Indian,GPE,NNP NNP NNP
 June 30,DATE,NNP CD
 Indians,NORP,NNPS
 Indians,NORP,NNPS
 Indians,NORP,NNPS
 1936,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 This past year,DATE,DT JJ NN
 year,DATE,NN
 San Juan,GPE,NNP NNP
 Mesa Schools,ORG,NNP NNP
 Last year,DATE,JJ NN
-the Toadlena School,ORG,DT NNP NNP
+Toadlena School,ORG,NNP NNP
 This year,DATE,DT NN
-the Toadlena School,ORG,DT NNP NNP SP
+Toadlena School,ORG,NNP NNP
 San Juan School,ORG,NNP NNP NNP
 This year,DATE,DT NN
 the Department of Agricul-,ORG,DT NNP IN NNP
 Shiprock,GPE,NNP
 Shiprock,GPE,NNP
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 the past two years,DATE,DT JJ CD NNS
 the winter 1924-25,DATE,DT NN CD SYM CD
 Ioadlena,NORP,NNP
@@ -1012,6 +1032,7 @@ Iield,GPE,NNP
 Iocito,GPE,NNP
 San Juan,GPE,NNP NNP
 Iumps,ORG,NNP
+San Juan School,ORG,NNP NNP NNP
 the year 1924-25,DATE,DT NN CD SYM CD
 this year,DATE,DT NN
 the past two years,DATE,DT JJ CD NNS
@@ -1029,7 +1050,7 @@ June 30,DATE,NNP CD
 June 30,DATE,NNP CD
 Indians,NORP,NNPS
 1926,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 a few years,DATE,DT JJ NNS
 14 or 16 years,DATE,CD CC CD NNS
 Colerado,GPE,NNP
@@ -1048,24 +1069,25 @@ Amount,PERSON,NNP
 Indians,NORP,NNPS
 Indians,NORP,NNPS
 Indians,NORP,NNPS
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 Eleanor D. Gregg,PERSON,NNP NNP NNP
 Field Nurses,ORG,NNP NNPS
 Field Matrons,PERSON,NNP NNPS
-Toadlena,ORG,NNP
+Toadlena,GPE,NNP
 the year,DATE,DT NN
 Gregg,PERSON,NNP
-the Toadlena School,ORG,DT NNP NNP
+Toadlena School,ORG,NNP NNP
 Program,ORG,NNP
+Juan,PERSON,NNP
 Indian School,ORG,JJ NNP
 1926,DATE,CD
-San Juan,GPE,NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 Navajo,NORP,NNP
 San Juan,GPE,NNP NNP
 the year,DATE,DT NN
 Mesa,ORG,NNP
 San Juan,GPE,NNP NNP
-San Juan,GPE,NNP NNP
+San Juan School,ORG,NNP NNP NNP
 March,DATE,NNP
 Missionaries,ORG,NNS
 Indians,NORP,NNPS
@@ -1140,7 +1162,7 @@ Gallup,ORG,NNP
 Shiprock,GPE,NNP
 San Juan,GPE,NNP NNP
 San Juan,GPE,NNP NNP
-Toadlena,FAC,NNP
+Toadlena,GPE,NNP
 Shiprock,GPE,NNP
 San Juan,GPE,NNP NNP
 Navajo,NORP,NNP
@@ -1178,7 +1200,7 @@ Cochiti,ORG,NNP
 Indians,NORP,NNPS
 Indians,NORP,NNPS
 1950,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 Navajo,NORP,NNP
 the past three years,DATE,DT JJ CD NNS
 early winter,DATE,JJ NN
@@ -1225,14 +1247,14 @@ June 30,DATE,NNP CD
 fiscal year,DATE,JJ NN
 Indians,NORP,NNPS
 Indians,NORP,NNPS
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 Indian,NORP,JJ
 Indians,NORP,NNPS
 Indian,NORP,JJ
 Medicine,GPE,NNP
 the East Farm,GPE,DT NNP NNP
 Laguna,GPE,NNP
-the Toadlena School,ORG,DT NNP NNP
+Toadlena School,ORG,NNP NNP
 James D. Kennedy,PERSON,NNP NNP NNP
 Wigglesworth,PERSON,NNP
 Wigglesworth,PERSON,NNP
@@ -1241,7 +1263,7 @@ San Juan,GPE,NNP NNP
 Indian School,ORG,JJ NNP
 Indians,NORP,NNPS
 1926,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 The San Juan,ORG,DT NNP NNP
 Navajo,NORP,NNP
 New Mexico,GPE,NNP NNP
@@ -1249,9 +1271,10 @@ Utah,GPE,NNP
 Indians,NORP,NNPS
 Shiprock,GPE,NNP
 "N. M.,",PERSON,"NNP NNP ,"
-San Juan,GPE,NNP NNP
+San Juan School,ORG,NNP NNP NNP
 Camp,ORG,NNP
 Juan Hospital,PERSON,NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 30st Office,ORG,NN NN
 Gallup,GPE,NNP
 N. M.,PERSON,NNP NNP
@@ -1260,8 +1283,9 @@ Farmington,GPE,NNP
 N. M. from,PERSON,NNP NNP IN
 State Highway,ORG,SP NNP NNP
 Gallup,ORG,NNP
+S. F. Ry..,PERSON,NNP NNP NNP NFP
 Farmington,GPE,NNP
-Shiprock,PERSON,NNP
+Shiprock,ORG,NNP
 Farmington,GPE,NNP
 Bell,PERSON,NNP
 Sunday,DATE,NNP
@@ -1271,7 +1295,7 @@ the Old Hospital,ORG,DT NNP NNP
 San Juan,GPE,NNP NNP
 Indians,NORP,NNPS
 1926,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 1925,DATE,CD
 March,DATE,NNP
 a few days,DATE,DT JJ NNS
@@ -1287,9 +1311,11 @@ San Juan Reservation,GPE,NNP NNP NNP
 18 years,DATE,CD NNS
 Indians,NORP,NNPS
 Indians,NORP,NNPS
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
+San Juan School,ORG,NNP NNP NNP
 the Shiprock Schools,ORG,DT NNP NNP
 San Juan'River,GPE,NNP NNP
+San Juan School,ORG,NNP NNP NNP
 Indians,NORP,NNPS
 the Health Program,ORG,DT NNP NNP
 Toadlena,GPE,NNP
@@ -1306,14 +1332,14 @@ year ending June 30",DATE,DT JJ JJ SP NN VBG NNP CD
 Indian,NORP,JJ
 Indian,NORP,JJ
 1926,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 H. J. Hagerman,PERSON,NNP NNP NNP
 Toadlena,GPE,NNP
 April,PERSON,NNP
 this year,DATE,DT NN
-the Toadlena School,ORG,DT NNP NNP
+Toadlena School,ORG,NNP NNP
 Indian,NORP,JJ
-Fort Defiance,FAC,NNP NNP
+Fort Defiance,GPE,NNP NNP
 Phoenix,GPE,NNP
 A. M. Wiggles-,PERSON,NNP NNP NNP
 Toadlena,GPE,NNP
@@ -1325,21 +1351,23 @@ Aneth,PERSON,NNP
 September,DATE,NNP
 1924,DATE,CD
 1926,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 "Home
 Training",ORG,NNP SP NNP
 Domestic Science,ORG,SP JJ NN
 four days,DATE,CD NNS
+is is,FAC,VBZ VBZ
 eighteen years old,DATE,CD NNS JJ
 Physician,NORP,NNP
 J1eed Matron,PERSON,NNP NNP
 last summer,DATE,JJ NN
 Indian,NORP,JJ
-Whites Indians,NORP,NNPS NNPS
+Number Number,FAC,NN NN
+Indians,NORP,NNPS
 U. S.,PERSON,NNP NNP SP
 Indian,NORP,JJ
 Indian,NORP,JJ
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 WATRI.,ORG,NNP
 weeks,DATE,NNS
 Indians,NORP,NNPS
@@ -1358,9 +1386,10 @@ Navajo,NORP,JJ
 Rattlesanke,PRODUCT,NNP
 Shiprock,GPE,NNP
 Shiprock,ORG,NNP
+San Juan School,ORG,NNP NNP NNP
 1924,DATE,CD
 1925,DATE,CD
-San Juan,GPE,NNP NNP
+San Juan School,ORG,NNP NNP NNP
 San Juan,GPE,NNP NNP
 1925,DATE,CD
 Shiprock,FAC,NNP
@@ -1380,19 +1409,19 @@ Agent,ORG,NNP
 Indians,NORP,NNPS
 early spring months,DATE,JJ NN NNS
 Indians,NORP,NNPS
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 "W. H.
 Hashbarger",PERSON,NNP NNP SP NNP
-the Toadlena School,ORG,DT NNP NNP SP
+Toadlena School,ORG,NNP NNP
 the past six years,DATE,DT JJ CD NNS
-Navajo,NORP,JJ
 Indian,NORP,JJ
 Super-,ORG,NNP
 Field Nurses,ORG,NNP NNPS
 H- J. Hagerman,PERSON,NNP NNP NNP
 Tribe,PERSON,NNP
+in in,LOC,RB IN
 late April,DATE,JJ NNP
-Toadlena,ORG,NNP
+Toadlena,GPE,NNP
 the United States,GPE,DT NNP NNP
 Santa Fe School,ORG,NNP NNP NNP
 San Juan Agency,ORG,NNP NNP NNP
@@ -1422,6 +1451,7 @@ Ilhich,GPE,NNP
 Pueblo,ORG,NNP
 Pueblo,ORG,NNP
 San Juan Agency,ORG,NNP NNP NNP
+Rambouillet,ORG,NNP
 many years,DATE,JJ NNS
 1925,DATE,CD
 "the Bureau of
@@ -1441,7 +1471,7 @@ Agency Stockman,PERSON,NNP NNP
 Sgn 1301a,DATE,NNP CD
 Indians,NORP,NNPS
 1926,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 the summer months,DATE,DT NN NNS
 twelve months of the year,DATE,CD NNS IN DT NN
 Hogback,PRODUCT,NNP
@@ -1452,7 +1482,8 @@ December'first,ORG,NNP
 SURFACE,ORG,NNP
 the spring of 1926,DATE,DT NN IN CD
 Indian,NORP,JJ
-Item-lo,WORK_OF_ART,NNP HYPH NNP
+1926,DATE,CD
+Sen Juen Agency,ORG,NNP NNP NNP
 H. Burke School,ORG,NNP NNP NNP
 this year,DATE,DT NN
 Phoenix,GPE,NNP
@@ -1526,25 +1557,27 @@ San Juan Agency,ORG,NNP NNP NNP
 Public Domain,ORG,NNP NNP
 San Juan,GPE,NNP NNP
 Mesa,ORG,NNP
-Mesa,ORG,NNP
+San Juan School,ORG,NNP NNP NNP
 the same day,DATE,DT JJ NN
 Missouri,GPE,NNP
 this spring,DATE,DT NN
 Norway,GPE,NNP
 Last year,DATE,JJ NN
-Toadlena Schools,PERSON,NNP NNP
+Toadlena,GPE,NNP
 This year,DATE,DT NN
 Shipreck,GPE,NNP
-Ship-,ORG,NNP
+San Juan School,ORG,NNP NNP NNP
+Ship-,FAC,NNP
 this year,DATE,DT NN
 next year,DATE,JJ NN
+Toadlena,GPE,NNP
 last year,DATE,JJ NN
 1926,DATE,CD
 San Juan Agency,ORG,NNP NNP NNP
 Mission,ORG,NNP
 Individual Indian Moneys,ORG,NNP JJ NNP
 Indians,NORP,NNPS
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 Navajo,NORP,NNP
 J~ndians,NORP,NNPS
 the Oil Companies,ORG,DT NNP NNS
@@ -1554,10 +1587,11 @@ Havajos,ORG,NNP
 Indians,NORP,NNPS
 Mesa Verde,ORG,NNP NNP
 Last year,DATE,JJ NN
+San Juan School,ORG,NNP NNP NNP
 a week,DATE,DT NN
 A few years ago,DATE,DT JJ NNS RB
 Farmington,GPE,NNP
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 H. E. Pine,PERSON,NNP NNP NNP
 the year,DATE,DT NN
 Bistai,GPE,NNP
@@ -1589,7 +1623,7 @@ Indian,NORP,JJ
 Indian,NORP,JJ
 Juan,PERSON,NNP SP
 1930,DATE,CD
-San Juan Agency,GPE,NNP NNP NNP
+San Juan Agency,ORG,NNP NNP NNP
 Holstein,PERSON,NNP
 Jicarilla Indian School,ORG,NNP NNP NNP
 Dulce,GPE,NNP
