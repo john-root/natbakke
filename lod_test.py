@@ -7,7 +7,8 @@ import csv
 def main():
     example = ftfy.fix_text(
         (open('./test2.txt').read().decode('utf-8')))
-    parser = initialise_spacy('new_mexico.json', geonames=True)
+    # parser = initialise_spacy('new_mexico.json', geonames=True)
+    parser = initialise_spacy()
     parser.matcher.add(
         "Toadlena",
         "GPE",
@@ -69,7 +70,7 @@ def main():
         [
             [
                 {ORTH: 'Diphtheria',
-                 LOWER: 'diptheria'}
+                 LOWER: 'diphtheria'}
             ]
         ]
     )
@@ -88,7 +89,7 @@ def main():
                                  'Entity_Label': ent.label_,
                                  'Parts_of_Speech': ' '.join([w.tag_ for w in ent])})
     print("After")
-    with open('after.csv', 'wb') as f:
+    with open('after2.csv', 'wb') as f:
         fieldnames = ['Entity_Orth', 'Entity_Label', 'Parts_of_Speech']
         writer = csv.DictWriter(f, fieldnames=fieldnames, dialect='excel')
         writer.writeheader()
