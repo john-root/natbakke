@@ -119,11 +119,10 @@ def get_words_hocr(canvas, scale_factor=None):
             count += 1
             word_dict = {}
             # parse each word with BS4
-            word_soup = BeautifulSoup(str(word), "lxml")
+
             # build a dictionary of word properties
             word_dict['line_number'] = line_count  # number
-            word_dict['bbox'] = word_soup.span[
-                'title'].split(';')[0].split()[1:]
+            word_dict['bbox'] = word['title'].split(';')[0].split()[1:]
             word_dict['start_x'] = int(word_dict['bbox'][0])
             word_dict['start_y'] = int(word_dict['bbox'][1])
             word_dict['end_x'] = int(word_dict['bbox'][2])
@@ -149,13 +148,12 @@ def get_words_hocr(canvas, scale_factor=None):
                     width,
                     height
                 ])
-            word_dict['text'] = ftfy.fix_text(word_soup.text)
+            word_dict['text'] = ftfy.fix_text(word.text)
             word_dict['start_idx'] = str(char_count)
             word_dict['end_idx'] = str(char_count + len(word_dict['text']))
             char_count = char_count + len(word_dict['text']) + 1
             word_dict['id'] = count  # word_soup.span['id'].split('_')[-1]
-            word_dict['confidence'] = word_soup.span[
-                'title'].split(';')[1].split()[-1]
+            word_dict['confidence'] = word['title'].split(';')[1].split()[-1]
             # print 'Confidence: %s' % word_dict['confidence']
             word_list.append(word_dict)
             # build a simple whitespaced text list
