@@ -106,7 +106,6 @@ def get_words_hocr(canvas, scale_factor=None):
     for line in lines:
         line_count += 1
         # parse each line with BS4
-        line_soup = BeautifulSoup(str(line), "lxml")
         # print 'hOCR Line: %s' % line
         # store line number for later
         # this is potentially fragile -- should possibly
@@ -114,7 +113,7 @@ def get_words_hocr(canvas, scale_factor=None):
         # ocracoke hCOR, for example.
         # number = line_soup.span['id'].split('_')[-1]
         # Parse with BS4 and extract all words from line.
-        words = line_soup.find_all("span", class_="ocrx_word")
+        words = line.find_all("span", class_="ocrx_word")
         for word in words:
             count += 1
             word_dict = {}
