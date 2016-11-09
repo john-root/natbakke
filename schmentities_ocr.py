@@ -1,6 +1,5 @@
 import os
 import fnmatch
-import subprocess
 from bs4 import BeautifulSoup
 import re
 import ftfy
@@ -9,6 +8,9 @@ import csv
 import glob
 import json
 from collections import Counter
+from Pil import Image
+from tesserocr import PyTessBaseAPI
+
 
 '''
 Add OCR full text length.
@@ -38,20 +40,13 @@ def main():
             for filename in find_files(bar, '*.jpg'):
                 if not os.path.basename(os.path.normpath(filename)).startswith('._'):
                     print 'Input Image: ', os.path.basename(os.path.normpath(filename))
-                    text_file = os.path.join(bar, str(
-                        filename.split("/")[-2]), os.path.basename(os.path.normpath(filename)).replace('.jpg', ''))
-                    hocr_file = os.path.join(
-                        '/tmp/', os.path.basename(os.path.normpath(filename)).replace('.jpg', ''))
-                    try:
-                        command = ['tesseract', filename, hocr_file, 'hocr']
-                        subprocess.check_output(
-                            command, stderr=subprocess.STDOUT)
-                        source_hocr = hocr_file + '.hocr'
-                        text_file = text_file + '.txt'
-                        small_list = []
-                        page = {}
-                        with open(source_hocr, 'r') as foo:
-                            hocr_contents = foo.read()
+                    with PyTessBaseAPI() as api:
+                        image = Image.open(filename)
+                        api.SetImage(image)
+                        hocr_contents = api.GetHOCRText(0)
+                        try:
+                            small_list = []
+                            page = {}
                             text_list = []
                             soup = BeautifulSoup(hocr_contents, "html.parser")
                             lines = soup.find_all("span", class_="ocr_line")
@@ -96,8 +91,8 @@ def main():
                             page['Full text length'] = len(ocr_text_sub)
                             print json.dumps(page, indent=4)
                             summary.append(page)
-                    except:
-                        pass
+                        except:
+                            pass
                 else:
                     print 'DODGY:', filename
             with open(json_file, 'w') as outfile:
