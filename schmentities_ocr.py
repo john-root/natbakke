@@ -10,6 +10,10 @@ import glob
 import json
 from collections import Counter
 
+'''
+Add OCR full text length.
+'''
+
 
 def find_files(directory, pattern):
     for root, dirs, files in os.walk(directory):
@@ -89,7 +93,7 @@ def main():
                             page['Average confidence'] = average_confidence
                             page['Total entities found'] = number_ents
                             page['Entity stats'] = stats
-                            page['Full text'] = ocr_text_sub
+                            page['Full text length'] = len(ocr_text_sub)
                             print json.dumps(page, indent=4)
                             summary.append(page)
                     except:

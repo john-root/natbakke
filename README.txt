@@ -15,3 +15,6 @@ Sample OCR text:
 
 Manual add of individual example e.g. Toadlena as an entity works, but the bulk add does not seem to be working.
 
+Source of data for enrichment:
+
+names.mongabay.com/data/indians.html
