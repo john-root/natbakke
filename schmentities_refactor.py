@@ -170,14 +170,13 @@ def process_image(imagefile, parser):
     return page
 
 
-def process_roll(folder_name, csv_file, parser):
+def process_roll(folder_name, csv_file, parser, json_write):
     '''
     Process a folder of images for a roll.
     '''
     folder_base = str(folder_name.split('/')[-2])
     json_file = os.path.join(
         folder_name, folder_base + '.json')
-    print 'JSON summary: %s' % json_file
     summary = []
     with open(csv_file, 'rw+') as f:
         csv_init(f)
@@ -185,13 +184,17 @@ def process_roll(folder_name, csv_file, parser):
     for image in images:
         page = process_image(image, parser)
     summary.append(page)
+    if json_write:
+        with open(json_file, 'w') as outfile:
+            json.dump(
+                summary, outfile, indent=4, sort_keys=True, separators=(',', ':'))
 
 
 def main():
     parser = initialise_spacy()
     process_roll(
         '/Users/matt.mcgrattan/Documents/IDA-NARA_files/M-1473_R-13/',
-        'output.csv', parser)
+        'output.csv', parser, json_write=False)
 
 
 def old_main():
