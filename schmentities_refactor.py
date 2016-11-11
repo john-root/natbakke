@@ -183,8 +183,8 @@ def main():
         writer = csv.DictWriter(f, fieldnames=fieldnames, dialect='excel')
         writer.writeheader()
         process_roll(
-            '/Users/matt.mcgrattan/Documents/IDA-NARA_files/M-1473_R-13/',
-            parser, writer, json_write=True)
+            '/Volumes/IDA-IMAGES/source/M-1011_R-09/',
+            parser, writer, json_write=False)
 
 
 if __name__ == '__main__':
