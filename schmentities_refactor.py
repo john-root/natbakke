@@ -136,9 +136,6 @@ def nlp_image(text, imagefile, parser):
     for item in c.items():
         z = list(item)
         stats[str(z[0])] = str(z[1])
-    print number_ents
-    print stats
-    print rows
     return number_ents, stats, rows
 
 
@@ -153,7 +150,24 @@ def process_image(imagefile, parser):
         else:
             hocr_data = ocr_image(imagefile, write=False)
     confidence, typewritten, text = ocr_parse(hocr_data)
-    nlp_image(text, imagefile, parser)
+    number_ents, stats, rows = nlp_image(text, imagefile, parser)
+    page = {}
+    page['Average_confidence'] = confidence
+    page['Total_entities_found'] = number_ents
+    page['Entity_stats'] = stats
+    page['Typescript'] = typewritten
+    page['Full_text_length'] = len(text)
+    # crimes against Python
+    base = os.path.basename(imagefile).replace('.jpg', '')
+    parts = base.split('_')
+    roll_bits = parts[0].split('R')
+    roll_bits[0] = roll_bits[0][
+        0:1] + '-' + roll_bits[0][1:]
+    id = ''.join(
+        ['https://dlcs-ida.org/iiif-img/2/1/', '_R-'.join(roll_bits) + '_' + parts[1]])
+    page['id'] = id
+    print json.dumps(page, indent=4)
+    return page
 
 
 def process_roll(folder_name, csv_file, parser):
@@ -169,7 +183,8 @@ def process_roll(folder_name, csv_file, parser):
         csv_init(f)
     images = get_images(folder_name, 'jpg')
     for image in images:
-        process_image(image, parser)
+        page = process_image(image, parser)
+    summary.append(page)
 
 
 def main():
