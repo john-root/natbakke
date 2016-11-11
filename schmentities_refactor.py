@@ -115,6 +115,33 @@ def ocr_parse(hocr_data, text_file=None):
     return average_confidence, typewritten, ocr_text_sub
 
 
+def nlp_image(text, imagefile, parser):
+    '''
+    Do entity extraction and entity stats gathering for
+    the text for an image.
+    '''
+    small_list = []
+    rows = []
+    parsed = parser(unicode(text))
+    for ent in parsed.ents:
+        if ent.label_ not in ['TIME', 'PERCENT', 'CARDINAL', 'ORDINAL', 'QUANTITY', 'MONEY'] and len(ent.orth_) > 3:
+            small_list.append(ent.label_)
+            cont_row = {'Entity_Orth': ent.orth_.encode('utf-8'),
+                        'Entity_Label': ent.label_,
+                        'Source': imagefile}
+            rows.append(cont_row)
+    number_ents = len(parsed.ents)
+    c = Counter(small_list)
+    stats = {}
+    for item in c.items():
+        z = list(item)
+        stats[str(z[0])] = str(z[1])
+    print number_ents
+    print stats
+    print rows
+    return number_ents, stats, rows
+
+
 def process_image(imagefile, parser):
     # text_file = imagefile.replace('jpg', 'txt')
     hocr_file = imagefile.replace('jpg', 'hocr')
@@ -126,7 +153,7 @@ def process_image(imagefile, parser):
         else:
             hocr_data = ocr_image(imagefile, write=False)
     confidence, typewritten, text = ocr_parse(hocr_data)
-    print typewritten
+    nlp_image(text, imagefile, parser)
 
 
 def process_roll(folder_name, csv_file, parser):
