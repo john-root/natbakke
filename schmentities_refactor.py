@@ -35,18 +35,121 @@ gather stats
 '''
 
 
-def process_roll(folder_name):
+def csv_init(f):
     '''
+    Initialise the CSV file by creating header row
+    if one doesn't already exist.
+    '''
+    reader = csv.reader(f)
+    headers = reader.next()
+    if headers[0] == 'Entity_Orth':
+        print 'Got headers'
+    else:
+        fieldnames = ['Entity_Orth', 'Entity_Label', 'Source']
+        writer = csv.DictWriter(f, fieldnames=fieldnames, dialect='excel')
+        writer.writeheader()
 
+
+def get_images(folder_name, ext):
     '''
+    Return a list of images in folder with extenstion ext.
+    '''
+    image_list = []
+    for filename in find_files(folder_name, '*.' + ext):
+        if not os.path.basename(os.path.normpath(filename)).startswith('._'):
+            image_list.append(os.path.normpath(filename))
+    if image_list:
+        return image_list
+
+
+def ocr_image(imagefile, write=True):
+    with PyTessBaseAPI() as api:
+        image = Image.open(imagefile)
+        api.SetImage(image)
+        hocr_contents = api.GetHOCRText(0)
+        if write:
+            with open(hocr_file, 'w') as hocka:
+                hocka.write(
+                    hocr_contents.encode(
+                        'ascii', 'xmlcharrefreplace')
+                )
+        return hocr_contents
+
+
+def ocr_parse(hocr_data, text_file=None):
+    text_list = []
+    soup = BeautifulSoup(hocr_data, "html.parser")
+    lines = soup.find_all("span", class_="ocr_line")
+    count = 0
+    conf_total = 0
+    for line in lines:
+        line_soup = BeautifulSoup(
+            str(line), "html.parser")
+        words = line_soup.find_all(
+            "span", class_="ocrx_word")
+        for word in words:
+            count += 1
+            word_soup = BeautifulSoup(
+                str(word), "html.parser")
+            text_list.append(
+                ftfy.fix_text(word_soup.text))
+            confidence = int(
+                word_soup.span['title'].split(';')[1].split()[-1])
+            conf_total = conf_total + confidence
+    ocr_text = ' '.join(text_list)
+    ocr_text_sub = re.sub(r'\s+', ' ', ocr_text)
+    if text_file:
+        with open(text_file, 'w') as texta:
+            texta.write(
+                ocr_text_sub.encode('ascii', 'replace'))
+    if conf_total > 0 and count > 0:
+        average_confidence = (conf_total / count)
+    else:
+        average_confidence = 0
+    if average_confidence < 60:
+        typewritten = False
+    elif (average_confidence > 70 and len(ocr_text_sub) < 10):
+        typewritten = False
+    else:
+        typewritten = True
+    return average_confidence, typewritten, ocr_text_sub
+
+
+def process_image(imagefile, parser):
+    # text_file = imagefile.replace('jpg', 'txt')
+    hocr_file = imagefile.replace('jpg', 'hocr')
+    if os.path.exists(imagefile):
+        if os.path.exists(hocr_file):
+            hocr = open(hocr_file, 'r')
+            hocr_data = hocr.read()
+            hocr.close()
+        else:
+            hocr_data = ocr_image(imagefile, write=False)
+    confidence, typewritten, text = ocr_parse(hocr_data)
+    print typewritten
+
+
+def process_roll(folder_name, csv_file, parser):
+    '''
+    Process a folder of images for a roll.
+    '''
+    folder_base = str(folder_name.split('/')[-2])
     json_file = os.path.join(
-        folder_name, str(folder_name.split('/')[-2]) + '.json')
-    print json_file
+        folder_name, folder_base + '.json')
+    print 'JSON summary: %s' % json_file
     summary = []
+    with open(csv_file, 'rw+') as f:
+        csv_init(f)
+    images = get_images(folder_name, 'jpg')
+    for image in images:
+        process_image(image, parser)
 
 
 def main():
-    process_roll('/Users/matt.mcgrattan/Documents/IDA-NARA_files/M-1473_R-13/')
+    parser = initialise_spacy()
+    process_roll(
+        '/Users/matt.mcgrattan/Documents/IDA-NARA_files/M-1473_R-13/',
+        'output.csv', parser)
 
 
 def old_main():
