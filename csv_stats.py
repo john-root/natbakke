@@ -18,7 +18,7 @@ for row in reader:
 
 unique_orths = set(orths)
 
-c = Counter(orths).most_common()
+c = Counter(orths)
 stats = {}
 for item in c.items():
     z = list(item)
@@ -26,7 +26,9 @@ for item in c.items():
     # if z[1] > 1:
     #     print 'Common: %s' % z
 
-sorted_stats = sorted(stats.items(), key=operator.itemgetter(1))
+
+
+sorted_stats = reversed(sorted(stats.items(), key=operator.itemgetter(1)))
 big_list = []
 for stat in sorted_stats:
     stat_dict = {}
