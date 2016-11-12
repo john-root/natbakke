@@ -186,10 +186,13 @@ def main():
         writer = csv.DictWriter(f, fieldnames=fieldnames, dialect='excel')
         writer.writeheader()
         # folders = glob.glob('/Volumes/IDA-IMAGES/source/[M, T]-*/')
-        folders = ['/Volumes/IDA-IMAGES/source/M-1011_R-09/']
+        folders = glob.glob('/Volumes/IDA-IMAGES/source/M-10[1,7]*/')
         for folder in folders:
-            process_roll(
-                folder, parser, writer, json_write=True)
+            print 'Folder: %s' % folder
+            # folders = ['/Volumes/IDA-IMAGES/source/M-1011_R-09/']
+            for folder in folders:
+                process_roll(
+                    folder, parser, writer, json_write=True)
 
 
 if __name__ == '__main__':
