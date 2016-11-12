@@ -127,10 +127,16 @@ def nlp_image(text, imagefile, parser, id):
 def process_image(imagefile, parser, folder_name):
     # text_file = imagefile.replace('jpg', 'txt')
     base = os.path.basename(imagefile).replace('.jpg', '')
-    parts = base.split('_')
-    id = ''.join(
-        ['https://dlcs-ida.org/iiif-img/2/1/',
-         folder_name + '_' + parts[1]])
+    print 'Base: %s' % base
+    if '_' in base:
+        parts = base.split('_')
+        id = ''.join(
+            ['https://dlcs-ida.org/iiif-img/2/1/',
+             folder_name + '_' + parts[1]])
+    else:
+        id = ''.join(
+            ['https://dlcs-ida.org/iiif-img/2/1/',
+             folder_name + '_' + base])
     hocr_file = imagefile.replace('jpg', 'hocr')
     if os.path.exists(imagefile):
         if os.path.exists(hocr_file):
@@ -181,7 +187,7 @@ def process_roll(folder_name, parser, writer, json_write=False):
 
 def main():
     parser = initialise_spacy()
-    with open('output_new.csv', 'wb') as f:
+    with open('output_m101_7.csv', 'wb') as f:
         fieldnames = ['Entity_Orth', 'Entity_Label', 'Source']
         writer = csv.DictWriter(f, fieldnames=fieldnames, dialect='excel')
         writer.writeheader()
