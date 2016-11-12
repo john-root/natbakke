@@ -149,11 +149,12 @@ def process_image(imagefile, parser, folder_name):
     number_ents, stats, rows = nlp_image(text, imagefile, parser, id)
     page = {}
     page['Average_confidence'] = confidence
-    page['Total_entities_found'] = number_ents
     if typewritten:
         page['Entity_stats'] = stats
+        page['Total_entities_found'] = number_ents
     else:
         page['Entity_stats'] = {}
+        page['Total_entities_found'] = 0
     page['Typescript'] = typewritten
     page['Full_text_length'] = len(text)
     page['id'] = id
@@ -187,18 +188,17 @@ def process_roll(folder_name, parser, writer, json_write=False):
 
 def main():
     parser = initialise_spacy()
-    with open('output_m101_7.csv', 'wb') as f:
+    with open('output_3.csv', 'wb') as f:
         fieldnames = ['Entity_Orth', 'Entity_Label', 'Source']
         writer = csv.DictWriter(f, fieldnames=fieldnames, dialect='excel')
         writer.writeheader()
         # folders = glob.glob('/Volumes/IDA-IMAGES/source/[M, T]-*/')
-        folders = glob.glob('/Volumes/IDA-IMAGES/source/M-10[1,7]*/')
+        folders = glob.glob('/Volumes/IDA-IMAGES/source/T-21_ROLL-0*/')
         for folder in folders:
             print 'Folder: %s' % folder
             # folders = ['/Volumes/IDA-IMAGES/source/M-1011_R-09/']
-            for folder in folders:
-                process_roll(
-                    folder, parser, writer, json_write=True)
+            process_roll(
+                folder, parser, writer, json_write=True)
 
 
 if __name__ == '__main__':
