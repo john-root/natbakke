@@ -144,7 +144,10 @@ def process_image(imagefile, parser, folder_name):
     page = {}
     page['Average_confidence'] = confidence
     page['Total_entities_found'] = number_ents
-    page['Entity_stats'] = stats
+    if typewritten:
+        page['Entity_stats'] = stats
+    else:
+        page['Entity_stats'] = {}
     page['Typescript'] = typewritten
     page['Full_text_length'] = len(text)
     page['id'] = id
@@ -182,7 +185,8 @@ def main():
         fieldnames = ['Entity_Orth', 'Entity_Label', 'Source']
         writer = csv.DictWriter(f, fieldnames=fieldnames, dialect='excel')
         writer.writeheader()
-        folders = glob.glob('/Volumes/IDA-IMAGES/source/[M, T]-*/')
+        # folders = glob.glob('/Volumes/IDA-IMAGES/source/[M, T]-*/')
+        folders = ['/Volumes/IDA-IMAGES/source/M-1011_R-09/']
         for folder in folders:
             process_roll(
                 folder, parser, writer, json_write=True)
