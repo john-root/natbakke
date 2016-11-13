@@ -12,6 +12,12 @@ from collections import Counter
 from PIL import Image
 from tesserocr import PyTessBaseAPI
 
+# >>> from enchant.checker import SpellChecker
+# >>> chkr = SpellChecker("en_US")
+# >>> chkr.set_text("This is sme sample txt with erors.")
+# >>> for err in chkr:
+# ...     print "ERROR:", err.word
+
 
 def find_files(directory, pattern):
     for root, dirs, files in os.walk(directory):
@@ -188,12 +194,12 @@ def process_roll(folder_name, parser, writer, json_write=False):
 
 def main():
     parser = initialise_spacy()
-    with open('output_3.csv', 'wb') as f:
+    with open('output_master.csv', 'wb') as f:
         fieldnames = ['Entity_Orth', 'Entity_Label', 'Source']
         writer = csv.DictWriter(f, fieldnames=fieldnames, dialect='excel')
         writer.writeheader()
         # folders = glob.glob('/Volumes/IDA-IMAGES/source/[M, T]-*/')
-        folders = glob.glob('/Volumes/IDA-IMAGES/source/T-21_ROLL-0*/')
+        folders = glob.glob('/Volumes/IDA-IMAGES/source/[M,T]-*/')
         for folder in folders:
             print 'Folder: %s' % folder
             # folders = ['/Volumes/IDA-IMAGES/source/M-1011_R-09/']
