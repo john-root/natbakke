@@ -4,15 +4,21 @@ import spacy
 from spacy_basics import initialise_spacy
 from spacy.attrs import ORTH, LOWER
 from schmentities_refactor import ocr_parse
+from tribes_import import initialise_tribes
 
 
 def main():
+    csv_file = '/Users/matt.mcgrattan/Documents/tribe_names.csv'
     ocr_data = open(
         '/Volumes/IDA-IMAGES/text/M-1011_R-09/M1011R09_0181.hocr').read()
     confidence, typewritten, text = ocr_parse(ocr_data)
     # matcher, parser =initialise_spacy('new_mexico.json')
-    matcher, parser =initialise_spacy()
-
+    # matcher, parser =initialise_spacy()
+    matcher, parser = initialise_tribes(csv_file)
+    if matcher:
+        print 'Got da matcha'
+    if parser:
+        print 'Got da parser'
     # parser = spacy.load('en')
     '''
     Create a custom matcher.
@@ -61,9 +67,14 @@ def main():
         Grab the dict from the entity
         '''
         entity = matcher.get_entity(ent_id)
-        print parser.vocab.strings[label]
-        print parser.vocab.strings[ent_id]
-        print entity["ent_type"]
+        label = parser.vocab.strings[label]
+        entity_id = parser.vocab.strings[ent_id]
+        ent_type = entity["ent_type"]
+        print label
+        print ent_type
+        # print 'Start offset: %s' % start
+        # print 'End offset: %s' % end
+        # print 'Text in the data: %s' % after[start: end].text
         '''
         Entity id, label (for entity), string matched in the text
         '''
