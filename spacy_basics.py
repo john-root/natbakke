@@ -42,6 +42,7 @@ def initialise_spacy(matcher_json=None, geonames=False):
     vocab to the matcher.
     '''
     parser = spacy.en.English()
+    matcher = spacy.matcher.Matcher(parser.vocab)
     if geonames:
         featurecode_dict = build_featurecode_dict('GeoNames.htm')
     if matcher_json is not None:
@@ -69,11 +70,44 @@ def initialise_spacy(matcher_json=None, geonames=False):
                     pass
             add_list = [name, z, {"geonameid": geonameid}, [word_list]]
             print ujson.dumps(add_list, indent=4)
-            parser.matcher.add(
-                name,  # Entity ID: Not really used at the moment.
-                z,   # Entity type: should be one of the types in the NER data
-                # Arbitrary attributes. Currently unused.
-                {"geonameid": geonameid},
-                [word_list]
+            matcher.add_pattern(
+                ''.join(name.split()).lower(),
+                word_list,
+                label=name)
+            matcher.add_entity(
+                # Entity ID -- Helps you act on the match.
+                ''.join(name.split()).lower(),
+                # Arbitrary attributes (optional)
+                {"ent_type": z,
+                    "geonameid": geonameid},
+                if_exists='update'
             )
-    return parser
+    matcher.add_pattern(
+        "narragansett",
+        [{LOWER: "narragansett", ORTH: "Narragansett"}],
+        label="Narragansett")
+    matcher.add_entity(
+        "narragansett",  # Entity ID -- Helps you act on the match.
+        # Arbitrary attributes (optional)
+        {"ent_type": "TRIBE",
+            "wiki_en": "https://en.wikipedia.org/wiki/Narragansett_people"},
+        if_exists='update'
+    )
+    matcher.add_pattern(
+        "courdalene",
+        [{LOWER: "cour", ORTH: "Cour"},
+            {LOWER: "d'alene", ORTH: "D'Alene"}],
+        label="Coeur d'Alene")
+    matcher.add_pattern(
+        "courdalene",
+        [{LOWER: "coeur", ORTH: "Coeur"},
+            {LOWER: "d'alene", ORTH: "d'Alene"}],
+        label="Coeur d'Alene")
+    matcher.add_entity(
+        "courdalene",  # Entity ID -- Helps you act on the match.
+        # Arbitrary attributes (optional)
+        {"ent_type": "TRIBE",
+            "wiki_en": "https://en.wikipedia.org/wiki/Coeur_d%27Alene_people"},
+        if_exists='update'
+    )
+    return matcher, parser
