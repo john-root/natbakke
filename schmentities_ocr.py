@@ -1,14 +1,7 @@
 # -*- coding: utf-8 -*-
 import os
 import fnmatch
-from bs4 import BeautifulSoup
-import re
-import ftfy
-from spacy_basics import initialise_spacy
-import csv
 import glob
-import json
-from collections import Counter
 from PIL import Image
 from tesserocr import PyTessBaseAPI
 import concurrent.futures
@@ -68,7 +61,7 @@ def process_roll(folder_name):
     '''
     folder_base = str(folder_name.split('/')[-2])
     images = get_images(folder_name, 'jpg')
-    with concurrent.futures.ProcessPoolExecutor(6) as pool:
+    with concurrent.futures.ProcessPoolExecutor(3) as pool:
         for image in images:
             if os.path.exists(image):
                 hocr_file = image.replace('jpg', 'hocr')
@@ -79,8 +72,13 @@ def process_roll(folder_name):
 
 
 def main():
-    process_roll(
-        '/Volumes/IDA-IMAGES/source/M-1011_R-09/')
+    folders = glob.glob('/Volumes/IDA-IMAGES/source/M-*/')
+    for folder in folders:
+        print 'Folder: %s' % folder
+        process_roll(
+            folder)
+        # process_roll(
+        #     '/Volumes/IDA-IMAGES/source/M-1011_R-09/')
 
 
 if __name__ == '__main__':
