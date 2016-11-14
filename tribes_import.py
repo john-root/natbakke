@@ -56,7 +56,7 @@ def initialise_tribes(csv_file):
             # Entity ID -- Helps you act on the match.
             ''.join(name.split()).lower(),
             # Arbitrary attributes (optional)
-            {"ent_type": "Tribe",
+            {"ent_type": "TRIBE",
              "loc_id": row['Source or LOC Linked Data Identifier'].strip()},
             if_exists='update'
         )
