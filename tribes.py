@@ -12,7 +12,16 @@ def main():
     confidence, typewritten, text = ocr_parse(ocr_data)
     original_parser = spacy.load('en')
     parser = spacy.load('en')
+    '''
+    Create a custom matcher.
+
+    Final output will need to redact
+    any entities in the non-custom matcher
+    and replace with custom entities where they
+    exist.
+    '''
     matcher = Matcher(parser.vocab)
+    # add a pattern (or patterns)
     matcher.add_pattern(
         "narragansett",
         [{LOWER: "narragansett", ORTH: "Narragansett"}],
@@ -20,11 +29,22 @@ def main():
     matcher.add_entity(
         "narragansett",  # Entity ID -- Helps you act on the match.
         # Arbitrary attributes (optional)
-        {"ent_type": "NORP",
+        {"ent_type": "TRIBE",
             "wiki_en": "https://en.wikipedia.org/wiki/Narragansett_people"},
         if_exists='update'
     )
-    before = original_parser(unicode(text))
+    matcher.add_pattern(
+        "courdalene",
+        [{LOWER: "cour", ORTH: "Cour"}, {LOWER: "d'alene", ORTH: "D'Alene"}],
+        label="Cour D'Alene")
+    matcher.add_entity(
+        "courdalene",  # Entity ID -- Helps you act on the match.
+        # Arbitrary attributes (optional)
+        {"ent_type": "TRIBE",
+            "wiki_en": "https://en.wikipedia.org/wiki/Coeur_d%27Alene_people"},
+        if_exists='update'
+    )
+    # before = original_parser(unicode(text))
     after = parser(unicode(text))
     matches = matcher(after)
     # for ent in before.ents:
@@ -44,23 +64,7 @@ def main():
     #          LOWER: 'toadlena'}
     #     ]
     # )
-    # parser2.matcher.add_pattern(
-    #     "SanJuanAgency",
-    #     [
 
-    #         {ORTH: 'San',
-    #          LOWER: 'san'},
-    #         {ORTH: 'Juan',
-    #          LOWER: 'juan'},
-    #         {ORTH: 'Agency',
-    #          LOWER: 'agency'}
-    #     ]
-    # )
-    # parser2.matcher.add_entity(
-    #     "SanJuanAgency",
-    #     {"ent_type": "ORG"},
-    #     if_exists='update'  # Callback to act on the matches
-    # )
     # parser2.matcher.add_entity(
     #     "Toadlena",
     #     {"ent_type": "GPE"},
