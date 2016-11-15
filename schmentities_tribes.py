@@ -4,7 +4,7 @@ import fnmatch
 from bs4 import BeautifulSoup
 import re
 import ftfy
-from spacy_basics import initialise_spacy
+# from spacy_basics import initialise_spacy
 import csv
 import glob
 import json
@@ -21,6 +21,7 @@ def find_files(directory, pattern):
             if fnmatch.fnmatch(basename, pattern):
                 filename = os.path.join(root, basename)
                 yield filename
+
 
 '''
 
@@ -144,7 +145,9 @@ def nlp_image(text, imagefile, parser, matcher, id):
                     'Source': id}
         rows.append(cont_row)
     for ent in parsed.ents:
-        if ent.label_ not in ['TIME', 'PERCENT', 'CARDINAL', 'ORDINAL', 'QUANTITY', 'MONEY'] and len(ent.orth_) > 3:
+        if ent.label_ not in ['TIME', 'PERCENT',
+                              'CARDINAL', 'ORDINAL',
+                              'QUANTITY', 'MONEY'] and len(ent.orth_) > 3:
             small_list.append(ent.label_)
             cont_row = {'Entity_Orth': ent.orth_.encode('utf-8'),
                         'Entity_Label': ent.label_,
@@ -172,7 +175,7 @@ def process_image(imagefile, parser, matcher, folder_name):
         id = ''.join(
             ['https://dlcs-ida.org/iiif-img/2/1/',
              folder_name + '_' + base])
-    hocr_file = imagefile #.replace('jpg', 'hocr')
+    hocr_file = imagefile  # .replace('jpg', 'hocr')
     if os.path.exists(imagefile):
         if os.path.exists(hocr_file):
             hocr = open(hocr_file, 'r')
@@ -195,7 +198,7 @@ def process_image(imagefile, parser, matcher, folder_name):
         page['Total_entities_found'] = 0
     page['Typescript'] = typewritten
     page['Full_text_length'] = len(text)
-    page['id'] = id.replace('.hocr','')
+    page['id'] = id.replace('.hocr', '')
 
     print json.dumps(page, indent=4)
     return page, rows
