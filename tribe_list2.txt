@@ -1,0 +1,97 @@
+Abenaki	The Abenaki tribe belonged to the Northeast woodland Cultural Group
+Aleut	The Aleut tribe belonged to the Arctic Indian tribes
+Apache	The Apache tribe were associated with the Southwest Native American Indian tribes
+Arapaho	The Arapaho tribe, aka Hocak and Pajoke, belonged to the Great Plains Indian tribes
+Arikara	The Arikara tribe belonged to the Great Plains Indian tribes
+Assiniboine	The Assiniboine tribe belonged to the Great Plains Indian tribes
+Bannock	The Bannock tribe belonged to the Great Basin Indian tribes
+Bella Coola	The Bella Coola tribe, aka the Nuxalk people, belonged to the Northwest Coast tribes
+Blackfoot	The Blackfoot or Blackfeet tribe, aka the Siksika, belonged to the Great Plains tribes
+Caddo	The Caddo tribe were associated with the Southeast Indian tribes
+Cayuse	The Cayuse tribe belonged to the Plateau Native American Indian tribes
+Cherokee	The Cherokee tribe belonged to the Southeast Native American Indian tribes
+Cheyenne	The Cheyenne tribe were associated with the Great Plains tribes
+Chickasaw	The Chickasaw tribe belonged to the Southeast Indian tribes
+Chinook	The Chinook tribe were associated with the Northwest Pacific Coast tribes
+Chippewa (Ojibwa)	The Chippewa (Ojibwa) tribe belonged to the Northeast Woodland Indian tribes
+Choctaw	The Choctaw tribe belonged to the Southeast Indian tribes
+Chumash	The Chumash tribe were associated with the California Indian tribes
+Clatsop	The Clatsop tribe, aka the Flatheads, belonged to the Northwest Pacific Coast tribes
+Coast Salish	The Coast Salish tribe belonged to the Northwest Pacific Coast Indian tribes
+Coeur d'Alene	The Coeur d'Alene tribe belonged to the Plateau Indian tribes
+Comanche	The Comanche tribe were associated with the Great Plains Indian tribes
+Cowlitz	The Cowlitz tribe belonged to the Northwest Pacific Coast Indian tribes
+Cree	The Cree tribe were associated with the Great Plains Indian tribes
+Creek	The Creek tribe belonged to the Southeast Indian tribes
+Crow	The Crow tribe belonged to the Great Plains Indian tribes
+Delaware (Lenape)	The Delaware (Lenape) tribe were associated with the Northeast Woodland Indian tribes
+Five Civilised Tribes	The Five Civilised Tribes were the Cherokee, Creek, Choctaw, Seminole and Chickasaw
+Flatheads	The name Flathead was given to different tribes who changed the shape of their heads
+Fox (Meskwaki)	The Fox (Meskwaki) tribe were associated with the Northeast Woodland Indian tribes
+Goshute	The Goshute tribe belonged to the Great Basin Indian tribes
+Gros Ventre	The Gros Ventre tribe were associated with the Great Plains Indian tribes
+Haida	The Haida tribe belonged to the Northwest Pacific Coast Indian tribes
+Hidatsa	The Hidatsa tribe belonged to the Great Plains Indian people
+Hopi	The Hopi tribe were associated with the Southwest Native Indians
+Huron (Wyandot)	The Huron (Wyandot) tribe belonged to the Northeast Woodland tribes
+Inuit	The Inuit tribe were associated with the Arctic tribes
+Iowa	The Iowa tribe belonged to the Great Plains Indian tribes list
+Iroquois Confederacy	The Iroquois Confederacy: the Mohawk, Oneida, Onondaga, Cayuga and Seneca
+Kansa	The Kansa tribe belonged to the Great Plains Indian people
+Kathlamet	The Kathlamet tribe were associated with the Northwest Pacific Coast Indian tribes
+Kickapoo	The Kickapoo tribe belonged to the Northeast Woodland Indian tribes
+Kiowa	The Kiowa tribe belonged to the Great Plains Native Indians list
+Lenape (Delaware)	The Lenape (Delaware) tribe belonged to the Northeast Woodland Indian tribes
+Maidu	The Maidu tribe were associated with the California Indian people
+Mandan	The Mandan tribe belonged to the Great Plains Native Indians list
+Meskwaki (Fox)	The Meskwaki (Fox) tribe belonged to the Northeast Woodland Indian tribes
+Missouria	The Missouria tribe belonged to the Great Plains Indian people
+Miwok	The Miwok tribe were associated with to the California Indian tribes
+Modoc	The Modoc tribe belonged to the Plateau Native Indians list
+Mohawk	The Mohawk tribe were associated with the Northeast Woodland Indian tribes
+Mohican	The Mohican tribe belonged to the Northeast Woodland Native Indians
+Mojave	The Mojave tribe belonged to the California Native Indians
+Narragansett	The Narragansett tribe belonged to the Northeast Woodland Indian tribes
+Natchez	The Natchez tribe belonged to the Southeast Native American Indian people
+Navajo	The Navajo tribe were associated with to the Southwest Native Indians list
+Nez Perce	The Nez Perce tribe belonged to the Plateau Native American tribes
+Ojibwe (Chippewa)	The Ojibwe (Chippewa) tribe belonged to the Northeast Woodland tribes
+Omaha	The Omaha tribe were associated with to the Great Plains Indian tribes
+Osage	The Osage tribe belonged to the Great Plains Native American tribes
+Otoe (Winnebago)	The Otoe tribe were associated with the Great Plains Indian tribes list
+Paiute	The Paiute tribe belonged to the Great Basin Native Indians
+Palouse	The Palouse tribe were associated with the Plateau Indian tribes
+Pawnee	The Pawnee tribe belonged to the Great Plains Native American Indian tribes
+Pennacook	The Pennacook tribe were associated with the Northeast Woodland Indian tribes
+Pequot	The Pequot tribe belonged to the Northeast Woodland Native American tribes
+Pima	The Pima tribe were associated with the Southwest Indian Native Indians list
+Pomo	The Pomo tribe were associated with the California Native Indians
+Ponca	The Ponca tribe belonged to the Great Plains Indian tribes list
+Powhatan	The Powhatan tribe belonged to the Northeast Woodland Indian tribes
+Powhatan Confederacy	The Powhatan Confederacy, a union of over 30 Algonquian speaking tribes
+Pueblo	The Pueblo tribe belonged to the Southwest Native American Indian tribes
+Salish (Coast)	The Salish (Coast) tribe belonged to the Northwest Pacific Coast Native Indians
+Sauk (Sac)	The Sauk (Sac) tribe belonged to the Northeast Woodland Indian tribes
+Seminole	The Seminole tribe were associated with the Southeast Native Indians list
+Serrano	The Serrano tribe belonged to the California Native American Indian tribes
+Shasta	The Shasta tribe were associated with the California Native Indians list
+Shawnee	The Shawnee tribe were associated with the Great Plains Indian tribes
+Shoshone	The Shoshone tribe belonged to the Great Basin Native American tribes
+Sioux	The Sioux tribe belonged to the Great Plains Native Indians
+Spokane	The Spokane tribe belonged to the Plateau Native American Indian tribes
+Tlingit	The Tlingit tribe belonged to the Northwest Pacific Coast Indian tribes
+Tsimshian	The Tsimshian tribe were associated with the Northwest Pacific Coast tribes
+Ute	The Ute tribe were associated with the Great Basin Indian tribes list
+Wahkiakum	The Wahkiakum tribe belonged to the Northwest Pacific Coast tribes
+Walla Walla	The Walla Walla tribe were associated with the Plateau Native American tribes
+Wampanoag	The Wampanoag tribe belonged to the Northeast Woodland tribes
+Wappo	The Wappo tribe were associated with the California Native Indians
+Washoe	The Washoe tribe belonged to the Great Basin Native Indians list
+Winnebago (Otoe)	The Winnebago (Otoe) tribe belonged to the Great Plains Native Indians
+Wintun	The Wintun tribe belonged to the California Native American Indian tribes
+Wyandot (Huron)	The Wyandot (Huron) tribe belonged to the Northeast Woodland tribes list
+Yakama	The Yakama tribe were associated with the Plateau Native Indians
+Yana	The Yana tribe belonged to the California Native Indians
+Yuchi	The Yuchi tribe belonged to the Southeast Native American Indian tribes
+Yuma	The Yuma tribe were associated with the California Native Indians list
+Zuni	The Zuni tribe belonged to the Southwest Native American Indian tribes
