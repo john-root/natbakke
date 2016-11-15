@@ -15,7 +15,6 @@ from enchant.checker import SpellChecker
 from tribes_import import initialise_tribes
 
 
-
 def find_files(directory, pattern):
     for root, dirs, files in os.walk(directory):
         for basename in files:
@@ -133,17 +132,17 @@ def nlp_image(text, imagefile, parser, matcher, id):
     parsed = parser(unicode(text))
     matches = matcher(parsed)
     for ent_id, label, start, end in matches:
-            '''
-            Grab the dict from the entity
-            '''
-            entity = matcher.get_entity(ent_id)
-            orth = parser.vocab.strings[label]
-            ent_type = entity["ent_type"]
-            small_list.append(entity["ent_type"])
-            cont_row = {'Entity_Orth': orth.encode('utf-8'),
-                        'Entity_Label': ent_type,
-                        'Source': id}
-            rows.append(cont_row)
+        '''
+        Grab the dict from the entity
+        '''
+        entity = matcher.get_entity(ent_id)
+        orth = parser.vocab.strings[label]
+        ent_type = entity["ent_type"]
+        small_list.append(entity["ent_type"])
+        cont_row = {'Entity_Orth': orth.encode('utf-8'),
+                    'Entity_Label': ent_type,
+                    'Source': id}
+        rows.append(cont_row)
     for ent in parsed.ents:
         if ent.label_ not in ['TIME', 'PERCENT', 'CARDINAL', 'ORDINAL', 'QUANTITY', 'MONEY'] and len(ent.orth_) > 3:
             small_list.append(ent.label_)
@@ -173,7 +172,7 @@ def process_image(imagefile, parser, matcher, folder_name):
         id = ''.join(
             ['https://dlcs-ida.org/iiif-img/2/1/',
              folder_name + '_' + base])
-    hocr_file = imagefile.replace('jpg', 'hocr')
+    hocr_file = imagefile #.replace('jpg', 'hocr')
     if os.path.exists(imagefile):
         if os.path.exists(hocr_file):
             hocr = open(hocr_file, 'r')
@@ -210,7 +209,7 @@ def process_roll(folder_name, parser, matcher, writer, json_write=False):
     json_file = os.path.join(
         folder_name, folder_base + '.json')
     summary = []
-    images = get_images(folder_name, 'jpg')
+    images = get_images(folder_name, 'hocr')
     for image in images:
         page, rows = process_image(image, parser, matcher, folder_base)
         if rows:
@@ -230,17 +229,18 @@ def main():
     csv_file = '/Users/matt.mcgrattan/Documents/tribe_names.csv'
     matcher, parser = initialise_tribes(csv_file)
     # parser = initialise_spacy()
-    with open('output_new.csv', 'wb') as f:
+    with open('output_tribes.csv', 'wb') as f:
         fieldnames = ['Entity_Orth', 'Entity_Label', 'Source']
         writer = csv.DictWriter(f, fieldnames=fieldnames, dialect='excel')
         writer.writeheader()
         # folders = glob.glob('/Volumes/IDA-IMAGES/source/[M, T]-*/')
-        folders = glob.glob('/Volumes/IDA-IMAGES/source/[M,T]-*/')
+        folders = glob.glob(
+            '/users/matt.mcgrattan/Dropbox/Digirati/text/[M,T]-*/')
         for folder in folders:
             print 'Folder: %s' % folder
             # folders = ['/Volumes/IDA-IMAGES/source/M-1011_R-09/']
             process_roll(
-                folder, parser, matcher, writer, json_write=False)
+                folder, parser, matcher, writer, json_write=True)
 
 
 if __name__ == '__main__':
