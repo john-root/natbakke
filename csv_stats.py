@@ -4,7 +4,7 @@ import operator
 import json
 
 
-csv_file = 'output_1.csv'
+csv_file = 'output_tribes.csv'
 # source = open(csv_file).read()
 
 
@@ -34,13 +34,9 @@ for stat in sorted_stats:
     stat_dict = {}
     stat_dict['Entity'] = list(stat)[0]
     stat_dict['Count'] = list(stat)[1]
-    stat_dict['Sources']= list(set([x['Source'] for x in rows if x['Entity_Orth'] == stat_dict['Entity']]))
+    # stat_dict['Sources']= list(set([x['Source'] for x in rows if x['Entity_Orth'] == stat_dict['Entity']]))
     stat_dict['Type']= list(set([x['Entity_Label'] for x in rows if x['Entity_Orth'] == stat_dict['Entity']]))
     big_list.append(stat_dict)
 
-with open('stats_1a.json', 'w') as outfile:
+with open('stats_master_tribes.json', 'w') as outfile:
     json.dump(big_list, outfile, indent=4, sort_keys=True)
-# print json.dumps(big_list, indent=4)
-
-
-
