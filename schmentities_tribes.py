@@ -195,7 +195,7 @@ def process_image(imagefile, parser, matcher, folder_name):
         page['Total_entities_found'] = 0
     page['Typescript'] = typewritten
     page['Full_text_length'] = len(text)
-    page['id'] = id
+    page['id'] = id.replace('.hocr','')
 
     print json.dumps(page, indent=4)
     return page, rows
